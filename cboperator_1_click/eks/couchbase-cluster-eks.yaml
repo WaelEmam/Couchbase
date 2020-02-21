@@ -23,9 +23,9 @@ spec:
   exposedFeatures:
     - xdcr
     - client
-  exposedFeatureServiceType: LoadBalancer
-  dns:
-    domain: seeastus.com
+  #exposedFeatureServiceType: LoadBalancer
+  #  dns:
+  #  domain: seeastus.com
   cluster:
     dataServiceMemoryQuota: 512
     indexServiceMemoryQuota: 256
