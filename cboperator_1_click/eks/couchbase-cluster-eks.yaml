@@ -1,0 +1,151 @@
+apiVersion: couchbase.com/v1
+kind: CouchbaseCluster
+metadata:
+  name: cb-eks-cluster
+spec:
+  baseImage: couchbase/server
+  version: enterprise-6.5.0
+  antiAffinity: false
+  tls:
+    static:
+      member:
+        serverSecret: couchbase-server-tls
+      operatorSecret: couchbase-operator-tls
+  authSecret: cb-example-auth
+  exposeAdminConsole: true
+  adminConsoleServices:
+    - data
+    - index
+    - query
+    - search
+    - analytics
+    - eventing  
+  exposedFeatures:
+    - xdcr
+    - client
+  exposedFeatureServiceType: LoadBalancer
+  dns:
+    domain: seeastus.com
+  cluster:
+    dataServiceMemoryQuota: 512
+    indexServiceMemoryQuota: 256
+    searchServiceMemoryQuota: 256
+    eventingServiceMemoryQuota: 256
+    analyticsServiceMemoryQuota: 1024
+    indexStorageSetting: memory_optimized
+    autoFailoverTimeout: 10
+    autoFailoverMaxCount: 3
+    autoFailoverOnDataDiskIssues: true
+    autoFailoverOnDataDiskIssuesTimePeriod: 120
+    autoFailoverServerGroup: false
+  buckets:
+    - name: default
+      type: couchbase
+      memoryQuota: 128
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      compressionMode: passive
+      enableFlush: true
+      enableIndexReplica: false
+  servers:
+    - name: data-east-1a
+      size: 1
+      services:
+        - data
+      serverGroups:
+       - us-east-1a
+      pod:
+        volumeMounts:
+          default: pvc-default  # /opt/couchbase/var/lib/couchbase
+          data: pvc-data        # /mnt/data
+          #          index: pvc-data
+    - name: data-east-1b
+      size: 1
+      services:
+        - data
+      serverGroups:
+       - us-east-1b
+      pod:
+        volumeMounts:
+          default: pvc-default
+          data: pvc-data
+          #          index: pvc-data
+    - name: data-east-1c
+      size: 1
+      services:
+        - data
+      serverGroups:
+       - us-east-1c
+      pod:
+        volumeMounts:
+          default: pvc-default
+          data: pvc-data
+          #index: pvc-data
+    - name: query-east-1b
+      size: 1
+      services:
+        - query
+        - index
+      serverGroups:
+       - us-east-1b
+      pod:
+        volumeMounts:
+          default: pvc-default
+          index: pvc-index
+    - name: query-east-1c
+      size: 1
+      services:
+        - index
+        - query
+      serverGroups:
+       - us-east-1c
+      pod:
+        volumeMounts:
+          default: pvc-default
+          index: pvc-index
+    - name: fts-evnt-ana-east-1c
+      size: 1
+      services:
+        - search
+        - eventing
+        - analytics
+      serverGroups:
+       - us-east-1c
+      pod:
+        volumeMounts:
+          default: pvc-default
+          #data: pvc-fts-evnt-ana
+          #index: pvc-fts-evnt-ana
+  securityContext:
+    fsGroup: 1000
+  volumeClaimTemplates:
+    - metadata:
+        name: pvc-default
+      spec:
+        storageClassName: gp2-multi-zone
+        resources:
+          requests:
+            storage: 1Gi
+    - metadata:
+        name: pvc-data
+      spec:
+        storageClassName: gp2-multi-zone
+        resources:
+          requests:
+            storage: 5Gi
+    - metadata:
+        name: pvc-index
+      spec:
+        storageClassName: gp2-multi-zone
+        resources:
+          requests:
+            storage: 3Gi
+    - metadata:
+        name: pvc-fts-evnt-ana
+      spec:
+        storageClassName: gp2-multi-zone
+        resources:
+          requests:
+            storage: 5Gi
