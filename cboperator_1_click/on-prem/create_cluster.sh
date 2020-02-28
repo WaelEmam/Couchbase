@@ -16,11 +16,13 @@
 
 kubectl create -f admission.yaml
 kubectl create -f crd.yaml
-kubectl create -f operator-role.yaml --namespace=default
+kubectl create -f operator-role.yaml --namespace default
 kubectl create -f operator-service-account.yaml --namespace default
 kubectl create -f operator-role-binding.yaml --namespace default
 kubectl create -f operator-deployment.yaml --namespace default
 kubectl create -f secret.yaml
 kubectl create -f couchbase-cluster.yaml
 
-# kubectl port-forward wael-cb-k8s-0000 8091:8091
+sleep 120
+
+kubectl port-forward wael-cb-k8s-0000 8091:8091
