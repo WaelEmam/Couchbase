@@ -14,6 +14,9 @@ spec:
     - search
     - analytics
     - eventing  
+  exposedFeatures:
+    - xdcr
+    - client
   cluster:
     dataServiceMemoryQuota: 512
     indexServiceMemoryQuota: 256
@@ -29,7 +32,43 @@ spec:
   buckets:
     - name: default
       type: couchbase
-      memoryQuota: 128
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: ecommerce
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: social
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: flight-data
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: contacts
+      type: couchbase
+      memoryQuota: 100
       replicas: 1
       ioPriority: low
       evictionPolicy: valueOnly
