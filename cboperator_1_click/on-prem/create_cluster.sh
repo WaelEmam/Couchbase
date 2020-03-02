@@ -24,5 +24,10 @@ kubectl create -f secret.yaml
 kubectl create -f couchbase-cluster.yaml
 
 sleep 120
-
+kubectl cp /Users/waelemam/mock_data/ecomm wael-cb-k8s-0000:/tmp/ecomm
 kubectl port-forward wael-cb-k8s-0000 8091:8091
+
+# cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file:///tmp/ecomm/ecom_products.json -g key::%_id% -t 4
+# cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file:///tmp/ecomm/ecom_reviews.json -g key::%_id% -t 4
+# cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file:///tmp/ecomm/ecom_orders.json -g key::%_id% -t 4
+# cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file://tmp/ecomm/ecom_users.json -g key::%_id% -t 4
