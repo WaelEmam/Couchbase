@@ -80,7 +80,7 @@ spec:
 #    - rack2
 #    - rack3  
   servers:
-    - size: 3
+    - size: 2
       name: data_index
 #      serverGroups:
 #        - rack1
