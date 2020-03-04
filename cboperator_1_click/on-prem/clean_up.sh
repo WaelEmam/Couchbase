@@ -3,6 +3,9 @@
 
 # Clean up
 
+port_forward=`ps -ef | grep 8091| grep -v grep| awk '{print $2}'`
+kill -9 ${port_forward}
+
 kubectl delete -f couchbase-cluster.yaml
 kubectl delete -f secret.yaml
 kubectl delete -f operator-role-binding.yaml
