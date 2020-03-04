@@ -76,27 +76,27 @@ uidNumber: 1001
 loginShell: /bin/bash
 userPassword: peter123
 
-dn: cn=beer,ou=groups,dc=wael,dc=couchbase,dc=com
+dn: cn=analytics,ou=groups,dc=wael,dc=couchbase,dc=com
 objectClass: groupOfNames
-cn: beer
+cn: analytics
 member: cn=peter,ou=users,dc=wael,dc=couchbase,dc=com
-description: beer group
+description: Analytics group
 
-dn: cn=music,ou=groups,dc=wael,dc=couchbase,dc=com
+dn: cn=support,ou=groups,dc=wael,dc=couchbase,dc=com
 objectClass: groupOfNames
-cn: music
+cn: support
 member: cn=wael,ou=users,dc=wael,dc=couchbase,dc=com
-description: music group
+description: Support
 
-dn: cn=flights,ou=groups,dc=wael,dc=couchbase,dc=com
+dn: cn=services,ou=groups,dc=wael,dc=couchbase,dc=com
 objectClass: groupOfNames
-cn: flights
+cn: services
 member: cn=john,ou=users,dc=wael,dc=couchbase,dc=com
-description: flights group
+description: Professional Services group
 
-dn: cn=ecommerce,ou=groups,dc=wael,dc=couchbase,dc=com
+dn: cn=engineering,ou=groups,dc=wael,dc=couchbase,dc=com
 objectClass: groupOfNames
-cn: ecommerce
+cn: engineering
 member: cn=erwin,ou=users,dc=wael,dc=couchbase,dc=com
-description: ecommerce groupo
+description: engineering group
 
