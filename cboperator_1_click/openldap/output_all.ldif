@@ -1,0 +1,6076 @@
+version: 1
+
+#dn: dc=wael,dc=couchbase,dc=com
+#objectClass: organization
+3objectClass: dcObject
+#objectClass: top
+3dc: wael
+#o: Couchbase
+
+#dn: cn=admin,dc=wael,dc=couchbase,dc=com
+#objectClass: organizationalRole
+#objectClass: simpleSecurityObject
+#cn: admin
+#userPassword: {SSHA}x1GC2uQlbqWkKml58OW1PrtfKxxVQd9P
+#description: LDAP administrator
+
+dn: ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+
+dn: ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: groupOfNames
+objectClass: top
+ou: Support
+
+dn: ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: groupOfNames
+objectClass: top
+ou: Marketing
+
+dn: ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: groupOfNames
+objectClass: top
+ou: Engineering
+
+dn: ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: groupOfNames
+objectClass: top
+ou: Solutions Engineering
+
+dn: cn=Ardyth Iu,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ardyth Iu
+sn: Iu
+carLicense: 9D0WJM
+departmentNumber: 6247
+description: This is Ardyth Iu's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 817-7269
+givenName: Ardyth
+homePhone: +1 213 595-6420
+initials: A. I.
+l: Sunnyvale
+mail: IuA@ns-mail6.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 213 553-8783
+ou: Support
+pager: +1 213 442-1437
+postalAddress: Support$Sunnyvale
+roomNumber: 8157
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 715-9248
+title: Chief Support Punk
+uid: IuA
+userPassword: Password1
+
+dn: cn=Cammy Choi,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Cammy Choi
+sn: Choi
+carLicense: EJ9QQM
+departmentNumber: 8056
+description: This is Cammy Choi's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 682-1225
+givenName: Cammy
+homePhone: +1 415 883-1355
+initials: C. C.
+l: San Francisco
+mail: ChoiC@ns-mail7.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 503-3110
+ou: Support
+pager: +1 415 689-8788
+postalAddress: Support$San Francisco
+roomNumber: 9035
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 268-1482
+title: Supreme Support Visionary
+uid: ChoiC
+userPassword: Password1
+
+dn: cn=Moyra Roob,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Moyra Roob
+sn: Roob
+carLicense: J9OGNA
+departmentNumber: 1059
+description: This is Moyra Roob's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 128-6832
+givenName: Moyra
+homePhone: +1 818 673-5898
+initials: M. R.
+l: Cambridge
+mail: RoobM@ns-mail2.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 818 683-3577
+ou: Support
+pager: +1 818 772-6535
+postalAddress: Support$Cambridge
+roomNumber: 9044
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 916-2078
+title: Supreme Support Manager
+uid: RoobM
+userPassword: Password1
+
+dn: cn=Eadie Cohrs,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Eadie Cohrs
+sn: Cohrs
+carLicense: PTA6NO
+departmentNumber: 3976
+description: This is Eadie Cohrs's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 845-3382
+givenName: Eadie
+homePhone: +1 510 782-8005
+initials: E. C.
+l: Cambridge
+mail: CohrsE@ns-mail2.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 752-9238
+ou: Support
+pager: +1 510 789-9616
+postalAddress: Support$Cambridge
+roomNumber: 9775
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 510 622-6648
+title: Associate Support Punk
+uid: CohrsE
+userPassword: Password1
+
+dn: cn=Mouna Youel,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Mouna Youel
+sn: Youel
+carLicense: 6CC36N
+departmentNumber: 7711
+description: This is Mouna Youel's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 192-2511
+givenName: Mouna
+homePhone: +1 510 836-9176
+initials: M. Y.
+l: San Jose
+mail: YouelM@ns-mail6.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 510 453-3210
+ou: Support
+pager: +1 510 151-2113
+postalAddress: Support$San Jose
+roomNumber: 9075
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 975-5159
+title: Supreme Support Mascot
+uid: YouelM
+userPassword: Password1
+
+dn: cn=Nata Ordway,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Nata Ordway
+sn: Ordway
+carLicense: MKI6BA
+departmentNumber: 6789
+description: This is Nata Ordway's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 745-5099
+givenName: Nata
+homePhone: +1 818 458-6035
+initials: N. O.
+l: Sunnyvale
+mail: OrdwayN@ns-mail6.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 697-9302
+ou: Support
+pager: +1 818 445-1864
+postalAddress: Support$Sunnyvale
+roomNumber: 8018
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 754-3038
+title: Junior Support Madonna
+uid: OrdwayN
+userPassword: Password1
+
+dn: cn=Ross Gierka,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ross Gierka
+sn: Gierka
+carLicense: 2R2ANO
+departmentNumber: 2629
+description: This is Ross Gierka's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 818 956-8261
+givenName: Ross
+homePhone: +1 818 679-9529
+initials: R. G.
+l: San Mateo
+mail: GierkaR@ns-mail5.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 631-1825
+ou: Support
+pager: +1 818 799-2972
+postalAddress: Support$San Mateo
+roomNumber: 9026
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 695-7197
+title: Master Support Madonna
+uid: GierkaR
+userPassword: Password1
+
+dn: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Walt Petree
+sn: Petree
+carLicense: V7ADT3
+departmentNumber: 7344
+description: This is Walt Petree's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 567-9797
+givenName: Walt
+homePhone: +1 206 782-4921
+initials: W. P.
+l: Redwood Shores
+mail: PetreeW@ns-mail4.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 206 344-7582
+ou: Support
+pager: +1 206 790-8722
+postalAddress: Support$Redwood Shores
+roomNumber: 8460
+secretary: cn=Bari Beznowski,ou=Marketing,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 696-4616
+title: Associate Support Assistant
+uid: PetreeW
+userPassword: Password1
+
+dn: cn=Anky Daymond,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Anky Daymond
+sn: Daymond
+carLicense: CDQXPC
+departmentNumber: 5981
+description: This is Anky Daymond's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 510 744-3143
+givenName: Anky
+homePhone: +1 510 704-5703
+initials: A. D.
+l: Cupertino
+mail: DaymondA@ns-mail4.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 215-4837
+ou: Support
+pager: +1 510 133-9903
+postalAddress: Support$Cupertino
+roomNumber: 8248
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 208-5906
+title: Chief Support Figurehead
+uid: DaymondA
+userPassword: Password1
+
+dn: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Britta Roper
+sn: Roper
+carLicense: 640Y5B
+departmentNumber: 9758
+description: This is Britta Roper's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 199-7282
+givenName: Britta
+homePhone: +1 213 841-6233
+initials: B. R.
+l: San Mateo
+mail: RoperB@ns-mail6.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 213 782-6079
+ou: Support
+pager: +1 213 799-1889
+postalAddress: Support$San Mateo
+roomNumber: 8129
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 710-5062
+title: Junior Support President
+uid: RoperB
+userPassword: Password1
+
+dn: cn=Charene Yonk,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Charene Yonk
+sn: Yonk
+carLicense: R9GPKD
+departmentNumber: 1983
+description: This is Charene Yonk's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 723-9852
+givenName: Charene
+homePhone: +1 510 488-2551
+initials: C. Y.
+l: San Francisco
+mail: YonkC@ns-mail2.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 510 625-9515
+ou: Support
+pager: +1 510 996-5793
+postalAddress: Support$San Francisco
+roomNumber: 9783
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 770-9577
+title: Associate Support Manager
+uid: YonkC
+userPassword: Password1
+
+dn: cn=Elena Sutter,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Elena Sutter
+sn: Sutter
+carLicense: US6HAX
+departmentNumber: 5903
+description: This is Elena Sutter's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 329-9938
+givenName: Elena
+homePhone: +1 804 514-4210
+initials: E. S.
+l: Alameda
+mail: SutterE@ns-mail7.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 804 428-6322
+ou: Support
+pager: +1 804 632-4550
+postalAddress: Support$Alameda
+roomNumber: 8439
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 686-6813
+title: Associate Support Vice President
+uid: SutterE
+userPassword: Password1
+
+dn: cn=JoAnne Geyer,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: JoAnne Geyer
+sn: Geyer
+carLicense: 49B8FQ
+departmentNumber: 8830
+description: This is JoAnne Geyer's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 828-9814
+givenName: JoAnne
+homePhone: +1 510 259-5490
+initials: J. G.
+l: Palo Alto
+mail: GeyerJ@ns-mail9.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 510 264-6103
+ou: Support
+pager: +1 510 680-9626
+postalAddress: Support$Palo Alto
+roomNumber: 9587
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 474-3323
+title: Associate Support Evangelist
+uid: GeyerJ
+userPassword: Password1
+
+dn: cn=Kaz Croxford,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Kaz Croxford
+sn: Croxford
+carLicense: XWUFS5
+departmentNumber: 9480
+description: This is Kaz Croxford's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 430-6031
+givenName: Kaz
+homePhone: +1 415 496-2709
+initials: K. C.
+l: Alameda
+mail: CroxforK@ns-mail6.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 415 981-8485
+ou: Support
+pager: +1 415 297-8947
+postalAddress: Support$Alameda
+roomNumber: 8205
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 806-1003
+title: Associate Support Czar
+uid: CroxforK
+userPassword: Password1
+
+dn: cn=Kyrstin Suen,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Kyrstin Suen
+sn: Suen
+carLicense: B16LGW
+departmentNumber: 7402
+description: This is Kyrstin Suen's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 931-8863
+givenName: Kyrstin
+homePhone: +1 818 186-3686
+initials: K. S.
+l: Armonk
+mail: SuenK@ns-mail3.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 715-6679
+ou: Support
+pager: +1 818 468-1079
+postalAddress: Support$Armonk
+roomNumber: 8409
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 251-3136
+title: Supreme Support Czar
+uid: SuenK
+userPassword: Password1
+
+dn: cn=Lyne Shuster,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Lyne Shuster
+sn: Shuster
+carLicense: EOXQYE
+departmentNumber: 9459
+description: This is Lyne Shuster's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 547-5296
+givenName: Lyne
+homePhone: +1 818 109-2559
+initials: L. S.
+l: Sunnyvale
+mail: ShusterL@ns-mail3.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 832-2897
+ou: Support
+pager: +1 818 604-9802
+postalAddress: Support$Sunnyvale
+roomNumber: 9052
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 818 922-7550
+title: Master Support Developer
+uid: ShusterL
+userPassword: Password1
+
+dn: cn=Mariya Kayar,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Mariya Kayar
+sn: Kayar
+carLicense: GOQYQM
+departmentNumber: 8479
+description: This is Mariya Kayar's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 319-8263
+givenName: Mariya
+homePhone: +1 804 811-5112
+initials: M. K.
+l: Redwood Shores
+mail: KayarM@ns-mail7.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 804 649-4414
+ou: Support
+pager: +1 804 219-8065
+postalAddress: Support$Redwood Shores
+roomNumber: 8601
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 897-6914
+title: Supreme Support Janitor
+uid: KayarM
+userPassword: Password1
+
+dn: cn=Anthea Bigras,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Anthea Bigras
+sn: Bigras
+carLicense: GCVQTL
+departmentNumber: 3553
+description: This is Anthea Bigras's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 599-6284
+givenName: Anthea
+homePhone: +1 206 697-6431
+initials: A. B.
+l: San Mateo
+mail: BigrasA@ns-mail3.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 988-4481
+ou: Support
+pager: +1 206 525-6783
+postalAddress: Support$San Mateo
+roomNumber: 8906
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 130-5342
+title: Junior Support Madonna
+uid: BigrasA
+userPassword: Password1
+
+dn: cn=Daloris Dupre,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Daloris Dupre
+sn: Dupre
+carLicense: U80T2J
+departmentNumber: 9967
+description: This is Daloris Dupre's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 220-4189
+givenName: Daloris
+homePhone: +1 415 521-1044
+initials: D. D.
+l: Santa Clara
+mail: DupreD@ns-mail8.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 436-8939
+ou: Support
+pager: +1 415 657-2217
+postalAddress: Support$Santa Clara
+roomNumber: 8178
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 415 359-7244
+title: Junior Support Madonna
+uid: DupreD
+userPassword: Password1
+
+dn: cn=Dwain Brennen,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Dwain Brennen
+sn: Brennen
+carLicense: 7PY6DH
+departmentNumber: 7136
+description: This is Dwain Brennen's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 794-5109
+givenName: Dwain
+homePhone: +1 408 235-3133
+initials: D. B.
+l: San Jose
+mail: BrennenD@ns-mail6.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 408 955-6430
+ou: Support
+pager: +1 408 229-3063
+postalAddress: Support$San Jose
+roomNumber: 8478
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 408 590-5862
+title: Junior Support Manager
+uid: BrennenD
+userPassword: Password1
+
+dn: cn=Edy Georgescu,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Edy Georgescu
+sn: Georgescu
+carLicense: TR1ANU
+departmentNumber: 9249
+description: This is Edy Georgescu's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 415 339-4018
+givenName: Edy
+homePhone: +1 415 318-8498
+initials: E. G.
+l: Orem
+mail: GeorgesE@ns-mail4.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 925-4654
+ou: Support
+pager: +1 415 396-3546
+postalAddress: Support$Orem
+roomNumber: 9830
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 282-6140
+title: Chief Support Manager
+uid: GeorgesE
+userPassword: Password1
+
+dn: cn=Geoffrey Mior,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Geoffrey Mior
+sn: Mior
+carLicense: 2VN9NG
+departmentNumber: 7237
+description: This is Geoffrey Mior's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 581-8441
+givenName: Geoffrey
+homePhone: +1 415 670-4152
+initials: G. M.
+l: San Jose
+mail: MiorG@ns-mail8.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 415 888-3794
+ou: Support
+pager: +1 415 783-3822
+postalAddress: Support$San Jose
+roomNumber: 8569
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 612-5670
+title: Associate Support Director
+uid: MiorG
+userPassword: Password1
+
+dn: cn=Letti Townley,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Letti Townley
+sn: Townley
+carLicense: O96H26
+departmentNumber: 4588
+description: This is Letti Townley's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 408 500-7318
+givenName: Letti
+homePhone: +1 408 599-1509
+initials: L. T.
+l: Milpitas
+mail: TownleyL@ns-mail2.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 408 931-7455
+ou: Support
+pager: +1 408 620-3001
+postalAddress: Support$Milpitas
+roomNumber: 8864
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 170-6650
+title: Chief Support Solutions Engineer
+uid: TownleyL
+userPassword: Password1
+
+dn: cn=Marko Stetner,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Marko Stetner
+sn: Stetner
+carLicense: R8YPFI
+departmentNumber: 3722
+description: This is Marko Stetner's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 466-9536
+givenName: Marko
+homePhone: +1 818 594-4915
+initials: M. S.
+l: Sunnyvale
+mail: StetnerM@ns-mail2.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 818 351-7387
+ou: Support
+pager: +1 818 726-3435
+postalAddress: Support$Sunnyvale
+roomNumber: 9407
+secretary: cn=Bari Beznowski,ou=Marketing,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 417-3945
+title: Chief Support Director
+uid: StetnerM
+userPassword: Password1
+
+dn: cn=Daffi Nambride,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Daffi Nambride
+sn: Nambride
+carLicense: ACTUVU
+departmentNumber: 8328
+description: This is Daffi Nambride's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 310-1997
+givenName: Daffi
+homePhone: +1 818 987-4202
+initials: D. N.
+l: Redmond
+mail: NambridD@ns-mail5.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 767-8189
+ou: Support
+pager: +1 818 888-7613
+postalAddress: Support$Redmond
+roomNumber: 9711
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 818 305-8539
+title: Supreme Support Czar
+uid: NambridD
+userPassword: Password1
+
+dn: cn=Parkinson Raab,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Parkinson Raab
+sn: Raab
+carLicense: TW6I3E
+departmentNumber: 8989
+description: This is Parkinson Raab's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 279-6484
+givenName: Parkinson
+homePhone: +1 206 339-4231
+initials: P. R.
+l: Milpitas
+mail: RaabP@ns-mail5.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 501-7566
+ou: Support
+pager: +1 206 126-3707
+postalAddress: Support$Milpitas
+roomNumber: 9810
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 354-4711
+title: Supreme Support Mascot
+uid: RaabP
+userPassword: Password1
+
+dn: cn=Ramiz Marchand,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ramiz Marchand
+sn: Marchand
+carLicense: DYPFPL
+departmentNumber: 5603
+description: This is Ramiz Marchand's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 203-6625
+givenName: Ramiz
+homePhone: +1 804 948-4247
+initials: R. M.
+l: Santa Clara
+mail: MarchanR@ns-mail8.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 804 692-4395
+ou: Support
+pager: +1 804 164-4996
+postalAddress: Support$Santa Clara
+roomNumber: 9906
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 984-4405
+title: Supreme Support Visionary
+uid: MarchanR
+userPassword: Password1
+
+dn: cn=Yutaka Stodart,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Yutaka Stodart
+sn: Stodart
+carLicense: BX1H3A
+departmentNumber: 6371
+description: This is Yutaka Stodart's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 818 250-1044
+givenName: Yutaka
+homePhone: +1 818 735-9828
+initials: Y. S.
+l: Cambridge
+mail: StodartY@ns-mail4.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 818 767-9753
+ou: Support
+pager: +1 818 529-4427
+postalAddress: Support$Cambridge
+roomNumber: 9281
+secretary: cn=Bari Beznowski,ou=Marketing,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 640-3912
+title: Supreme Support Sales Rep
+uid: StodartY
+userPassword: Password1
+
+dn: cn=Aurelie Schenck,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Aurelie Schenck
+sn: Schenck
+carLicense: A89Y9E
+departmentNumber: 1134
+description: This is Aurelie Schenck's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 398-5464
+givenName: Aurelie
+homePhone: +1 510 871-4829
+initials: A. S.
+l: Redmond
+mail: SchenckA@ns-mail9.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 510 837-9974
+ou: Support
+pager: +1 510 941-4613
+postalAddress: Support$Redmond
+roomNumber: 8564
+telephoneNumber: +1 510 203-1806
+title: Junior Support Dictator
+uid: SchenckA
+userPassword: Password1
+
+dn: cn=Burgess Baccari,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Burgess Baccari
+sn: Baccari
+carLicense: 90I6HO
+departmentNumber: 3769
+description: This is Burgess Baccari's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 363-1650
+givenName: Burgess
+homePhone: +1 804 759-6079
+initials: B. B.
+l: San Mateo
+mail: BaccariB@ns-mail3.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 804 416-2430
+ou: Support
+pager: +1 804 109-8728
+postalAddress: Support$San Mateo
+roomNumber: 9323
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 165-7128
+title: Associate Support Visionary
+uid: BaccariB
+userPassword: Password1
+
+dn: cn=Fifine Samhaber,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Fifine Samhaber
+sn: Samhaber
+carLicense: 97Y4P1
+departmentNumber: 4624
+description: This is Fifine Samhaber's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 619-7522
+givenName: Fifine
+homePhone: +1 213 162-5099
+initials: F. S.
+l: Fremont
+mail: SamhabeF@ns-mail7.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 896-2376
+ou: Support
+pager: +1 213 856-3495
+postalAddress: Support$Fremont
+roomNumber: 8451
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 213 104-7844
+title: Chief Support Fellow
+uid: SamhabeF
+userPassword: Password1
+
+dn: cn=Janean Kowalsky,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Janean Kowalsky
+sn: Kowalsky
+carLicense: S773B8
+departmentNumber: 2425
+description: This is Janean Kowalsky's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 151-7610
+givenName: Janean
+homePhone: +1 415 492-1908
+initials: J. K.
+l: Milpitas
+mail: KowalskJ@ns-mail4.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 415 717-3500
+ou: Support
+pager: +1 415 154-8249
+postalAddress: Support$Milpitas
+roomNumber: 9719
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 464-7257
+title: Supreme Support Visionary
+uid: KowalskJ
+userPassword: Password1
+
+dn: cn=Jderek Lonsdale,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jderek Lonsdale
+sn: Lonsdale
+carLicense: MIBAKS
+departmentNumber: 2904
+description: This is Jderek Lonsdale's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 786-3077
+givenName: Jderek
+homePhone: +1 213 880-8585
+initials: J. L.
+l: San Mateo
+mail: LonsdalJ@ns-mail8.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 497-8006
+ou: Support
+pager: +1 213 851-1515
+postalAddress: Support$San Mateo
+roomNumber: 8449
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 839-1134
+title: Supreme Support Warrior
+uid: LonsdalJ
+userPassword: Password1
+
+dn: cn=Tuesday Stoyles,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Tuesday Stoyles
+sn: Stoyles
+carLicense: WE9B8O
+departmentNumber: 1343
+description: This is Tuesday Stoyles's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 213 204-1367
+givenName: Tuesday
+homePhone: +1 213 984-3515
+initials: T. S.
+l: Armonk
+mail: StoylesT@ns-mail5.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 213 460-7949
+ou: Support
+pager: +1 213 612-3439
+postalAddress: Support$Armonk
+roomNumber: 9489
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 377-8621
+title: Master Support Warrior
+uid: StoylesT
+userPassword: Password1
+
+dn: cn=Zonnya Comstock,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Zonnya Comstock
+sn: Comstock
+carLicense: 6HC35T
+departmentNumber: 2993
+description: This is Zonnya Comstock's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 923-5338
+givenName: Zonnya
+homePhone: +1 408 874-3566
+initials: Z. C.
+l: San Francisco
+mail: ComstocZ@ns-mail7.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 408 263-6852
+ou: Support
+pager: +1 408 287-3778
+postalAddress: Support$San Francisco
+roomNumber: 8790
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 408 292-8643
+title: Supreme Support Assistant
+uid: ComstocZ
+userPassword: Password1
+
+dn: cn=Charmion Systest,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Charmion Systest
+sn: Systest
+carLicense: 6BQ7JB
+departmentNumber: 2302
+description: This is Charmion Systest's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 378-8102
+givenName: Charmion
+homePhone: +1 818 715-7124
+initials: C. S.
+l: San Francisco
+mail: SystestC@ns-mail3.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 818 762-4810
+ou: Support
+pager: +1 818 585-6377
+postalAddress: Support$San Francisco
+roomNumber: 9975
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 735-6538
+title: Supreme Support Assistant
+uid: SystestC
+userPassword: Password1
+
+dn: cn=Madalena Chandra,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Madalena Chandra
+sn: Chandra
+carLicense: JLO945
+departmentNumber: 8858
+description: This is Madalena Chandra's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 632-9231
+givenName: Madalena
+homePhone: +1 818 527-5575
+initials: M. C.
+l: Cupertino
+mail: ChandraM@ns-mail6.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 818 354-5510
+ou: Support
+pager: +1 818 661-2532
+postalAddress: Support$Cupertino
+roomNumber: 8932
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 907-5479
+title: Chief Support Writer
+uid: ChandraM
+userPassword: Password1
+
+dn: cn=Vallier Hartkopf,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Vallier Hartkopf
+sn: Hartkopf
+carLicense: FOVD6W
+departmentNumber: 3304
+description: This is Vallier Hartkopf's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 616-3678
+givenName: Vallier
+homePhone: +1 213 114-4055
+initials: V. H.
+l: Sunnyvale
+mail: HartkopV@ns-mail4.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 982-5495
+ou: Support
+pager: +1 213 990-5245
+postalAddress: Support$Sunnyvale
+roomNumber: 9268
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 207-1883
+title: Associate Support Developer
+uid: HartkopV
+userPassword: Password1
+
+dn: cn=Vmbackup Seawell,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Vmbackup Seawell
+sn: Seawell
+carLicense: 4L99UF
+departmentNumber: 2272
+description: This is Vmbackup Seawell's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 705-9168
+givenName: Vmbackup
+homePhone: +1 510 932-3203
+initials: V. S.
+l: Milpitas
+mail: SeawellV@ns-mail2.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 893-3221
+ou: Support
+pager: +1 510 166-3915
+postalAddress: Support$Milpitas
+roomNumber: 9796
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 510 610-8596
+title: Supreme Support Developer
+uid: SeawellV
+userPassword: Password1
+
+dn: cn=Adelind Saungikar,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Adelind Saungikar
+sn: Saungikar
+carLicense: 583KXD
+departmentNumber: 8579
+description: This is Adelind Saungikar's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 278-3816
+givenName: Adelind
+homePhone: +1 206 584-6735
+initials: A. S.
+l: Redmond
+mail: SaungikA@ns-mail9.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 206 275-9753
+ou: Support
+pager: +1 206 865-9120
+postalAddress: Support$Redmond
+roomNumber: 8141
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 708-7110
+title: Supreme Support President
+uid: SaungikA
+userPassword: Password1
+
+dn: cn=Bobby Constantino,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Bobby Constantino
+sn: Constantino
+carLicense: YBYWMG
+departmentNumber: 6930
+description: This is Bobby Constantino's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 213-7720
+givenName: Bobby
+homePhone: +1 510 694-2061
+initials: B. C.
+l: San Jose
+mail: ConstanB@ns-mail8.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 588-9284
+ou: Support
+pager: +1 510 364-9651
+postalAddress: Support$San Jose
+roomNumber: 9552
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 854-7359
+title: Master Support Solutions Engineer
+uid: ConstanB
+userPassword: Password1
+
+dn: cn=Merrilee Randolph,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Merrilee Randolph
+sn: Randolph
+carLicense: Y80B8E
+departmentNumber: 7393
+description: This is Merrilee Randolph's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 814-9256
+givenName: Merrilee
+homePhone: +1 415 992-5097
+initials: M. R.
+l: Armonk
+mail: RandolpM@ns-mail3.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 446-8810
+ou: Support
+pager: +1 415 123-5442
+postalAddress: Support$Armonk
+roomNumber: 9340
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 578-8910
+title: Supreme Support Madonna
+uid: RandolpM
+userPassword: Password1
+
+dn: cn=Pammie Pellizzeri,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Pammie Pellizzeri
+sn: Pellizzeri
+carLicense: QLKB9R
+departmentNumber: 1774
+description: This is Pammie Pellizzeri's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 306-9057
+givenName: Pammie
+homePhone: +1 415 664-6395
+initials: P. P.
+l: San Francisco
+mail: PellizzP@ns-mail9.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 356-4410
+ou: Support
+pager: +1 415 570-5809
+postalAddress: Support$San Francisco
+roomNumber: 8687
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 353-5604
+title: Chief Support Manager
+uid: PellizzP
+userPassword: Password1
+
+dn: cn=Thanh-Son Giguere,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Thanh-Son Giguere
+sn: Giguere
+carLicense: C5K7Q5
+departmentNumber: 2986
+description: This is Thanh-Son Giguere's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 213 397-5531
+givenName: Thanh-Son
+homePhone: +1 213 682-5220
+initials: T. G.
+l: Redmond
+mail: GiguereT@ns-mail6.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 213 552-9426
+ou: Support
+pager: +1 213 846-4663
+postalAddress: Support$Redmond
+roomNumber: 8244
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 615-4336
+title: Associate Support Manager
+uid: GiguereT
+userPassword: Password1
+
+dn: cn=Painterson Viriato,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Painterson Viriato
+sn: Viriato
+carLicense: HS3WIG
+departmentNumber: 1450
+description: This is Painterson Viriato's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 924-1129
+givenName: Painterson
+homePhone: +1 510 679-4719
+initials: P. V.
+l: San Mateo
+mail: ViriatoP@ns-mail9.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 510 913-7896
+ou: Support
+pager: +1 510 750-9877
+postalAddress: Support$San Mateo
+roomNumber: 9692
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 510 686-5728
+title: Associate Support Warrior
+uid: ViriatoP
+userPassword: Password1
+
+dn: cn=Francine Palfreyman,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Francine Palfreyman
+sn: Palfreyman
+carLicense: HVI4SC
+departmentNumber: 1582
+description: This is Francine Palfreyman's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 125-5975
+givenName: Francine
+homePhone: +1 818 375-1287
+initials: F. P.
+l: Milpitas
+mail: PalfreyF@ns-mail8.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 818 979-9238
+ou: Support
+pager: +1 818 837-3189
+postalAddress: Support$Milpitas
+roomNumber: 9356
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 816-1597
+title: Master Support Assistant
+uid: PalfreyF
+userPassword: Password1
+
+dn: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Fanchette Schwalbach
+sn: Schwalbach
+carLicense: NV36AL
+departmentNumber: 2731
+description: This is Fanchette Schwalbach's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 213 222-6106
+givenName: Fanchette
+homePhone: +1 213 758-2195
+initials: F. S.
+l: Alameda
+mail: SchwalbF@ns-mail5.com
+mobile: +1 213 171-6948
+ou: Support
+pager: +1 213 497-9695
+postalAddress: Support$Alameda
+roomNumber:: OTUxMSA=
+telephoneNumber: +1 213 405-8070
+title: Chief Support Pinhead
+uid: SchwalbF
+userPassword: Password1
+
+dn: cn=Randie Karmous-Edwards,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=c
+ om
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Randie Karmous-Edwards
+sn: Karmous-Edwards
+carLicense: JO4UYM
+departmentNumber: 2208
+description: This is Randie Karmous-Edwards's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 328-3889
+givenName: Randie
+homePhone: +1 206 717-8222
+initials: R. K.
+l: Palo Alto
+mail: KarmousR@ns-mail3.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 206 985-2323
+ou: Support
+pager: +1 206 644-1954
+postalAddress: Support$Palo Alto
+roomNumber: 8908
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 649-5068
+title: Associate Support Stooge
+uid: KarmousR
+userPassword: Password1
+
+dn: cn=Sriranjani Ircbellcore,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=c
+ om
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Sriranjani Ircbellcore
+sn: Ircbellcore
+carLicense: L7QQCX
+departmentNumber: 7688
+description: This is Sriranjani Ircbellcore's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 236-6242
+givenName: Sriranjani
+homePhone: +1 804 261-3835
+initials: S. I.
+l: Santa Clara
+mail: IrcbellS@ns-mail7.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 804 701-3054
+ou: Support
+pager: +1 804 481-1659
+postalAddress: Support$Santa Clara
+roomNumber: 8551
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 804 339-9323
+title: Supreme Support Figurehead
+uid: IrcbellS
+userPassword: Password1
+
+dn: cn=Tdr Denter,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Tdr Denter
+sn: Denter
+carLicense: 5QLM30
+departmentNumber: 8460
+description: This is Tdr Denter's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 139-1629
+givenName: Tdr
+homePhone: +1 818 842-2231
+initials: T. D.
+l: Fremont
+mail: DenterT@ns-mail6.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 818 550-5188
+ou: Marketing
+pager: +1 818 582-7918
+postalAddress: Marketing$Fremont
+roomNumber: 8082
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 354-5431
+title: Supreme Marketing Czar
+uid: DenterT
+userPassword: Password1
+
+dn: cn=Aigneis Kay,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Aigneis Kay
+sn: Kay
+carLicense: EMWHLX
+departmentNumber: 1411
+description: This is Aigneis Kay's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 498-9001
+givenName: Aigneis
+homePhone: +1 510 411-8966
+initials: A. K.
+l: Milpitas
+mail: KayA@ns-mail3.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 406-4155
+ou: Marketing
+pager: +1 510 774-6865
+postalAddress: Marketing$Milpitas
+roomNumber: 9561
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 518-6780
+title: Supreme Marketing Czar
+uid: KayA
+userPassword: Password1
+
+dn: cn=Diana Incze,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Diana Incze
+sn: Incze
+carLicense: YQGKDS
+departmentNumber: 3735
+description: This is Diana Incze's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 496-5206
+givenName: Diana
+homePhone: +1 818 517-5867
+initials: D. I.
+l: Armonk
+mail: InczeD@ns-mail9.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 776-2813
+ou: Marketing
+pager: +1 818 224-5943
+postalAddress: Marketing$Armonk
+roomNumber: 9280
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 818 237-7540
+title: Master Marketing Madonna
+uid: InczeD
+userPassword: Password1
+
+dn: cn=Hailee Neal,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Hailee Neal
+sn: Neal
+carLicense: BQUGMX
+departmentNumber: 8905
+description: This is Hailee Neal's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 213 131-6383
+givenName: Hailee
+homePhone: +1 213 285-4907
+initials: H. N.
+l: San Francisco
+mail: NealH@ns-mail9.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 213 342-3616
+ou: Marketing
+pager: +1 213 678-8613
+postalAddress: Marketing$San Francisco
+roomNumber: 9785
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 213 222-1054
+title: Supreme Marketing Consultant
+uid: NealH
+userPassword: Password1
+
+dn: cn=Uday Kiefer,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Uday Kiefer
+sn: Kiefer
+carLicense: 7XVORK
+departmentNumber: 2519
+description: This is Uday Kiefer's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 297-5954
+givenName: Uday
+homePhone: +1 415 777-4488
+initials: U. K.
+l: Sunnyvale
+mail: KieferU@ns-mail6.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 415 523-8989
+ou: Marketing
+pager: +1 415 416-9228
+postalAddress: Marketing$Sunnyvale
+roomNumber: 9310
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 415 317-4014
+title: Associate Marketing Technician
+uid: KieferU
+userPassword: Password1
+
+dn: cn=Val de Hoog,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Val de Hoog
+sn: de Hoog
+carLicense: H2F1XV
+departmentNumber: 4360
+description: This is Val de Hoog's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 206 394-2885
+givenName: Val
+homePhone: +1 206 909-8345
+initials: V. d.
+l: San Francisco
+mail: de HoogV@ns-mail6.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 549-6575
+ou: Marketing
+pager: +1 206 545-2384
+postalAddress: Marketing$San Francisco
+roomNumber: 8149
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 879-4737
+title: Chief Marketing President
+uid: de HoogV
+userPassword: Password1
+
+dn: cn=Winona Stat,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Winona Stat
+sn: Stat
+carLicense: GCPMQU
+departmentNumber: 5053
+description: This is Winona Stat's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 175-3038
+givenName: Winona
+homePhone: +1 510 227-1073
+initials: W. S.
+l: Cupertino
+mail: StatW@ns-mail9.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 296-4210
+ou: Marketing
+pager: +1 510 329-9709
+postalAddress: Marketing$Cupertino
+roomNumber: 8316
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 510 415-1184
+title: Junior Marketing Madonna
+uid: StatW
+userPassword: Password1
+
+dn: cn=Alok Sydoryk,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Alok Sydoryk
+sn: Sydoryk
+carLicense: WIR9OE
+departmentNumber: 9360
+description: This is Alok Sydoryk's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 834-5599
+givenName: Alok
+homePhone: +1 804 532-7511
+initials: A. S.
+l: Santa Clara
+mail: SydorykA@ns-mail3.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 804 741-9599
+ou: Marketing
+pager: +1 804 169-2920
+postalAddress: Marketing$Santa Clara
+roomNumber: 9658
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 804 915-2387
+title: Supreme Marketing Architect
+uid: SydorykA
+userPassword: Password1
+
+dn: cn=Davida Dacre,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Davida Dacre
+sn: Dacre
+carLicense: 7TKYBR
+departmentNumber: 4991
+description: This is Davida Dacre's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 615-5666
+givenName: Davida
+homePhone: +1 206 186-1106
+initials: D. D.
+l: Milpitas
+mail: DacreD@ns-mail4.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 302-3975
+ou: Marketing
+pager: +1 206 148-9203
+postalAddress: Marketing$Milpitas
+roomNumber: 8365
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 206 780-2530
+title: Master Marketing Manager
+uid: DacreD
+userPassword: Password1
+
+dn: cn=Elsa Laprade,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Elsa Laprade
+sn: Laprade
+carLicense: BBOR80
+departmentNumber: 2329
+description: This is Elsa Laprade's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 229-2006
+givenName: Elsa
+homePhone: +1 510 944-6765
+initials: E. L.
+l: San Francisco
+mail: LapradeE@ns-mail4.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 510 656-3929
+ou: Marketing
+pager: +1 510 697-1716
+postalAddress: Marketing$San Francisco
+roomNumber: 8210
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 201-8578
+title: Junior Marketing Fellow
+uid: LapradeE
+userPassword: Password1
+
+dn: cn=Corene Heynen,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Corene Heynen
+sn: Heynen
+carLicense: 60KK1I
+departmentNumber: 7221
+description: This is Corene Heynen's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 925-6800
+givenName: Corene
+homePhone: +1 804 664-5536
+initials: C. H.
+l: Palo Alto
+mail: HeynenC@ns-mail4.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 804 527-8969
+ou: Marketing
+pager: +1 804 352-6809
+postalAddress: Marketing$Palo Alto
+roomNumber: 8224
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 636-5013
+title: Associate Marketing Architect
+uid: HeynenC
+userPassword: Password1
+
+dn: cn=Daron Ganness,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Daron Ganness
+sn: Ganness
+carLicense: SJMJYY
+departmentNumber: 6764
+description: This is Daron Ganness's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 415 269-5778
+givenName: Daron
+homePhone: +1 415 652-4908
+initials: D. G.
+l: Cupertino
+mail: GannessD@ns-mail6.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 415 652-2535
+ou: Marketing
+pager: +1 415 833-6916
+postalAddress: Marketing$Cupertino
+roomNumber: 9437
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 415 253-4749
+title: Junior Marketing Stooge
+uid: GannessD
+userPassword: Password1
+
+dn: cn=Fwpas MacNeil,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Fwpas MacNeil
+sn: MacNeil
+carLicense: 2X2E56
+departmentNumber: 5916
+description: This is Fwpas MacNeil's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 836-9595
+givenName: Fwpas
+homePhone: +1 804 192-7605
+initials: F. M.
+l: Fremont
+mail: MacNeilF@ns-mail2.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 804 523-5087
+ou: Marketing
+pager: +1 804 972-3708
+postalAddress: Marketing$Fremont
+roomNumber: 9013
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 638-7997
+title: Chief Marketing Dictator
+uid: MacNeilF
+userPassword: Password1
+
+dn: cn=Gabbey Eisele,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Gabbey Eisele
+sn: Eisele
+carLicense: AY05CU
+departmentNumber: 3160
+description: This is Gabbey Eisele's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 621-1924
+givenName: Gabbey
+homePhone: +1 408 222-5117
+initials: G. E.
+l: Palo Alto
+mail: EiseleG@ns-mail2.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 408 277-6213
+ou: Marketing
+pager: +1 408 730-2000
+postalAddress: Marketing$Palo Alto
+roomNumber: 9716
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 325-6375
+title: Master Marketing Punk
+uid: EiseleG
+userPassword: Password1
+
+dn: cn=Harold Wilder,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Harold Wilder
+sn: Wilder
+carLicense: S0FEEW
+departmentNumber: 2199
+description: This is Harold Wilder's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 278-3022
+givenName: Harold
+homePhone: +1 510 973-3612
+initials: H. W.
+l: Redwood Shores
+mail: WilderH@ns-mail8.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 510 848-4967
+ou: Marketing
+pager: +1 510 992-3228
+postalAddress: Marketing$Redwood Shores
+roomNumber: 8301
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 510 315-9861
+title: Supreme Marketing Dictator
+uid: WilderH
+userPassword: Password1
+
+dn: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Hatti Betsill
+sn: Betsill
+carLicense: LNMML2
+departmentNumber: 6937
+description: This is Hatti Betsill's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 415 713-2046
+givenName: Hatti
+homePhone: +1 415 791-6603
+initials: H. B.
+l: Menlo Park
+mail: BetsillH@ns-mail7.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 604-4055
+ou: Marketing
+pager: +1 415 140-1168
+postalAddress: Marketing$Menlo Park
+roomNumber: 9778
+telephoneNumber: +1 415 734-4371
+title: Chief Marketing Mascot
+uid: BetsillH
+userPassword: Password1
+
+dn: cn=Hulda Parihar,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Hulda Parihar
+sn: Parihar
+carLicense: XY4JE9
+departmentNumber: 9977
+description: This is Hulda Parihar's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 600-2330
+givenName: Hulda
+homePhone: +1 415 154-8283
+initials: H. P.
+l: Redwood Shores
+mail: PariharH@ns-mail7.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 415 696-1749
+ou: Marketing
+pager: +1 415 959-5255
+postalAddress: Marketing$Redwood Shores
+roomNumber: 8584
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 415 785-5924
+title: Master Marketing Madonna
+uid: PariharH
+userPassword: Password1
+
+dn: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jesse Reydman
+sn: Reydman
+carLicense: GTP33D
+departmentNumber: 1307
+description: This is Jesse Reydman's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 377-2760
+givenName: Jesse
+homePhone: +1 213 309-7045
+initials: J. R.
+l: San Francisco
+mail: ReydmanJ@ns-mail7.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 213 321-2986
+ou: Marketing
+pager: +1 213 236-9084
+postalAddress: Marketing$San Francisco
+roomNumber: 9035
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 773-7396
+title: Junior Marketing Janitor
+uid: ReydmanJ
+userPassword: Password1
+
+dn: cn=Justin Nafezi,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Justin Nafezi
+sn: Nafezi
+carLicense: KAJUYC
+departmentNumber: 5999
+description: This is Justin Nafezi's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 521-8585
+givenName: Justin
+homePhone: +1 804 436-4990
+initials: J. N.
+l: Armonk
+mail: NafeziJ@ns-mail2.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 804 409-2281
+ou: Marketing
+pager: +1 804 486-8881
+postalAddress: Marketing$Armonk
+roomNumber: 8881
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 523-2849
+title: Chief Marketing Assistant
+uid: NafeziJ
+userPassword: Password1
+
+dn: cn=Lynwood Glenn,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Lynwood Glenn
+sn: Glenn
+carLicense: O16BU4
+departmentNumber: 5258
+description: This is Lynwood Glenn's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 233-4873
+givenName: Lynwood
+homePhone: +1 818 197-4275
+initials: L. G.
+l: Menlo Park
+mail: GlennL@ns-mail4.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 755-2076
+ou: Marketing
+pager: +1 818 247-2875
+postalAddress: Marketing$Menlo Park
+roomNumber: 9902
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 818 188-6128
+title: Master Marketing Grunt
+uid: GlennL
+userPassword: Password1
+
+dn: cn=Malina Strock,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Malina Strock
+sn: Strock
+carLicense: LNRS3B
+departmentNumber: 3125
+description: This is Malina Strock's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 925-5873
+givenName: Malina
+homePhone: +1 206 673-2108
+initials: M. S.
+l: Cambridge
+mail: StrockM@ns-mail7.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 196-3385
+ou: Marketing
+pager: +1 206 676-7867
+postalAddress: Marketing$Cambridge
+roomNumber: 8752
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 206 276-4642
+title: Master Marketing Dictator
+uid: StrockM
+userPassword: Password1
+
+dn: cn=Antonina Malta,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Antonina Malta
+sn: Malta
+carLicense: 0WKE3D
+departmentNumber: 9993
+description: This is Antonina Malta's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 571-4339
+givenName: Antonina
+homePhone: +1 206 258-7794
+initials: A. M.
+l: Santa Clara
+mail: MaltaA@ns-mail7.com
+manager: cn=Raudres Halligan,ou=Solutions Engineering,ou=groups,dc=wael,dc=c
+ ouchbase,dc=com
+mobile: +1 206 962-9838
+ou: Marketing
+pager: +1 206 197-7324
+postalAddress: Marketing$Santa Clara
+roomNumber: 8311
+secretary: cn=Taryn Rhyndress,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 211-5445
+title: Master Marketing Punk
+uid: MaltaA
+userPassword: Password1
+
+dn: cn=Bari Beznowski,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Bari Beznowski
+sn: Beznowski
+carLicense: TDGN8F
+departmentNumber: 4387
+description: This is Bari Beznowski's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 213 871-7838
+givenName: Bari
+homePhone: +1 213 242-7474
+initials: B. B.
+l: Santa Clara
+mail: BeznowsB@ns-mail8.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 213 561-8324
+ou: Marketing
+pager: +1 213 133-1331
+postalAddress: Marketing$Santa Clara
+roomNumber: 9412
+telephoneNumber: +1 213 638-3185
+title: Junior Marketing Evangelist
+uid: BeznowsB
+userPassword: Password1
+
+dn: cn=Celestine Orth,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Celestine Orth
+sn: Orth
+carLicense: MCVGQA
+departmentNumber: 2421
+description: This is Celestine Orth's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 415 397-4246
+givenName: Celestine
+homePhone: +1 415 839-1987
+initials: C. O.
+l: Palo Alto
+mail: OrthC@ns-mail9.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 415 278-9220
+ou: Marketing
+pager: +1 415 684-6646
+postalAddress: Marketing$Palo Alto
+roomNumber: 9714
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 415 450-5357
+title: Master Marketing Pinhead
+uid: OrthC
+userPassword: Password1
+
+dn: cn=Class Keriakos,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Class Keriakos
+sn: Keriakos
+carLicense: M68NCN
+departmentNumber: 1067
+description: This is Class Keriakos's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 487-5578
+givenName: Class
+homePhone: +1 818 695-8734
+initials: C. K.
+l: Cambridge
+mail: KeriakoC@ns-mail8.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 433-9752
+ou: Marketing
+pager: +1 818 790-3527
+postalAddress: Marketing$Cambridge
+roomNumber: 8845
+telephoneNumber: +1 818 544-9693
+title: Chief Marketing Dictator
+uid: KeriakoC
+userPassword: Password1
+
+dn: cn=Geraldine Aghi,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Geraldine Aghi
+sn: Aghi
+carLicense: 5CUHSR
+departmentNumber: 1679
+description: This is Geraldine Aghi's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 206 520-2647
+givenName: Geraldine
+homePhone: +1 206 792-2629
+initials: G. A.
+l: Alameda
+mail: AghiG@ns-mail2.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 503-9817
+ou: Marketing
+pager: +1 206 895-7731
+postalAddress: Marketing$Alameda
+roomNumber: 8589
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 719-1519
+title: Supreme Marketing Manager
+uid: AghiG
+userPassword: Password1
+
+dn: cn=Italo Lanthier,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Italo Lanthier
+sn: Lanthier
+carLicense: A4JB42
+departmentNumber: 1291
+description: This is Italo Lanthier's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 923-2344
+givenName: Italo
+homePhone: +1 415 393-4403
+initials: I. L.
+l: Cambridge
+mail: LanthieI@ns-mail7.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 415 466-9034
+ou: Marketing
+pager: +1 415 368-1264
+postalAddress: Marketing$Cambridge
+roomNumber: 9006
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 415 844-8703
+title: Supreme Marketing Director
+uid: LanthieI
+userPassword: Password1
+
+dn: cn=Juliette Whang,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Juliette Whang
+sn: Whang
+carLicense: DWXIXV
+departmentNumber: 3395
+description: This is Juliette Whang's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 837-9771
+givenName: Juliette
+homePhone: +1 818 235-5499
+initials: J. W.
+l: San Mateo
+mail: WhangJ@ns-mail4.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 818 213-9084
+ou: Marketing
+pager: +1 818 147-9658
+postalAddress: Marketing$San Mateo
+roomNumber: 9885
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 818 646-5665
+title: Master Marketing Developer
+uid: WhangJ
+userPassword: Password1
+
+dn: cn=Kettie Boileau,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Kettie Boileau
+sn: Boileau
+carLicense: J6O85W
+departmentNumber: 2908
+description: This is Kettie Boileau's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 818 693-7130
+givenName: Kettie
+homePhone: +1 818 898-6789
+initials: K. B.
+l: Cambridge
+mail: BoileauK@ns-mail4.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 818 634-8165
+ou: Marketing
+pager: +1 818 779-1788
+postalAddress: Marketing$Cambridge
+roomNumber: 8781
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 273-3625
+title: Master Marketing Mascot
+uid: BoileauK
+userPassword: Password1
+
+dn: cn=Lyndy Cinicolo,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Lyndy Cinicolo
+sn: Cinicolo
+carLicense: SQP3V1
+departmentNumber: 5209
+description: This is Lyndy Cinicolo's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 132-4889
+givenName: Lyndy
+homePhone: +1 818 305-9056
+initials: L. C.
+l: Sunnyvale
+mail: CinicolL@ns-mail7.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 753-3672
+ou: Marketing
+pager: +1 818 291-2671
+postalAddress: Marketing$Sunnyvale
+roomNumber: 9637
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 818 104-6699
+title: Associate Marketing Developer
+uid: CinicolL
+userPassword: Password1
+
+dn: cn=Markus Avirett,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Markus Avirett
+sn: Avirett
+carLicense: XVVTGX
+departmentNumber: 7560
+description: This is Markus Avirett's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 423-8864
+givenName: Markus
+homePhone: +1 804 985-8312
+initials: M. A.
+l: Sunnyvale
+mail: AvirettM@ns-mail5.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 804 681-6735
+ou: Marketing
+pager: +1 804 750-3270
+postalAddress: Marketing$Sunnyvale
+roomNumber: 8676
+telephoneNumber: +1 804 557-8040
+title: Junior Marketing Evangelist
+uid: AvirettM
+userPassword: Password1
+
+dn: cn=Renelle Alfaro,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Renelle Alfaro
+sn: Alfaro
+carLicense: 6ILLO6
+departmentNumber: 7010
+description: This is Renelle Alfaro's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 461-1421
+givenName: Renelle
+homePhone: +1 804 785-8490
+initials: R. A.
+l: San Mateo
+mail: AlfaroR@ns-mail6.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 804 315-4275
+ou: Marketing
+pager: +1 804 545-2670
+postalAddress: Marketing$San Mateo
+roomNumber: 9862
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 378-9989
+title: Supreme Marketing Warrior
+uid: AlfaroR
+userPassword: Password1
+
+dn: cn=Tawei Slattery,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Tawei Slattery
+sn: Slattery
+carLicense: I98P5Y
+departmentNumber: 6497
+description: This is Tawei Slattery's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 376-8653
+givenName: Tawei
+homePhone: +1 804 633-8470
+initials: T. S.
+l: Milpitas
+mail: SlatterT@ns-mail4.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 753-3319
+ou: Marketing
+pager: +1 804 410-9678
+postalAddress: Marketing$Milpitas
+roomNumber: 9321
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 111-1697
+title: Chief Marketing Sales Rep
+uid: SlatterT
+userPassword: Password1
+
+dn: cn=Tri Letourneau,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Tri Letourneau
+sn: Letourneau
+carLicense: NYMKST
+departmentNumber: 7894
+description: This is Tri Letourneau's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 816-5990
+givenName: Tri
+homePhone: +1 818 965-8072
+initials: T. L.
+l: Santa Clara
+mail: LetournT@ns-mail4.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 818 116-8266
+ou: Marketing
+pager: +1 818 335-6389
+postalAddress: Marketing$Santa Clara
+roomNumber: 8297
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 108-2637
+title: Master Marketing Solutions Engineer
+uid: LetournT
+userPassword: Password1
+
+dn: cn=Elhamy Hilliard,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Elhamy Hilliard
+sn: Hilliard
+carLicense: DJUR8X
+departmentNumber: 5673
+description: This is Elhamy Hilliard's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 421-9003
+givenName: Elhamy
+homePhone: +1 415 650-8500
+initials: E. H.
+l: San Jose
+mail: HilliarE@ns-mail6.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 497-6306
+ou: Marketing
+pager: +1 415 127-5195
+postalAddress: Marketing$San Jose
+roomNumber: 9450
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 789-8236
+title: Associate Marketing Writer
+uid: HilliarE
+userPassword: Password1
+
+dn: cn=Emile Moo-Young,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Emile Moo-Young
+sn: Moo-Young
+carLicense: 6D4GG0
+departmentNumber: 8161
+description: This is Emile Moo-Young's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 730-9189
+givenName: Emile
+homePhone: +1 415 159-9511
+initials: E. M.
+l: Orem
+mail: Moo-YouE@ns-mail2.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 762-2530
+ou: Marketing
+pager: +1 415 444-7478
+postalAddress: Marketing$Orem
+roomNumber: 9259
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 415 573-1240
+title: Junior Marketing Evangelist
+uid: Moo-YouE
+userPassword: Password1
+
+dn: cn=Mccauley Murris,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Mccauley Murris
+sn: Murris
+carLicense: QUMDQF
+departmentNumber: 2005
+description: This is Mccauley Murris's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 655-6993
+givenName: Mccauley
+homePhone: +1 415 242-8092
+initials: M. M.
+l: Armonk
+mail: MurrisM@ns-mail9.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 567-7389
+ou: Marketing
+pager: +1 415 270-1024
+postalAddress: Marketing$Armonk
+roomNumber: 9137
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 372-4834
+title: Supreme Marketing Grunt
+uid: MurrisM
+userPassword: Password1
+
+dn: cn=Alexandrina Ledu,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Alexandrina Ledu
+sn: Ledu
+carLicense: JI189I
+departmentNumber: 2557
+description: This is Alexandrina Ledu's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 213 157-4483
+givenName: Alexandrina
+homePhone: +1 213 696-8420
+initials: A. L.
+l: Cambridge
+mail: LeduA@ns-mail2.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 130-9079
+ou: Marketing
+pager: +1 213 507-6926
+postalAddress: Marketing$Cambridge
+roomNumber: 9642
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 327-4128
+title: Supreme Marketing Assistant
+uid: LeduA
+userPassword: Password1
+
+dn: cn=Madel Strickland,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Madel Strickland
+sn: Strickland
+carLicense: YB3FXC
+departmentNumber: 6831
+description: This is Madel Strickland's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 804 507-7146
+givenName: Madel
+homePhone: +1 804 847-6694
+initials: M. S.
+l: Fremont
+mail: StricklM@ns-mail6.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 713-6236
+ou: Marketing
+pager: +1 804 128-9598
+postalAddress: Marketing$Fremont
+roomNumber: 9921
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 741-7027
+title: Junior Marketing Manager
+uid: StricklM
+userPassword: Password1
+
+dn: cn=Malvina Scissons,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Malvina Scissons
+sn: Scissons
+carLicense: 29EL8P
+departmentNumber: 6724
+description: This is Malvina Scissons's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 276-1903
+givenName: Malvina
+homePhone: +1 206 693-7200
+initials: M. S.
+l: Palo Alto
+mail: ScissonM@ns-mail7.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 370-2907
+ou: Marketing
+pager: +1 206 297-3419
+postalAddress: Marketing$Palo Alto
+roomNumber: 9044
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 825-8975
+title: Master Marketing Architect
+uid: ScissonM
+userPassword: Password1
+
+dn: cn=Arabele Sylvestre,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Arabele Sylvestre
+sn: Sylvestre
+carLicense: YXIUG8
+departmentNumber: 5410
+description: This is Arabele Sylvestre's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 818 172-7051
+givenName: Arabele
+homePhone: +1 818 692-7467
+initials: A. S.
+l: Redmond
+mail: SylvestA@ns-mail5.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 818 519-1123
+ou: Marketing
+pager: +1 818 159-7724
+postalAddress: Marketing$Redmond
+roomNumber: 9474
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 702-6655
+title: Junior Marketing Warrior
+uid: SylvestA
+userPassword: Password1
+
+dn: cn=Ferdinand Hilaire,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ferdinand Hilaire
+sn: Hilaire
+carLicense: R78KOQ
+departmentNumber: 9796
+description: This is Ferdinand Hilaire's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 283-8074
+givenName: Ferdinand
+homePhone: +1 818 701-9207
+initials: F. H.
+l: Fremont
+mail: HilaireF@ns-mail2.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 818 687-9415
+ou: Marketing
+pager: +1 818 807-9319
+postalAddress: Marketing$Fremont
+roomNumber: 9706
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 818 933-4730
+title: Chief Marketing Manager
+uid: HilaireF
+userPassword: Password1
+
+dn: cn=Hollie Candelario,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Hollie Candelario
+sn: Candelario
+carLicense: 3PTK18
+departmentNumber: 1804
+description: This is Hollie Candelario's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 408 998-2885
+givenName: Hollie
+homePhone: +1 408 879-5627
+initials: H. C.
+l: Alameda
+mail: CandelaH@ns-mail8.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 408 527-4834
+ou: Marketing
+pager: +1 408 816-4627
+postalAddress: Marketing$Alameda
+roomNumber: 9297
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 408 101-7355
+title: Supreme Marketing Technician
+uid: CandelaH
+userPassword: Password1
+
+dn: cn=Sylvia Seelaender,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Sylvia Seelaender
+sn: Seelaender
+carLicense: MIAENN
+departmentNumber: 6004
+description: This is Sylvia Seelaender's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 582-5706
+givenName: Sylvia
+homePhone: +1 408 381-6570
+initials: S. S.
+l: Alameda
+mail: SeelaenS@ns-mail4.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 408 431-2398
+ou: Marketing
+pager: +1 408 440-8192
+postalAddress: Marketing$Alameda
+roomNumber: 9506
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 587-6613
+title: Master Marketing Assistant
+uid: SeelaenS
+userPassword: Password1
+
+dn: cn=Mariel Archambault,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Mariel Archambault
+sn: Archambault
+carLicense: J8A6BI
+departmentNumber: 8356
+description: This is Mariel Archambault's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 576-6771
+givenName: Mariel
+homePhone: +1 415 304-9393
+initials: M. A.
+l: Sunnyvale
+mail: ArchambM@ns-mail9.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 201-7057
+ou: Marketing
+pager: +1 415 351-4183
+postalAddress: Marketing$Sunnyvale
+roomNumber: 8237
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 487-3481
+title: Associate Marketing Writer
+uid: ArchambM
+userPassword: Password1
+
+dn: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Romonda Van Cooney
+sn: Van Cooney
+carLicense: GVBLSO
+departmentNumber: 1804
+description: This is Romonda Van Cooney's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 818 808-5210
+givenName: Romonda
+homePhone: +1 818 468-2440
+initials: R. V.
+l: Santa Clara
+mail: Van CooR@ns-mail9.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 818 419-2855
+ou: Marketing
+pager: +1 818 463-6854
+postalAddress: Marketing$Santa Clara
+roomNumber: 9038
+secretary: cn=Bari Beznowski,ou=Marketing,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 451-2448
+title: Master Marketing Architect
+uid: Van CooR
+userPassword: Password1
+
+dn: cn=Annabelle Pantalone,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Annabelle Pantalone
+sn: Pantalone
+carLicense: YNJ899
+departmentNumber: 7375
+description: This is Annabelle Pantalone's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 415 969-7202
+givenName: Annabelle
+homePhone: +1 415 428-2514
+initials: A. P.
+l: Sunnyvale
+mail: PantaloA@ns-mail7.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 444-9784
+ou: Marketing
+pager: +1 415 309-2771
+postalAddress: Marketing$Sunnyvale
+roomNumber: 8022
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 443-4751
+title: Chief Marketing President
+uid: PantaloA
+userPassword: Password1
+
+dn: cn=Anne-corinne Bonnar,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Anne-corinne Bonnar
+sn: Bonnar
+carLicense: ES047T
+departmentNumber: 2614
+description: This is Anne-corinne Bonnar's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 177-4669
+givenName: Anne-corinne
+homePhone: +1 804 501-6123
+initials: A. B.
+l: Armonk
+mail: BonnarA@ns-mail5.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 435-7324
+ou: Marketing
+pager: +1 804 902-2289
+postalAddress: Marketing$Armonk
+roomNumber: 9553
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 740-6673
+title: Junior Marketing Assistant
+uid: BonnarA
+userPassword: Password1
+
+dn: cn=Janot Baker-Gregory,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Janot Baker-Gregory
+sn: Baker-Gregory
+carLicense: 4DIH80
+departmentNumber: 8743
+description: This is Janot Baker-Gregory's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 213 952-3485
+givenName: Janot
+homePhone: +1 213 724-1653
+initials: J. B.
+l: San Jose
+mail: Baker-GJ@ns-mail3.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 865-3883
+ou: Marketing
+pager: +1 213 356-5994
+postalAddress: Marketing$San Jose
+roomNumber: 9301
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 213 766-7579
+title: Junior Marketing Technician
+uid: Baker-GJ
+userPassword: Password1
+
+dn: cn=Jerrilyn Hutchinson,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jerrilyn Hutchinson
+sn: Hutchinson
+carLicense: 6W17VI
+departmentNumber: 6347
+description: This is Jerrilyn Hutchinson's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 901-6388
+givenName: Jerrilyn
+homePhone: +1 818 933-8585
+initials: J. H.
+l: San Jose
+mail: HutchinJ@ns-mail2.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 818 197-6327
+ou: Marketing
+pager: +1 818 502-5785
+postalAddress: Marketing$San Jose
+roomNumber: 9849
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 818 809-9533
+title: Associate Marketing Grunt
+uid: HutchinJ
+userPassword: Password1
+
+dn: cn=Priscilla Covington,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Priscilla Covington
+sn: Covington
+carLicense: A2G8E3
+departmentNumber: 2940
+description: This is Priscilla Covington's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 213 778-6350
+givenName: Priscilla
+homePhone: +1 213 943-4247
+initials: P. C.
+l: Redwood Shores
+mail: CovingtP@ns-mail6.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 845-5064
+ou: Marketing
+pager: +1 213 508-2011
+postalAddress: Marketing$Redwood Shores
+roomNumber: 8276
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 450-5973
+title: Master Marketing Admin
+uid: CovingtP
+userPassword: Password1
+
+dn: cn=Hoa Peets,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Hoa Peets
+sn: Peets
+carLicense: BG8DNE
+departmentNumber: 7157
+description: This is Hoa Peets's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 973-2632
+givenName: Hoa
+homePhone: +1 213 185-3525
+initials: H. P.
+l: Santa Clara
+mail: PeetsH@ns-mail4.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 105-8311
+ou: Engineering
+pager: +1 213 761-5509
+postalAddress: Engineering$Santa Clara
+roomNumber: 9166
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 213 252-9318
+title: Associate Engineering Warrior
+uid: PeetsH
+userPassword: Password1
+
+dn: cn=Fox Binner,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Fox Binner
+sn: Binner
+carLicense: HW008H
+departmentNumber: 7251
+description: This is Fox Binner's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 709-7204
+givenName: Fox
+homePhone: +1 415 518-4729
+initials: F. B.
+l: Menlo Park
+mail: BinnerF@ns-mail5.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 415 983-4275
+ou: Engineering
+pager: +1 415 804-9255
+postalAddress: Engineering$Menlo Park
+roomNumber: 8772
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 704-2747
+title: Master Engineering Writer
+uid: BinnerF
+userPassword: Password1
+
+dn: cn=Gini Bolio,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Gini Bolio
+sn: Bolio
+carLicense: I034AF
+departmentNumber: 1348
+description: This is Gini Bolio's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 251-1550
+givenName: Gini
+homePhone: +1 415 781-1532
+initials: G. B.
+l: Palo Alto
+mail: BolioG@ns-mail7.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 415 915-7793
+ou: Engineering
+pager: +1 415 695-7076
+postalAddress: Engineering$Palo Alto
+roomNumber: 9105
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 520-2685
+title: Associate Engineering Director
+uid: BolioG
+userPassword: Password1
+
+dn: cn=Krissy Eby,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Krissy Eby
+sn: Eby
+carLicense: DIHV09
+departmentNumber: 3056
+description: This is Krissy Eby's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 459-2383
+givenName: Krissy
+homePhone: +1 818 395-4540
+initials: K. E.
+l: Redwood Shores
+mail: EbyK@ns-mail6.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 263-7818
+ou: Engineering
+pager: +1 818 616-2189
+postalAddress: Engineering$Redwood Shores
+roomNumber: 8760
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 869-2018
+title: Associate Engineering Dictator
+uid: EbyK
+userPassword: Password1
+
+dn: cn=Ranga Zirko,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ranga Zirko
+sn: Zirko
+carLicense: WQIOQR
+departmentNumber: 9352
+description: This is Ranga Zirko's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 510 201-5383
+givenName: Ranga
+homePhone: +1 510 590-9744
+initials: R. Z.
+l: Orem
+mail: ZirkoR@ns-mail4.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 510 728-6267
+ou: Engineering
+pager: +1 510 743-3472
+postalAddress: Engineering$Orem
+roomNumber: 9962
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 902-2901
+title: Chief Engineering Manager
+uid: ZirkoR
+userPassword: Password1
+
+dn: cn=Lauren Monck,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Lauren Monck
+sn: Monck
+carLicense: 3MS21X
+departmentNumber: 6347
+description: This is Lauren Monck's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 929-8509
+givenName: Lauren
+homePhone: +1 510 676-5281
+initials: L. M.
+l: Menlo Park
+mail: MonckL@ns-mail8.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 342-1817
+ou: Engineering
+pager: +1 510 643-7980
+postalAddress: Engineering$Menlo Park
+roomNumber: 9668
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 510 116-4880
+title: Junior Engineering Admin
+uid: MonckL
+userPassword: Password1
+
+dn: cn=Othilie Niro,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Othilie Niro
+sn: Niro
+carLicense: 0XNILD
+departmentNumber: 6998
+description: This is Othilie Niro's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 310-8296
+givenName: Othilie
+homePhone: +1 804 533-7867
+initials: O. N.
+l: Santa Clara
+mail: NiroO@ns-mail9.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 509-3240
+ou: Engineering
+pager: +1 804 778-1912
+postalAddress: Engineering$Santa Clara
+roomNumber: 9789
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 259-1384
+title: Junior Engineering Developer
+uid: NiroO
+userPassword: Password1
+
+dn: cn=Thia Fontana,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Thia Fontana
+sn: Fontana
+carLicense: QKQJ9U
+departmentNumber: 5224
+description: This is Thia Fontana's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 858-6462
+givenName: Thia
+homePhone: +1 510 863-9599
+initials: T. F.
+l: Fremont
+mail: FontanaT@ns-mail9.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 510 486-2493
+ou: Engineering
+pager: +1 510 194-4900
+postalAddress: Engineering$Fremont
+roomNumber: 8413
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 217-9814
+title: Junior Engineering President
+uid: FontanaT
+userPassword: Password1
+
+dn: cn=Wilkin Gupta,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Wilkin Gupta
+sn: Gupta
+carLicense: S9PLLL
+departmentNumber: 2960
+description: This is Wilkin Gupta's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 418-9720
+givenName: Wilkin
+homePhone: +1 804 683-6643
+initials: W. G.
+l: Redwood Shores
+mail: GuptaW@ns-mail6.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 153-4574
+ou: Engineering
+pager: +1 804 829-5195
+postalAddress: Engineering$Redwood Shores
+roomNumber: 9287
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 137-1328
+title: Chief Engineering Writer
+uid: GuptaW
+userPassword: Password1
+
+dn: cn=Armin Paynter,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Armin Paynter
+sn: Paynter
+carLicense: 6WPYE3
+departmentNumber: 8740
+description: This is Armin Paynter's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 458-9501
+givenName: Armin
+homePhone: +1 206 800-2701
+initials: A. P.
+l: Palo Alto
+mail: PaynterA@ns-mail8.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 340-9137
+ou: Engineering
+pager: +1 206 550-6563
+postalAddress: Engineering$Palo Alto
+roomNumber: 8277
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 443-3187
+title: Master Engineering Engineer
+uid: PaynterA
+userPassword: Password1
+
+dn: cn=Danika Hopley,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Danika Hopley
+sn: Hopley
+carLicense: SIC7S8
+departmentNumber: 2200
+description: This is Danika Hopley's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 273-6230
+givenName: Danika
+homePhone: +1 415 582-9080
+initials: D. H.
+l: Redwood Shores
+mail: HopleyD@ns-mail7.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 415 712-9243
+ou: Engineering
+pager: +1 415 256-2646
+postalAddress: Engineering$Redwood Shores
+roomNumber: 8641
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 477-1845
+title: Supreme Engineering Evangelist
+uid: HopleyD
+userPassword: Password1
+
+dn: cn=Dodi Schiefer,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Dodi Schiefer
+sn: Schiefer
+carLicense: HA7H4W
+departmentNumber: 7273
+description: This is Dodi Schiefer's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 206 121-1856
+givenName: Dodi
+homePhone: +1 206 252-6297
+initials: D. S.
+l: Milpitas
+mail: SchiefeD@ns-mail8.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 711-9437
+ou: Engineering
+pager: +1 206 365-7699
+postalAddress: Engineering$Milpitas
+roomNumber: 9063
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 297-2638
+title: Master Engineering Janitor
+uid: SchiefeD
+userPassword: Password1
+
+dn: cn=Gerber Connor,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Gerber Connor
+sn: Connor
+carLicense: DH9HX5
+departmentNumber: 4358
+description: This is Gerber Connor's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 217-5940
+givenName: Gerber
+homePhone: +1 408 273-1955
+initials: G. C.
+l: Palo Alto
+mail: ConnorG@ns-mail8.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 408 888-6395
+ou: Engineering
+pager: +1 408 707-3873
+postalAddress: Engineering$Palo Alto
+roomNumber: 8999
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 408 121-7522
+title: Junior Engineering Stooge
+uid: ConnorG
+userPassword: Password1
+
+dn: cn=Gernot Broome,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Gernot Broome
+sn: Broome
+carLicense: 5GWNGQ
+departmentNumber: 9497
+description: This is Gernot Broome's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 501-2153
+givenName: Gernot
+homePhone: +1 804 122-8096
+initials: G. B.
+l: Cupertino
+mail: BroomeG@ns-mail7.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 369-7412
+ou: Engineering
+pager: +1 804 879-3842
+postalAddress: Engineering$Cupertino
+roomNumber: 8940
+telephoneNumber: +1 804 262-4210
+title: Associate Engineering Czar
+uid: BroomeG
+userPassword: Password1
+
+dn: cn=Hilliary Rego,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Hilliary Rego
+sn: Rego
+carLicense: 379I8W
+departmentNumber: 5372
+description: This is Hilliary Rego's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 985-2250
+givenName: Hilliary
+homePhone: +1 510 345-4264
+initials: H. R.
+l: Milpitas
+mail: RegoH@ns-mail5.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 510 531-4911
+ou: Engineering
+pager: +1 510 910-6547
+postalAddress: Engineering$Milpitas
+roomNumber: 8859
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 860-6480
+title: Associate Engineering Stooge
+uid: RegoH
+userPassword: Password1
+
+dn: cn=Tc Pomposelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Tc Pomposelli
+sn: Pomposelli
+carLicense: ACDHNT
+departmentNumber: 8556
+description: This is Tc Pomposelli's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 832-8521
+givenName: Tc
+homePhone: +1 818 568-6921
+initials: T. P.
+l: Palo Alto
+mail: PomposeT@ns-mail9.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 628-9558
+ou: Engineering
+pager: +1 818 472-3109
+postalAddress: Engineering$Palo Alto
+roomNumber: 9794
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 239-4457
+title: Junior Engineering Engineer
+uid: PomposeT
+userPassword: Password1
+
+dn: cn=Cho-Kuen Kayar,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Cho-Kuen Kayar
+sn: Kayar
+carLicense: QJR1UR
+departmentNumber: 1345
+description: This is Cho-Kuen Kayar's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 291-8344
+givenName: Cho-Kuen
+homePhone: +1 415 660-8791
+initials: C. K.
+l: Orem
+mail: KayarC@ns-mail6.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 884-2939
+ou: Engineering
+pager: +1 415 417-7047
+postalAddress: Engineering$Orem
+roomNumber: 9783
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 415 741-2130
+title: Junior Engineering Figurehead
+uid: KayarC
+userPassword: Password1
+
+dn: cn=Colli Hogeboom,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Colli Hogeboom
+sn: Hogeboom
+carLicense: BOGS8I
+departmentNumber: 7773
+description: This is Colli Hogeboom's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 408 815-6356
+givenName: Colli
+homePhone: +1 408 622-1958
+initials: C. H.
+l: Fremont
+mail: HogebooC@ns-mail4.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 408 274-9268
+ou: Engineering
+pager: +1 408 135-1806
+postalAddress: Engineering$Fremont
+roomNumber: 8573
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 565-7037
+title: Chief Engineering Writer
+uid: HogebooC
+userPassword: Password1
+
+dn: cn=Heda Whiteside,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Heda Whiteside
+sn: Whiteside
+carLicense: 1S7SSA
+departmentNumber: 9124
+description: This is Heda Whiteside's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 838-4397
+givenName: Heda
+homePhone: +1 206 275-3817
+initials: H. W.
+l: Palo Alto
+mail: WhitesiH@ns-mail9.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 206 894-8850
+ou: Engineering
+pager: +1 206 527-5058
+postalAddress: Engineering$Palo Alto
+roomNumber: 9519
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 305-7483
+title: Chief Engineering Pinhead
+uid: WhitesiH
+userPassword: Password1
+
+dn: cn=Jasver Decleir,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jasver Decleir
+sn: Decleir
+carLicense: CP2EE2
+departmentNumber: 5341
+description: This is Jasver Decleir's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 190-3846
+givenName: Jasver
+homePhone: +1 804 945-8727
+initials: J. D.
+l: Sunnyvale
+mail: DecleirJ@ns-mail3.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 804 301-7532
+ou: Engineering
+pager: +1 804 181-3047
+postalAddress: Engineering$Sunnyvale
+roomNumber: 8226
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 995-9798
+title: Chief Engineering Punk
+uid: DecleirJ
+userPassword: Password1
+
+dn: cn=Mick Akkermans,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Mick Akkermans
+sn: Akkermans
+carLicense: MI7XOB
+departmentNumber: 7264
+description: This is Mick Akkermans's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 365-2341
+givenName: Mick
+homePhone: +1 804 745-5155
+initials: M. A.
+l: San Francisco
+mail: AkkermaM@ns-mail8.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 804 148-4635
+ou: Engineering
+pager: +1 804 905-9733
+postalAddress: Engineering$San Francisco
+roomNumber: 8007
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 566-7931
+title: Supreme Engineering Janitor
+uid: AkkermaM
+userPassword: Password1
+
+dn: cn=Robyn Dhaliwal,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Robyn Dhaliwal
+sn: Dhaliwal
+carLicense: L8HS7Q
+departmentNumber: 2526
+description: This is Robyn Dhaliwal's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 755-4269
+givenName: Robyn
+homePhone: +1 510 632-6109
+initials: R. D.
+l: Cupertino
+mail: DhaliwaR@ns-mail8.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 531-4996
+ou: Engineering
+pager: +1 510 515-3534
+postalAddress: Engineering$Cupertino
+roomNumber: 9254
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 584-9767
+title: Master Engineering Yahoo
+uid: DhaliwaR
+userPassword: Password1
+
+dn: cn=Subhashini Mau,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Subhashini Mau
+sn: Mau
+carLicense: 99MN2Y
+departmentNumber: 2780
+description: This is Subhashini Mau's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 279-7004
+givenName: Subhashini
+homePhone: +1 206 794-4805
+initials: S. M.
+l: Palo Alto
+mail: MauS@ns-mail3.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 206 223-5332
+ou: Engineering
+pager: +1 206 325-5774
+postalAddress: Engineering$Palo Alto
+roomNumber: 9290
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 206 255-8671
+title: Junior Engineering Solutions Engineer
+uid: MauS
+userPassword: Password1
+
+dn: cn=Teressa Saisho,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Teressa Saisho
+sn: Saisho
+carLicense: XPQTA8
+departmentNumber: 6406
+description: This is Teressa Saisho's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 804 861-9203
+givenName: Teressa
+homePhone: +1 804 945-5126
+initials: T. S.
+l: Cambridge
+mail: SaishoT@ns-mail4.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 232-9076
+ou: Engineering
+pager: +1 804 473-5174
+postalAddress: Engineering$Cambridge
+roomNumber: 8141
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 645-1097
+title: Junior Engineering Vice President
+uid: SaishoT
+userPassword: Password1
+
+dn: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Alora Antonelli
+sn: Antonelli
+carLicense: OQKJW6
+departmentNumber: 4876
+description: This is Alora Antonelli's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 415 724-5924
+givenName: Alora
+homePhone: +1 415 844-3831
+initials: A. A.
+l: Milpitas
+mail: AntonelA@ns-mail5.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 415 508-9067
+ou: Engineering
+pager: +1 415 377-4530
+postalAddress: Engineering$Milpitas
+roomNumber: 8489
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 176-4644
+title: Supreme Engineering Warrior
+uid: AntonelA
+userPassword: Password1
+
+dn: cn=Chan Gilbertson,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Chan Gilbertson
+sn: Gilbertson
+carLicense: 3HVIWP
+departmentNumber: 3559
+description: This is Chan Gilbertson's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 452-4178
+givenName: Chan
+homePhone: +1 408 832-5020
+initials: C. G.
+l: Redwood Shores
+mail: GilbertC@ns-mail9.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 408 307-9957
+ou: Engineering
+pager: +1 408 269-6921
+postalAddress: Engineering$Redwood Shores
+roomNumber: 8980
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 248-3121
+title: Chief Engineering Writer
+uid: GilbertC
+userPassword: Password1
+
+dn: cn=Chloris Zeisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Chloris Zeisler
+sn: Zeisler
+carLicense: SQUHXO
+departmentNumber: 3623
+description: This is Chloris Zeisler's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 507-6946
+givenName: Chloris
+homePhone: +1 408 398-1286
+initials: C. Z.
+l: San Mateo
+mail: ZeislerC@ns-mail2.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 408 197-3839
+ou: Engineering
+pager: +1 408 619-1968
+postalAddress: Engineering$San Mateo
+roomNumber: 8172
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 937-2250
+title: Supreme Engineering Madonna
+uid: ZeislerC
+userPassword: Password1
+
+dn: cn=Eamonn Stennett,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Eamonn Stennett
+sn: Stennett
+carLicense: 3JVTK7
+departmentNumber: 2169
+description: This is Eamonn Stennett's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 206 597-1443
+givenName: Eamonn
+homePhone: +1 206 522-2026
+initials: E. S.
+l: Milpitas
+mail: StennetE@ns-mail8.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 206 949-1524
+ou: Engineering
+pager: +1 206 893-7725
+postalAddress: Engineering$Milpitas
+roomNumber: 9761
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 746-2678
+title: Associate Engineering Dictator
+uid: StennetE
+userPassword: Password1
+
+dn: cn=Elsy Miltenburg,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Elsy Miltenburg
+sn: Miltenburg
+carLicense: YDXPOL
+departmentNumber: 2858
+description: This is Elsy Miltenburg's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 849-6534
+givenName: Elsy
+homePhone: +1 206 717-6280
+initials: E. M.
+l: San Jose
+mail: MiltenbE@ns-mail9.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 415-3479
+ou: Engineering
+pager: +1 206 652-3161
+postalAddress: Engineering$San Jose
+roomNumber: 8412
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 126-9089
+title: Junior Engineering Director
+uid: MiltenbE
+userPassword: Password1
+
+dn: cn=Joella Deitiker,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Joella Deitiker
+sn: Deitiker
+carLicense: P76UNE
+departmentNumber: 1449
+description: This is Joella Deitiker's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 382-5146
+givenName: Joella
+homePhone: +1 213 397-1676
+initials: J. D.
+l: Orem
+mail: DeitikeJ@ns-mail3.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 300-7248
+ou: Engineering
+pager: +1 213 817-5073
+postalAddress: Engineering$Orem
+roomNumber: 9441
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 213 281-2903
+title: Master Engineering Czar
+uid: DeitikeJ
+userPassword: Password1
+
+dn: cn=Michaela Gerard,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Michaela Gerard
+sn: Gerard
+carLicense: 8DAX7L
+departmentNumber: 3434
+description: This is Michaela Gerard's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 521-1120
+givenName: Michaela
+homePhone: +1 818 421-1229
+initials: M. G.
+l: San Jose
+mail: GerardM@ns-mail6.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 818 779-9751
+ou: Engineering
+pager: +1 818 904-6621
+postalAddress: Engineering$San Jose
+roomNumber: 8755
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 818 916-3920
+title: Master Engineering Evangelist
+uid: GerardM
+userPassword: Password1
+
+dn: cn=Patches Donelan,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Patches Donelan
+sn: Donelan
+carLicense: K01CLI
+departmentNumber: 1050
+description: This is Patches Donelan's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 808-8423
+givenName: Patches
+homePhone: +1 206 268-8489
+initials: P. D.
+l: Menlo Park
+mail: DonelanP@ns-mail8.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 664-8133
+ou: Engineering
+pager: +1 206 890-6387
+postalAddress: Engineering$Menlo Park
+roomNumber: 8119
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 961-1202
+title: Junior Engineering Grunt
+uid: DonelanP
+userPassword: Password1
+
+dn: cn=Seanna Alspaugh,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Seanna Alspaugh
+sn: Alspaugh
+carLicense: L8ASSK
+departmentNumber: 9084
+description: This is Seanna Alspaugh's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 777-4447
+givenName: Seanna
+homePhone: +1 804 414-5728
+initials: S. A.
+l: Fremont
+mail: AlspaugS@ns-mail7.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 804 191-7460
+ou: Engineering
+pager: +1 804 918-7758
+postalAddress: Engineering$Fremont
+roomNumber: 9972
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 804 986-5174
+title: Supreme Engineering Madonna
+uid: AlspaugS
+userPassword: Password1
+
+dn: cn=Stuart Schubert,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Stuart Schubert
+sn: Schubert
+carLicense: FBXQQP
+departmentNumber: 3844
+description: This is Stuart Schubert's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 193-8456
+givenName: Stuart
+homePhone: +1 206 533-1911
+initials: S. S.
+l: Alameda
+mail: SchuberS@ns-mail4.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 206 972-8894
+ou: Engineering
+pager: +1 206 916-4686
+postalAddress: Engineering$Alameda
+roomNumber: 9978
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 339-5984
+title: Associate Engineering Architect
+uid: SchuberS
+userPassword: Password1
+
+dn: cn=Taryn Rhyndress,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Taryn Rhyndress
+sn: Rhyndress
+carLicense: 8YW46I
+departmentNumber: 9762
+description: This is Taryn Rhyndress's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 818 447-1495
+givenName: Taryn
+homePhone: +1 818 295-5746
+initials: T. R.
+l: Santa Clara
+mail: RhyndreT@ns-mail7.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 818 922-2148
+ou: Engineering
+pager: +1 818 843-9640
+postalAddress: Engineering$Santa Clara
+roomNumber: 8344
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 818 784-6996
+title: Associate Engineering Janitor
+uid: RhyndreT
+userPassword: Password1
+
+dn: cn=Ruthanne Crepeau,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ruthanne Crepeau
+sn: Crepeau
+carLicense: Y3SPNC
+departmentNumber: 3308
+description: This is Ruthanne Crepeau's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 804 782-1464
+givenName: Ruthanne
+homePhone: +1 804 719-8886
+initials: R. C.
+l: Armonk
+mail: CrepeauR@ns-mail4.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 804 362-7153
+ou: Engineering
+pager: +1 804 552-4816
+postalAddress: Engineering$Armonk
+roomNumber: 9709
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 315-5439
+title: Junior Engineering Pinhead
+uid: CrepeauR
+userPassword: Password1
+
+dn: cn=Albertine Loadsum,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Albertine Loadsum
+sn: Loadsum
+carLicense: C2T2T9
+departmentNumber: 9891
+description: This is Albertine Loadsum's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 856-6162
+givenName: Albertine
+homePhone: +1 804 456-8865
+initials: A. L.
+l: Milpitas
+mail: LoadsumA@ns-mail3.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 374-3183
+ou: Engineering
+pager: +1 804 742-1581
+postalAddress: Engineering$Milpitas
+roomNumber: 8602
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 804 698-1642
+title: Master Engineering Madonna
+uid: LoadsumA
+userPassword: Password1
+
+dn: cn=Dee dee Shibahara,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Dee dee Shibahara
+sn: Shibahara
+carLicense: IFWR6U
+departmentNumber: 4362
+description: This is Dee dee Shibahara's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 418-4143
+givenName: Dee dee
+homePhone: +1 510 360-6460
+initials: D. S.
+l: San Mateo
+mail: ShibahaD@ns-mail9.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 510 411-4006
+ou: Engineering
+pager: +1 510 686-7196
+postalAddress: Engineering$San Mateo
+roomNumber: 8917
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 510 914-7524
+title: Junior Engineering Vice President
+uid: ShibahaD
+userPassword: Password1
+
+dn: cn=Gilberta Dziemian,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Gilberta Dziemian
+sn: Dziemian
+carLicense: O510NA
+departmentNumber: 2612
+description: This is Gilberta Dziemian's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 667-6370
+givenName: Gilberta
+homePhone: +1 818 617-5444
+initials: G. D.
+l: Milpitas
+mail: DziemiaG@ns-mail4.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 635-6558
+ou: Engineering
+pager: +1 818 739-5272
+postalAddress: Engineering$Milpitas
+roomNumber: 8901
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 529-5168
+title: Associate Engineering Fellow
+uid: DziemiaG
+userPassword: Password1
+
+dn: cn=Kristen Bachynski,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Kristen Bachynski
+sn: Bachynski
+carLicense: UCXQEE
+departmentNumber: 2444
+description: This is Kristen Bachynski's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 359-7939
+givenName: Kristen
+homePhone: +1 804 665-8352
+initials: K. B.
+l: Palo Alto
+mail: BachynsK@ns-mail9.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 522-5696
+ou: Engineering
+pager: +1 804 898-5333
+postalAddress: Engineering$Palo Alto
+roomNumber: 9063
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 189-9243
+title: Master Engineering Czar
+uid: BachynsK
+userPassword: Password1
+
+dn: cn=Lurlene Hoddinott,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Lurlene Hoddinott
+sn: Hoddinott
+carLicense: IVHUXV
+departmentNumber: 4494
+description: This is Lurlene Hoddinott's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 960-2714
+givenName: Lurlene
+homePhone: +1 206 409-7690
+initials: L. H.
+l: Armonk
+mail: HoddinoL@ns-mail7.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 206 565-7657
+ou: Engineering
+pager: +1 206 972-8179
+postalAddress: Engineering$Armonk
+roomNumber: 9979
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 738-2215
+title: Junior Engineering Vice President
+uid: HoddinoL
+userPassword: Password1
+
+dn: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=c
+ om
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Carmencita Whisler
+sn: Whisler
+carLicense: JJITPB
+departmentNumber: 9225
+description: This is Carmencita Whisler's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 818 381-6317
+givenName: Carmencita
+homePhone: +1 818 374-7427
+initials: C. W.
+l: Redmond
+mail: WhislerC@ns-mail9.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 818 488-1149
+ou: Engineering
+pager: +1 818 795-8547
+postalAddress: Engineering$Redmond
+roomNumber: 8477
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 818 726-9978
+title: Supreme Engineering Evangelist
+uid: WhislerC
+userPassword: Password1
+
+dn: cn=Lezlie Toastmasters,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc=
+ com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Lezlie Toastmasters
+sn: Toastmasters
+carLicense: 1IPNVC
+departmentNumber: 6923
+description: This is Lezlie Toastmasters's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 269-9151
+givenName: Lezlie
+homePhone: +1 408 242-9046
+initials: L. T.
+l: Sunnyvale
+mail: ToastmaL@ns-mail8.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 408 648-6481
+ou: Engineering
+pager: +1 408 930-7901
+postalAddress: Engineering$Sunnyvale
+roomNumber: 8777
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 597-6370
+title: Supreme Engineering Madonna
+uid: ToastmaL
+userPassword: Password1
+
+dn: cn=Dev Fab,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,dc=co
+ m
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Dev Fab
+sn: Fab
+carLicense: 2RIALX
+departmentNumber: 5342
+description: This is Dev Fab's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 334-5900
+givenName: Dev
+homePhone: +1 206 313-1779
+initials: D. F.
+l: Alameda
+mail: FabD@ns-mail5.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 206 651-4124
+ou: Solutions Engineering
+pager: +1 206 985-2589
+postalAddress: Solutions Engineering$Alameda
+roomNumber: 9858
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 409-3067
+title: Chief Solutions Engineering Artist
+uid: FabD
+userPassword: Password1
+
+dn: cn=Rex Howat,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,dc=
+ com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Rex Howat
+sn: Howat
+carLicense: EN6F8Y
+departmentNumber: 8262
+description: This is Rex Howat's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 408 444-6666
+givenName: Rex
+homePhone: +1 408 141-3409
+initials: R. H.
+l: San Mateo
+mail: HowatR@ns-mail4.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 408 868-8587
+ou: Solutions Engineering
+pager: +1 408 992-4176
+postalAddress: Solutions Engineering$San Mateo
+roomNumber: 9252
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 408 469-4774
+title: Master Solutions Engineering Technician
+uid: HowatR
+userPassword: Password1
+
+dn: cn=Dosi Cicci,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Dosi Cicci
+sn: Cicci
+carLicense: KESMN5
+departmentNumber: 3786
+description: This is Dosi Cicci's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 818 596-9076
+givenName: Dosi
+homePhone: +1 818 229-6496
+initials: D. C.
+l: Santa Clara
+mail: CicciD@ns-mail8.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 875-2356
+ou: Solutions Engineering
+pager: +1 818 794-8911
+postalAddress: Solutions Engineering$Santa Clara
+roomNumber: 8056
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 818 316-8104
+title: Master Solutions Engineering Consultant
+uid: CicciD
+userPassword: Password1
+
+dn: cn=Elka Bates,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Elka Bates
+sn: Bates
+carLicense: 5RBSE3
+departmentNumber: 4152
+description: This is Elka Bates's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 427-3628
+givenName: Elka
+homePhone: +1 213 255-3877
+initials: E. B.
+l: Redwood Shores
+mail: BatesE@ns-mail7.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 213 668-2887
+ou: Solutions Engineering
+pager: +1 213 185-7365
+postalAddress: Solutions Engineering$Redwood Shores
+roomNumber: 8330
+telephoneNumber: +1 213 707-1637
+title: Chief Solutions Engineering Czar
+uid: BatesE
+userPassword: Password1
+
+dn: cn=How Gundry,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: How Gundry
+sn: Gundry
+carLicense: 4K37VO
+departmentNumber: 4377
+description: This is How Gundry's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 905-4405
+givenName: How
+homePhone: +1 510 282-7543
+initials: H. G.
+l: Redwood Shores
+mail: GundryH@ns-mail5.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 510 321-4627
+ou: Solutions Engineering
+pager: +1 510 569-3899
+postalAddress: Solutions Engineering$Redwood Shores
+roomNumber: 9200
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 500-9216
+title: Chief Solutions Engineering Assistant
+uid: GundryH
+userPassword: Password1
+
+dn: cn=Anader Loos,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Anader Loos
+sn: Loos
+carLicense: MP91UA
+departmentNumber: 7521
+description: This is Anader Loos's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 818 840-4045
+givenName: Anader
+homePhone: +1 818 265-3151
+initials: A. L.
+l: Orem
+mail: LoosA@ns-mail8.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 818 895-4491
+ou: Solutions Engineering
+pager: +1 818 293-2029
+postalAddress: Solutions Engineering$Orem
+roomNumber: 8493
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 818 520-5688
+title: Associate Solutions Engineering Architect
+uid: LoosA
+userPassword: Password1
+
+dn: cn=Cathe Heyer,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Cathe Heyer
+sn: Heyer
+carLicense: 6KPI32
+departmentNumber: 8435
+description: This is Cathe Heyer's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 799-7606
+givenName: Cathe
+homePhone: +1 804 431-3304
+initials: C. H.
+l: Redwood Shores
+mail: HeyerC@ns-mail4.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 804 599-5272
+ou: Solutions Engineering
+pager: +1 804 617-8098
+postalAddress: Solutions Engineering$Redwood Shores
+roomNumber: 8189
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 804 131-5530
+title: Chief Solutions Engineering Madonna
+uid: HeyerC
+userPassword: Password1
+
+dn: cn=Dorisa Wans,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Dorisa Wans
+sn: Wans
+carLicense: QGM377
+departmentNumber: 5210
+description: This is Dorisa Wans's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 804 872-6427
+givenName: Dorisa
+homePhone: +1 804 447-3490
+initials: D. W.
+l: San Francisco
+mail: WansD@ns-mail9.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 804 388-6335
+ou: Solutions Engineering
+pager: +1 804 922-9432
+postalAddress: Solutions Engineering$San Francisco
+roomNumber: 9277
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 920-6635
+title: Junior Solutions Engineering Visionary
+uid: WansD
+userPassword: Password1
+
+dn: cn=Mei Aguilar,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Mei Aguilar
+sn: Aguilar
+carLicense: 5J0GBD
+departmentNumber: 6961
+description: This is Mei Aguilar's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 702-2904
+givenName: Mei
+homePhone: +1 206 952-2559
+initials: M. A.
+l: Redmond
+mail: AguilarM@ns-mail4.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 206 804-8052
+ou: Solutions Engineering
+pager: +1 206 989-9914
+postalAddress: Solutions Engineering$Redmond
+roomNumber: 9526
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 841-1742
+title: Associate Solutions Engineering Developer
+uid: AguilarM
+userPassword: Password1
+
+dn: cn=Methi Seidl,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Methi Seidl
+sn: Seidl
+carLicense: GL18M0
+departmentNumber: 8663
+description: This is Methi Seidl's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 356-1164
+givenName: Methi
+homePhone: +1 206 452-2447
+initials: M. S.
+l: Cambridge
+mail: SeidlM@ns-mail4.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 206 724-9620
+ou: Solutions Engineering
+pager: +1 206 514-3882
+postalAddress: Solutions Engineering$Cambridge
+roomNumber: 8893
+secretary: cn=Bari Beznowski,ou=Marketing,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 785-8704
+title: Supreme Solutions Engineering Artist
+uid: SeidlM
+userPassword: Password1
+
+dn: cn=Pars Saiyed,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Pars Saiyed
+sn: Saiyed
+carLicense: 9T45VM
+departmentNumber: 5773
+description: This is Pars Saiyed's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 915-5952
+givenName: Pars
+homePhone: +1 206 431-4038
+initials: P. S.
+l: Cambridge
+mail: SaiyedP@ns-mail8.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 206 239-7151
+ou: Solutions Engineering
+pager: +1 206 935-8855
+postalAddress: Solutions Engineering$Cambridge
+roomNumber: 9319
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 585-5148
+title: Junior Solutions Engineering Punk
+uid: SaiyedP
+userPassword: Password1
+
+dn: cn=Verile Dido,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Verile Dido
+sn: Dido
+carLicense: SDUGGW
+departmentNumber: 4534
+description: This is Verile Dido's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 622-6544
+givenName: Verile
+homePhone: +1 213 408-4975
+initials: V. D.
+l: Fremont
+mail: DidoV@ns-mail8.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 213 898-9078
+ou: Solutions Engineering
+pager: +1 213 163-4435
+postalAddress: Solutions Engineering$Fremont
+roomNumber: 9751
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 213 725-6789
+title: Chief Solutions Engineering Grunt
+uid: DidoV
+userPassword: Password1
+
+dn: cn=Zonda Dbase,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Zonda Dbase
+sn: Dbase
+carLicense: AMXHS9
+departmentNumber: 9699
+description: This is Zonda Dbase's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 213 646-1791
+givenName: Zonda
+homePhone: +1 213 236-1803
+initials: Z. D.
+l: Menlo Park
+mail: DbaseZ@ns-mail5.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 213 898-4126
+ou: Solutions Engineering
+pager: +1 213 744-6908
+postalAddress: Solutions Engineering$Menlo Park
+roomNumber: 8925
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 706-6720
+title: Supreme Solutions Engineering Grunt
+uid: DbaseZ
+userPassword: Password1
+
+dn: cn=Adora Kenlan,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,
+ dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Adora Kenlan
+sn: Kenlan
+carLicense: 6QSUJG
+departmentNumber: 9996
+description: This is Adora Kenlan's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 796-6479
+givenName: Adora
+homePhone: +1 510 953-3553
+initials: A. K.
+l: San Mateo
+mail: KenlanA@ns-mail2.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 320-5617
+ou: Solutions Engineering
+pager: +1 510 485-3937
+postalAddress: Solutions Engineering$San Mateo
+roomNumber: 9527
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 543-9114
+title: Master Solutions Engineering Consultant
+uid: KenlanA
+userPassword: Password1
+
+dn: cn=Golda Dorval,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,
+ dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Golda Dorval
+sn: Dorval
+carLicense: L4ONX0
+departmentNumber: 9603
+description: This is Golda Dorval's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 804 925-7080
+givenName: Golda
+homePhone: +1 804 207-4487
+initials: G. D.
+l: Redmond
+mail: DorvalG@ns-mail2.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 425-3902
+ou: Solutions Engineering
+pager: +1 804 920-4625
+postalAddress: Solutions Engineering$Redmond
+roomNumber: 9238
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 257-6063
+title: Supreme Solutions Engineering Evangelist
+uid: DorvalG
+userPassword: Password1
+
+dn: cn=Jak Bomstein,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,
+ dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jak Bomstein
+sn: Bomstein
+carLicense: VK3D9B
+departmentNumber: 3382
+description: This is Jak Bomstein's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 998-5175
+givenName: Jak
+homePhone: +1 408 669-3993
+initials: J. B.
+l: Palo Alto
+mail: BomsteiJ@ns-mail2.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 408 553-2934
+ou: Solutions Engineering
+pager: +1 408 136-6618
+postalAddress: Solutions Engineering$Palo Alto
+roomNumber: 8216
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 905-7329
+title: Junior Solutions Engineering Yahoo
+uid: BomsteiJ
+userPassword: Password1
+
+dn: cn=Joni Fajardo,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,
+ dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Joni Fajardo
+sn: Fajardo
+carLicense: VO02F9
+departmentNumber: 3426
+description: This is Joni Fajardo's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 804 764-2530
+givenName: Joni
+homePhone: +1 804 952-6527
+initials: J. F.
+l: Menlo Park
+mail: FajardoJ@ns-mail4.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 730-9753
+ou: Solutions Engineering
+pager: +1 804 140-8465
+postalAddress: Solutions Engineering$Menlo Park
+roomNumber: 9682
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 188-9494
+title: Associate Solutions Engineering Punk
+uid: FajardoJ
+userPassword: Password1
+
+dn: cn=Kathi Forden,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,
+ dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Kathi Forden
+sn: Forden
+carLicense: C7JXA5
+departmentNumber: 6098
+description: This is Kathi Forden's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 206 648-1224
+givenName: Kathi
+homePhone: +1 206 778-1657
+initials: K. F.
+l: Cambridge
+mail: FordenK@ns-mail2.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 206 961-1471
+ou: Solutions Engineering
+pager: +1 206 352-2533
+postalAddress: Solutions Engineering$Cambridge
+roomNumber: 8503
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 368-2111
+title: Chief Solutions Engineering Manager
+uid: FordenK
+userPassword: Password1
+
+dn: cn=Nissa Tavana,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase,
+ dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Nissa Tavana
+sn: Tavana
+carLicense: KCF1AD
+departmentNumber: 5174
+description: This is Nissa Tavana's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 795-7684
+givenName: Nissa
+homePhone: +1 510 822-5196
+initials: N. T.
+l: San Mateo
+mail: TavanaN@ns-mail4.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 510 210-4803
+ou: Solutions Engineering
+pager: +1 510 587-5343
+postalAddress: Solutions Engineering$San Mateo
+roomNumber: 9265
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 510 984-6150
+title: Junior Solutions Engineering Director
+uid: TavanaN
+userPassword: Password1
+
+dn: cn=Athar Gritton,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Athar Gritton
+sn: Gritton
+carLicense: M8PFRB
+departmentNumber: 8972
+description: This is Athar Gritton's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 408 217-7628
+givenName: Athar
+homePhone: +1 408 377-6927
+initials: A. G.
+l: Sunnyvale
+mail: GrittonA@ns-mail8.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 408 677-9291
+ou: Solutions Engineering
+pager: +1 408 255-7805
+postalAddress: Solutions Engineering$Sunnyvale
+roomNumber: 8390
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 318-5801
+title: Chief Solutions Engineering Director
+uid: GrittonA
+userPassword: Password1
+
+dn: cn=Dannye Gaylor,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Dannye Gaylor
+sn: Gaylor
+carLicense: QPXJQ8
+departmentNumber: 2497
+description: This is Dannye Gaylor's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 510 285-4797
+givenName: Dannye
+homePhone: +1 510 793-8032
+initials: D. G.
+l: Orem
+mail: GaylorD@ns-mail3.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 871-4907
+ou: Solutions Engineering
+pager: +1 510 663-5478
+postalAddress: Solutions Engineering$Orem
+roomNumber: 9273
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 169-1376
+title: Supreme Solutions Engineering Pinhead
+uid: GaylorD
+userPassword: Password1
+
+dn: cn=Farah Sookdeo,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Farah Sookdeo
+sn: Sookdeo
+carLicense: WFLBGN
+departmentNumber: 4072
+description: This is Farah Sookdeo's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 432-8315
+givenName: Farah
+homePhone: +1 213 574-7905
+initials: F. S.
+l: San Jose
+mail: SookdeoF@ns-mail2.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 213 690-1205
+ou: Solutions Engineering
+pager: +1 213 467-7248
+postalAddress: Solutions Engineering$San Jose
+roomNumber: 8921
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 213 306-2908
+title: Supreme Solutions Engineering Fellow
+uid: SookdeoF
+userPassword: Password1
+
+dn: cn=Jock Nicholas,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jock Nicholas
+sn: Nicholas
+carLicense: Q5R6XU
+departmentNumber: 7834
+description: This is Jock Nicholas's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 415 230-7462
+givenName: Jock
+homePhone: +1 415 208-2098
+initials: J. N.
+l: Redmond
+mail: NicholaJ@ns-mail7.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 415 380-8020
+ou: Solutions Engineering
+pager: +1 415 914-4975
+postalAddress: Solutions Engineering$Redmond
+roomNumber: 9139
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 530-8733
+title: Supreme Solutions Engineering Madonna
+uid: NicholaJ
+userPassword: Password1
+
+dn: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Lida Shackley
+sn: Shackley
+carLicense: OF8DGW
+departmentNumber: 1109
+description: This is Lida Shackley's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 986-5615
+givenName: Lida
+homePhone: +1 510 244-4476
+initials: L. S.
+l: Palo Alto
+mail: ShackleL@ns-mail3.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 510 462-4271
+ou: Solutions Engineering
+pager: +1 510 158-5334
+postalAddress: Solutions Engineering$Palo Alto
+roomNumber: 8674
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 510 783-7055
+title: Master Solutions Engineering Technician
+uid: ShackleL
+userPassword: Password1
+
+dn: cn=Onida Rathbun,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Onida Rathbun
+sn: Rathbun
+carLicense: 55BT3X
+departmentNumber: 5200
+description: This is Onida Rathbun's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 773-8608
+givenName: Onida
+homePhone: +1 206 712-2250
+initials: O. R.
+l: Redmond
+mail: RathbunO@ns-mail5.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 667-7211
+ou: Solutions Engineering
+pager: +1 206 324-7647
+postalAddress: Solutions Engineering$Redmond
+roomNumber: 8492
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 206 924-9439
+title: Master Solutions Engineering Stooge
+uid: RathbunO
+userPassword: Password1
+
+dn: cn=Sharai Garvin,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Sharai Garvin
+sn: Garvin
+carLicense: KJR5WN
+departmentNumber: 7763
+description: This is Sharai Garvin's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 750-6523
+givenName: Sharai
+homePhone: +1 804 195-7526
+initials: S. G.
+l: Menlo Park
+mail: GarvinS@ns-mail6.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 804 883-4310
+ou: Solutions Engineering
+pager: +1 804 659-3726
+postalAddress: Solutions Engineering$Menlo Park
+roomNumber: 8195
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 824-3515
+title: Supreme Solutions Engineering Vice President
+uid: GarvinS
+userPassword: Password1
+
+dn: cn=Snair Soldera,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Snair Soldera
+sn: Soldera
+carLicense: Y22TVL
+departmentNumber: 9492
+description: This is Snair Soldera's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 802-8438
+givenName: Snair
+homePhone: +1 510 758-4259
+initials: S. S.
+l: Cambridge
+mail: SolderaS@ns-mail2.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 510 613-6916
+ou: Solutions Engineering
+pager: +1 510 592-1368
+postalAddress: Solutions Engineering$Cambridge
+roomNumber: 8618
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 273-5999
+title: Master Solutions Engineering Visionary
+uid: SolderaS
+userPassword: Password1
+
+dn: cn=Virgina Adhem,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Virgina Adhem
+sn: Adhem
+carLicense: XP3BAX
+departmentNumber: 7389
+description: This is Virgina Adhem's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 510 238-8654
+givenName: Virgina
+homePhone: +1 510 742-2647
+initials: V. A.
+l: Milpitas
+mail: AdhemV@ns-mail3.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 499-5535
+ou: Solutions Engineering
+pager: +1 510 571-4052
+postalAddress: Solutions Engineering$Milpitas
+roomNumber: 9086
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 510 771-1171
+title: Junior Solutions Engineering Fellow
+uid: AdhemV
+userPassword: Password1
+
+dn: cn=Christye Trent,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbas
+ e,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Christye Trent
+sn: Trent
+carLicense: 41IORQ
+departmentNumber: 3322
+description: This is Christye Trent's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 804 744-2328
+givenName: Christye
+homePhone: +1 804 897-4861
+initials: C. T.
+l: San Jose
+mail: TrentC@ns-mail5.com
+manager: cn=Walt Petree,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 929-7700
+ou: Solutions Engineering
+pager: +1 804 745-1678
+postalAddress: Solutions Engineering$San Jose
+roomNumber: 8499
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 804 297-7148
+title: Associate Solutions Engineering Director
+uid: TrentC
+userPassword: Password1
+
+dn: cn=Kamlesh Terwey,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbas
+ e,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Kamlesh Terwey
+sn: Terwey
+carLicense: JN5RJ3
+departmentNumber: 7405
+description: This is Kamlesh Terwey's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 907-4901
+givenName: Kamlesh
+homePhone: +1 510 198-4903
+initials: K. T.
+l: San Jose
+mail: TerweyK@ns-mail5.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 262-5014
+ou: Solutions Engineering
+pager: +1 510 160-5227
+postalAddress: Solutions Engineering$San Jose
+roomNumber: 9663
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 895-8832
+title: Chief Solutions Engineering Madonna
+uid: TerweyK
+userPassword: Password1
+
+dn: cn=Krishan Berube,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbas
+ e,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Krishan Berube
+sn: Berube
+carLicense: YIWA9G
+departmentNumber: 4915
+description: This is Krishan Berube's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 553-4592
+givenName: Krishan
+homePhone: +1 510 896-1855
+initials: K. B.
+l: Sunnyvale
+mail: BerubeK@ns-mail3.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 507-1735
+ou: Solutions Engineering
+pager: +1 510 845-3309
+postalAddress: Solutions Engineering$Sunnyvale
+roomNumber: 8262
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 954-5947
+title: Chief Solutions Engineering Janitor
+uid: BerubeK
+userPassword: Password1
+
+dn: cn=Nelli Palidwor,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbas
+ e,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Nelli Palidwor
+sn: Palidwor
+carLicense: 1SVHOL
+departmentNumber: 9558
+description: This is Nelli Palidwor's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 408 445-7682
+givenName: Nelli
+homePhone: +1 408 482-2774
+initials: N. P.
+l: Cupertino
+mail: PalidwoN@ns-mail5.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 408 455-9638
+ou: Solutions Engineering
+pager: +1 408 404-9768
+postalAddress: Solutions Engineering$Cupertino
+roomNumber: 8281
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 258-9062
+title: Junior Solutions Engineering Technician
+uid: PalidwoN
+userPassword: Password1
+
+dn: cn=Sanjeev Dursse,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbas
+ e,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Sanjeev Dursse
+sn: Dursse
+carLicense: RKOFJR
+departmentNumber: 2467
+description: This is Sanjeev Dursse's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 213 843-6876
+givenName: Sanjeev
+homePhone: +1 213 762-1122
+initials: S. D.
+l: Redwood Shores
+mail: DursseS@ns-mail9.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 886-4284
+ou: Solutions Engineering
+pager: +1 213 377-9148
+postalAddress: Solutions Engineering$Redwood Shores
+roomNumber: 9741
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 337-8467
+title: Junior Solutions Engineering Consultant
+uid: DursseS
+userPassword: Password1
+
+dn: cn=Shekar Dobbing,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbas
+ e,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Shekar Dobbing
+sn: Dobbing
+carLicense: TCWM23
+departmentNumber: 2702
+description: This is Shekar Dobbing's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 860-9010
+givenName: Shekar
+homePhone: +1 206 719-8171
+initials: S. D.
+l: San Mateo
+mail: DobbingS@ns-mail4.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 206 796-7867
+ou: Solutions Engineering
+pager: +1 206 461-9440
+postalAddress: Solutions Engineering$San Mateo
+roomNumber: 9888
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 206 647-7774
+title: Supreme Solutions Engineering Assistant
+uid: DobbingS
+userPassword: Password1
+
+dn: cn=Tommie Spitzer,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchbas
+ e,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Tommie Spitzer
+sn: Spitzer
+carLicense: GY3OGH
+departmentNumber: 8118
+description: This is Tommie Spitzer's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 415 811-4219
+givenName: Tommie
+homePhone: +1 415 732-9167
+initials: T. S.
+l: Menlo Park
+mail: SpitzerT@ns-mail4.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 415 182-9537
+ou: Solutions Engineering
+pager: +1 415 704-7534
+postalAddress: Solutions Engineering$Menlo Park
+roomNumber: 8070
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 153-8932
+title: Associate Solutions Engineering Czar
+uid: SpitzerT
+userPassword: Password1
+
+dn: cn=Davina Suddarth,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchba
+ se,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Davina Suddarth
+sn: Suddarth
+carLicense: YAP0M0
+departmentNumber: 2993
+description: This is Davina Suddarth's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 213 505-5793
+givenName: Davina
+homePhone: +1 213 497-3538
+initials: D. S.
+l: Menlo Park
+mail: SuddartD@ns-mail8.com
+manager: cn=Alora Antonelli,ou=Engineering,ou=groups,dc=wael,dc=couchbase,dc
+ =com
+mobile: +1 213 625-2774
+ou: Solutions Engineering
+pager: +1 213 358-8689
+postalAddress: Solutions Engineering$Menlo Park
+roomNumber: 8057
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 213 210-8058
+title: Junior Solutions Engineering Architect
+uid: SuddartD
+userPassword: Password1
+
+dn: cn=Henny Vmsupport,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchba
+ se,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Henny Vmsupport
+sn: Vmsupport
+carLicense: AF6W35
+departmentNumber: 1250
+description: This is Henny Vmsupport's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 271-9208
+givenName: Henny
+homePhone: +1 408 297-1049
+initials: H. V.
+l: Sunnyvale
+mail: VmsuppoH@ns-mail5.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 408 343-8637
+ou: Solutions Engineering
+pager: +1 408 452-4408
+postalAddress: Solutions Engineering$Sunnyvale
+roomNumber: 8113
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 636-5854
+title: Associate Solutions Engineering Pinhead
+uid: VmsuppoH
+userPassword: Password1
+
+dn: cn=Kayle Foxworthy,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchba
+ se,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Kayle Foxworthy
+sn: Foxworthy
+carLicense: YBKU21
+departmentNumber: 2258
+description: This is Kayle Foxworthy's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 267-5393
+givenName: Kayle
+homePhone: +1 408 578-4433
+initials: K. F.
+l: Sunnyvale
+mail: FoxwortK@ns-mail4.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 408 857-1398
+ou: Solutions Engineering
+pager: +1 408 789-3051
+postalAddress: Solutions Engineering$Sunnyvale
+roomNumber: 8078
+secretary: cn=Lauren Monck,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 493-6147
+title: Chief Solutions Engineering Vice President
+uid: FoxwortK
+userPassword: Password1
+
+dn: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchba
+ se,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Maryrose Deliva
+sn: Deliva
+carLicense: 5AHNGN
+departmentNumber: 8991
+description: This is Maryrose Deliva's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 408 772-5845
+givenName: Maryrose
+homePhone: +1 408 795-3278
+initials: M. D.
+l: San Jose
+mail: DelivaM@ns-mail3.com
+manager: cn=Fanchette Schwalbach,ou=Support,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 408 108-1533
+ou: Solutions Engineering
+pager: +1 408 839-2575
+postalAddress: Solutions Engineering$San Jose
+roomNumber: 9161
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 408 262-9869
+title: Associate Solutions Engineering Warrior
+uid: DelivaM
+userPassword: Password1
+
+dn: cn=Quentin Fontana,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchba
+ se,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Quentin Fontana
+sn: Fontana
+carLicense: 9WTBN2
+departmentNumber: 8906
+description: This is Quentin Fontana's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 510 119-5629
+givenName: Quentin
+homePhone: +1 510 946-9652
+initials: Q. F.
+l: San Francisco
+mail: FontanaQ@ns-mail6.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 456-1662
+ou: Solutions Engineering
+pager: +1 510 526-3079
+postalAddress: Solutions Engineering$San Francisco
+roomNumber: 9624
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 510 751-2112
+title: Junior Solutions Engineering Writer
+uid: FontanaQ
+userPassword: Password1
+
+dn: cn=Annadiane Tamasi,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchb
+ ase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Annadiane Tamasi
+sn: Tamasi
+carLicense: CGQHBW
+departmentNumber: 4356
+description: This is Annadiane Tamasi's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 979-2231
+givenName: Annadiane
+homePhone: +1 804 443-6171
+initials: A. T.
+l: San Francisco
+mail: TamasiA@ns-mail5.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 804 521-6691
+ou: Solutions Engineering
+pager: +1 804 694-3042
+postalAddress: Solutions Engineering$San Francisco
+roomNumber: 9795
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 804 605-8933
+title: Supreme Solutions Engineering Vice President
+uid: TamasiA
+userPassword: Password1
+
+dn: cn=Fanya Kollmorgen,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchb
+ ase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Fanya Kollmorgen
+sn: Kollmorgen
+carLicense: 7A6LFL
+departmentNumber: 4296
+description: This is Fanya Kollmorgen's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 775-8521
+givenName: Fanya
+homePhone: +1 415 574-9333
+initials: F. K.
+l: Palo Alto
+mail: KollmorF@ns-mail5.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 415 974-5725
+ou: Solutions Engineering
+pager: +1 415 224-4253
+postalAddress: Solutions Engineering$Palo Alto
+roomNumber: 8606
+secretary: cn=Marko Stetner,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 447-4629
+title: Junior Solutions Engineering Czar
+uid: KollmorF
+userPassword: Password1
+
+dn: cn=Ginnifer Meachum,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchb
+ ase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ginnifer Meachum
+sn: Meachum
+carLicense: L1PIWC
+departmentNumber: 7065
+description: This is Ginnifer Meachum's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 510 673-6283
+givenName: Ginnifer
+homePhone: +1 510 280-3193
+initials: G. M.
+l: Redmond
+mail: MeachumG@ns-mail8.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 510 737-4569
+ou: Solutions Engineering
+pager: +1 510 400-7332
+postalAddress: Solutions Engineering$Redmond
+roomNumber: 8606
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 510 467-1688
+title: Associate Solutions Engineering Punk
+uid: MeachumG
+userPassword: Password1
+
+dn: cn=Lizbeth Eveleigh,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchb
+ ase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Lizbeth Eveleigh
+sn: Eveleigh
+carLicense: PA14M8
+departmentNumber: 3498
+description: This is Lizbeth Eveleigh's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 213 956-7775
+givenName: Lizbeth
+homePhone: +1 213 827-8182
+initials: L. E.
+l: Menlo Park
+mail: EveleigL@ns-mail9.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 213 757-1318
+ou: Solutions Engineering
+pager: +1 213 612-7499
+postalAddress: Solutions Engineering$Menlo Park
+roomNumber: 9857
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 331-3971
+title: Junior Solutions Engineering Evangelist
+uid: EveleigL
+userPassword: Password1
+
+dn: cn=Raudres Halligan,ou=Solutions Engineering,ou=groups,dc=wael,dc=couchb
+ ase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Raudres Halligan
+sn: Halligan
+carLicense: 4FLJ57
+departmentNumber: 5498
+description: This is Raudres Halligan's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 935-9385
+givenName: Raudres
+homePhone: +1 804 219-3495
+initials: R. H.
+l: Santa Clara
+mail: HalligaR@ns-mail7.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 804 102-6758
+ou: Solutions Engineering
+pager: +1 804 811-6960
+postalAddress: Solutions Engineering$Santa Clara
+roomNumber: 8691
+telephoneNumber: +1 804 277-7990
+title: Junior Solutions Engineering Architect
+uid: HalligaR
+userPassword: Password1
+
+dn: cn=Clemmie Goricanec,ou=Solutions Engineering,ou=groups,dc=wael,dc=couch
+ base,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Clemmie Goricanec
+sn: Goricanec
+carLicense: GK9LDH
+departmentNumber: 3024
+description: This is Clemmie Goricanec's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 804 930-2651
+givenName: Clemmie
+homePhone: +1 804 759-9727
+initials: C. G.
+l: Palo Alto
+mail: GoricanC@ns-mail9.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 804 392-9183
+ou: Solutions Engineering
+pager: +1 804 458-3473
+postalAddress: Solutions Engineering$Palo Alto
+roomNumber: 9594
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 804 550-1088
+title: Chief Solutions Engineering Solutions Engineer
+uid: GoricanC
+userPassword: Password1
+
+dn: cn=Rebeka Kasumovich,ou=Solutions Engineering,ou=groups,dc=wael,dc=couch
+ base,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Rebeka Kasumovich
+sn: Kasumovich
+carLicense: E4T9QK
+departmentNumber: 2371
+description: This is Rebeka Kasumovich's description
+employeeType: Normal
+facsimileTelephoneNumber: +1 408 330-9357
+givenName: Rebeka
+homePhone: +1 408 194-1289
+initials: R. K.
+l: Sunnyvale
+mail: KasumovR@ns-mail2.com
+manager: cn=Jesse Reydman,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 408 821-3552
+ou: Solutions Engineering
+pager: +1 408 228-3018
+postalAddress: Solutions Engineering$Sunnyvale
+roomNumber: 8759
+secretary: cn=Gernot Broome,ou=Engineering,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 626-7572
+title: Chief Solutions Engineering Director
+uid: KasumovR
+userPassword: Password1
+
+dn: cn=Shawn Mummy-Craft,ou=Solutions Engineering,ou=groups,dc=wael,dc=couch
+ base,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Shawn Mummy-Craft
+sn: Mummy-Craft
+carLicense: RRNUVC
+departmentNumber: 2187
+description: This is Shawn Mummy-Craft's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 408 762-3395
+givenName: Shawn
+homePhone: +1 408 142-3597
+initials: S. M.
+l: Armonk
+mail: Mummy-CS@ns-mail6.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 408 716-3210
+ou: Solutions Engineering
+pager: +1 408 783-8284
+postalAddress: Solutions Engineering$Armonk
+roomNumber: 8369
+telephoneNumber: +1 408 472-9194
+title: Associate Solutions Engineering Grunt
+uid: Mummy-CS
+userPassword: Password1
+
+dn: cn=Vinay Blankenship,ou=Solutions Engineering,ou=groups,dc=wael,dc=couch
+ base,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Vinay Blankenship
+sn: Blankenship
+carLicense: VEW8F8
+departmentNumber: 8242
+description: This is Vinay Blankenship's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 408 745-3882
+givenName: Vinay
+homePhone: +1 408 909-2465
+initials: V. B.
+l: Orem
+mail: BlankenV@ns-mail3.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 408 467-3007
+ou: Solutions Engineering
+pager: +1 408 428-5017
+postalAddress: Solutions Engineering$Orem
+roomNumber: 8207
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 408 394-9845
+title: Associate Solutions Engineering President
+uid: BlankenV
+userPassword: Password1
+
+dn: cn=Bernardina Prymack,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Bernardina Prymack
+sn: Prymack
+carLicense: RW60QC
+departmentNumber: 1894
+description: This is Bernardina Prymack's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 213 290-6386
+givenName: Bernardina
+homePhone: +1 213 899-4954
+initials: B. P.
+l: Alameda
+mail: PrymackB@ns-mail4.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 213 315-6650
+ou: Solutions Engineering
+pager: +1 213 405-5411
+postalAddress: Solutions Engineering$Alameda
+roomNumber: 8146
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 213 297-6985
+title: Junior Solutions Engineering Stooge
+uid: PrymackB
+userPassword: Password1
+
+dn: cn=Bhupendra Matatall,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Bhupendra Matatall
+sn: Matatall
+carLicense: V9EXYU
+departmentNumber: 2992
+description: This is Bhupendra Matatall's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 818 244-5664
+givenName: Bhupendra
+homePhone: +1 818 557-2086
+initials: B. M.
+l: San Mateo
+mail: MatatalB@ns-mail5.com
+manager: cn=Romonda Van Cooney,ou=Marketing,ou=groups,dc=wael,dc=couchbase,d
+ c=com
+mobile: +1 818 305-6532
+ou: Solutions Engineering
+pager: +1 818 351-7960
+postalAddress: Solutions Engineering$San Mateo
+roomNumber: 9379
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 818 757-1076
+title: Chief Solutions Engineering Figurehead
+uid: MatatalB
+userPassword: Password1
+
+dn: cn=Evangelin Westcott,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Evangelin Westcott
+sn: Westcott
+carLicense: EKOL4H
+departmentNumber: 7376
+description: This is Evangelin Westcott's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 510 860-5592
+givenName: Evangelin
+homePhone: +1 510 762-2992
+initials: E. W.
+l: Santa Clara
+mail: WestcotE@ns-mail2.com
+manager: cn=Hatti Betsill,ou=Marketing,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 510 667-7027
+ou: Solutions Engineering
+pager: +1 510 115-8012
+postalAddress: Solutions Engineering$Santa Clara
+roomNumber: 8261
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 510 520-1050
+title: Master Solutions Engineering Engineer
+uid: WestcotE
+userPassword: Password1
+
+dn: cn=Hang-Tong Hartland,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Hang-Tong Hartland
+sn: Hartland
+carLicense: PY4KR5
+departmentNumber: 5213
+description: This is Hang-Tong Hartland's description
+employeeType: Contract
+facsimileTelephoneNumber: +1 206 927-5000
+givenName: Hang-Tong
+homePhone: +1 206 161-3990
+initials: H. H.
+l: Armonk
+mail: HartlanH@ns-mail5.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 206 200-8024
+ou: Solutions Engineering
+pager: +1 206 435-1290
+postalAddress: Solutions Engineering$Armonk
+roomNumber: 8027
+secretary: cn=Jock Nicholas,ou=Solutions Engineering,dc=wael,dc=couchbase,dc
+ =com
+telephoneNumber: +1 206 963-2876
+title: Chief Solutions Engineering Warrior
+uid: HartlanH
+userPassword: Password1
+
+dn: cn=Trent Bulkovshteyn,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Trent Bulkovshteyn
+sn: Bulkovshteyn
+carLicense: Q771LL
+departmentNumber: 8523
+description: This is Trent Bulkovshteyn's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 213 783-4002
+givenName: Trent
+homePhone: +1 213 424-4465
+initials: T. B.
+l: Redwood Shores
+mail: BulkovsT@ns-mail6.com
+manager: cn=Britta Roper,ou=Support,ou=groups,dc=wael,dc=couchbase,dc=com
+mobile: +1 213 215-8833
+ou: Solutions Engineering
+pager: +1 213 965-4709
+postalAddress: Solutions Engineering$Redwood Shores
+roomNumber: 9748
+secretary: cn=Elka Bates,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=co
+ m
+telephoneNumber: +1 213 301-1091
+title: Associate Solutions Engineering Consultant
+uid: BulkovsT
+userPassword: Password1
+
+dn: cn=Davine Maragoudakis,ou=Solutions Engineering,ou=groups,dc=wael,dc=cou
+ chbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Davine Maragoudakis
+sn: Maragoudakis
+carLicense: 5FR0SH
+departmentNumber: 7687
+description: This is Davine Maragoudakis's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 580-4300
+givenName: Davine
+homePhone: +1 206 690-4563
+initials: D. M.
+l: Redmond
+mail: MaragouD@ns-mail5.com
+manager: cn=Maryrose Deliva,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+mobile: +1 206 371-7814
+ou: Solutions Engineering
+pager: +1 206 971-1371
+postalAddress: Solutions Engineering$Redmond
+roomNumber: 9086
+secretary: cn=Methi Seidl,ou=Solutions Engineering,dc=wael,dc=couchbase,dc=c
+ om
+telephoneNumber: +1 206 743-2876
+title: Master Solutions Engineering Admin
+uid: MaragouD
+userPassword: Password1
+
+dn: cn=Ann-Hoon MacNaughton,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ann-Hoon MacNaughton
+sn: MacNaughton
+carLicense: P0QB1X
+departmentNumber: 9076
+description: This is Ann-Hoon MacNaughton's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 415 623-2773
+givenName: Ann-Hoon
+homePhone: +1 415 688-6313
+initials: A. M.
+l: Cupertino
+mail: MacNaugA@ns-mail8.com
+manager: cn=Lida Shackley,ou=Solutions Engineering,ou=groups,dc=wael,dc=couc
+ hbase,dc=com
+mobile: +1 415 544-4382
+ou: Solutions Engineering
+pager: +1 415 118-5447
+postalAddress: Solutions Engineering$Cupertino
+roomNumber: 8989
+secretary: cn=Thanh-Son Giguere,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 415 249-9801
+title: Junior Solutions Engineering Evangelist
+uid: MacNaugA
+userPassword: Password1
+
+dn: cn=Selestina Massingale,ou=Solutions Engineering,ou=groups,dc=wael,dc=co
+ uchbase,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Selestina Massingale
+sn: Massingale
+carLicense: AU9SF2
+departmentNumber: 9709
+description: This is Selestina Massingale's description
+employeeType: Employee
+facsimileTelephoneNumber: +1 206 932-5271
+givenName: Selestina
+homePhone: +1 206 691-2789
+initials: S. M.
+l: Redwood Shores
+mail: MassingS@ns-mail5.com
+manager: cn=Carmencita Whisler,ou=Engineering,ou=groups,dc=wael,dc=couchbase
+ ,dc=com
+mobile: +1 206 122-8040
+ou: Solutions Engineering
+pager: +1 206 820-8476
+postalAddress: Solutions Engineering$Redwood Shores
+roomNumber: 9322
+secretary: cn=Yutaka Stodart,ou=Support,dc=wael,dc=couchbase,dc=com
+telephoneNumber: +1 206 346-3270
+title: Chief Solutions Engineering Pinhead
+uid: MassingS
+userPassword: Password1
+
