@@ -19,13 +19,13 @@ kubectl port-forward wael-cb-k8s-0000 8091:8091 &
 
 
 # Copy Ecomm Data Set (50 Users, 100 Products, 60 Orders, 30 Reviews)
-kubectl cp /Users/waelemam/mock_data/ecomm wael-cb-k8s-0000:/tmp/ecomm
+kubectl cp data/ecomm wael-cb-k8s-0000:/tmp/ecomm
 
 # Copy Music Data Set (10 Countries, 50 Users, 50 Tracks, 50 Playlists)
-kubectl cp /Users/waelemam/mock_data/music wael-cb-k8s-0000:/tmp/music
+kubectl cp data/music wael-cb-k8s-0000:/tmp/music
 
 # Copy Contacts Data Set (50 Contacts)
-kubectl cp /Users/waelemam/mock_data/contacts wael-cb-k8s-0000:/tmp/contacts
+kubectl cp data/contacts wael-cb-k8s-0000:/tmp/contacts
 
 # Import Data set to ecommerce bucket
 kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file:///tmp/ecomm/reviews.json -g key::%_id% -t 4"

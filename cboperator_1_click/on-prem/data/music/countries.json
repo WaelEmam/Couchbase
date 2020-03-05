@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "country_VG",
+    "gdp": 62465,
+    "country_code": "VG",
+    "region-number": "092",
+    "name": "British Virgin Islands",
+    "updated": "2019-08-07T20:50:36.000Z",
+    "population": 47401
+  },
+  {
+    "_id": "country_PH",
+    "gdp": 51510,
+    "country_code": "PH",
+    "region-number": "608",
+    "name": "Philippines",
+    "updated": "2019-08-26T17:38:47.000Z",
+    "population": 73697
+  },
+  {
+    "_id": "country_PK",
+    "gdp": 15265,
+    "country_code": "PK",
+    "region-number": "586",
+    "name": "Pakistan",
+    "updated": "2019-03-13T09:54:27.000Z",
+    "population": 80533
+  },
+  {
+    "_id": "country_BF",
+    "gdp": 70982,
+    "country_code": "BF",
+    "region-number": "854",
+    "name": "Burkina Faso",
+    "updated": "2020-01-07T17:58:40.000Z",
+    "population": 57640
+  },
+  {
+    "_id": "country_TW",
+    "gdp": 19742,
+    "country_code": "TW",
+    "region-number": "158",
+    "name": "Taiwan, Republic of China ",
+    "updated": "2019-05-05T08:28:35.000Z",
+    "population": 79896
+  },
+  {
+    "_id": "country_RW",
+    "gdp": 29107,
+    "country_code": "RW",
+    "region-number": "646",
+    "name": "Rwanda",
+    "updated": "2019-11-19T14:29:44.000Z",
+    "population": 54610
+  },
+  {
+    "_id": "country_HM",
+    "gdp": 41630,
+    "country_code": "HM",
+    "region-number": "334",
+    "name": "Heard Island and Mcdonald Islands",
+    "updated": "2019-10-10T08:38:02.000Z",
+    "population": 91399
+  },
+  {
+    "_id": "country_DK",
+    "gdp": 71742,
+    "country_code": "DK",
+    "region-number": "208",
+    "name": "Denmark",
+    "updated": "2020-02-24T19:07:54.000Z",
+    "population": 80513
+  },
+  {
+    "_id": "country_KZ",
+    "gdp": 66081,
+    "country_code": "KZ",
+    "region-number": "398",
+    "name": "Kazakhstan",
+    "updated": "2019-04-24T18:32:12.000Z",
+    "population": 57218
+  }
+]
