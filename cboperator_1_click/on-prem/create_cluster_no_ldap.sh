@@ -14,17 +14,7 @@ kubectl create -f couchbase-cluster.yaml
 
 # Wait till all pods are up and running
 sleep 120
-
 kubectl port-forward wael-cb-k8s-0000 8091:8091 &
-
-
-# LDAP Integration
-ldap=`kubectl get pods -o wide | grep open| awk '{print $6}'`
-
-#echo ${ldap}
-
-/Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/couchbase-cli setting-ldap --cluster http://localhost --username Administrator --password password --hosts ${ldap} --port 389 --bind-dn 'cn=admin,dc=wael,dc=couchbase,dc=com' --bind-password 'admin123' --authentication-enabled 1 --user-dn-query 'ou=users,dc=wael,dc=couchbase,dc=com??one?(uid=%u)' --authorization-enabled 1 --group-query 'ou=groups,dc=wael,dc=couchbase,dc=com??one?(member=%D)'
-# /Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/couchbase-cli setting-ldap --cluster http://localhost --username Administrator --password password --hosts ${ldap} --port 389 --bind-dn 'cn=admin,dc=wael,dc=couchbase,dc=com' --bind-password 'admin123' --authentication-enabled 1
 
 
 # Copy Ecomm Data Set (50 Users, 100 Products, 60 Orders, 30 Reviews)
@@ -51,5 +41,4 @@ kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost
 
 # Import Contacts Dataset
 kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b contacts -f list -d file:///tmp/contacts/contacts.json -g key::%contact_id% -t 4"
-
 
