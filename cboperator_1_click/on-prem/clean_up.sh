@@ -15,13 +15,10 @@ kubectl delete -f crd.yaml
 kubectl delete -f admission.yaml
 kubectl delete -f operator-service-account.yaml
 
-ldap=`kubectl get deployments | grep openldap| awk '{print $1}'`
-echo $ldap
-if [[ ${ldap} = openldap ]]
+if `kubectl get deployments | awk '{print $1}'| grep -q "openldap"`
 then
-    kubectl delete deployment openldap
-    kubectl delete svc openldap
+	kubectl delete deployment openldap
+	kubectl delete svc openldap
 else
 	exit
 fi
-
