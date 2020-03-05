@@ -48,7 +48,7 @@ spec:
       conflictResolution: seqno
       enableFlush: false
       enableIndexReplica: false
-    - name: social
+    - name: music
       type: couchbase
       memoryQuota: 100
       replicas: 1
