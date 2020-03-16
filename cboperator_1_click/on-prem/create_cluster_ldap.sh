@@ -43,8 +43,6 @@ kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost
 # Import Contacts Dataset
 kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b contacts -f list -d file:///tmp/contacts/contacts.json -g key::%contact_id% -t 4"
 
-
-
 # LDAP Integration
 
 kubectl run openldap --image=osixia/openldap:1.3.0 --port=389 --env LDAP_ORGANISATION="Couchbase" --env LDAP_DOMAIN="wael.couchbase.com" --env LDAP_ADMIN_PASSWORD="admin123"
@@ -61,3 +59,16 @@ ldap=`kubectl get pods -o wide | grep open| awk '{print $6}'`
 
 # Set Users Permissions
 kubectl exec wael-cb-k8s-0000 -- bash -c "couchbase-cli user-manage -c 127.0.0.1:8091 -u Administrator -p password --set --rbac-username erwin  --rbac-name "Erwin" --roles bucket_admin[music],data_writer[music],fts_admin[music],query_manage_index[music],query_delete[music],query_insert[music],query_select[music],query_update[music]  --auth-domain external"
+
+
+
+# Create Couchmart
+kubectl create -f couchmart.yml
+kubectl expose deployment couchmart --type=LoadBalancer --port=8888 --target-port=8888
+sleep 20
+IP=`kubectl get pods -o wide | grep wael-cb-k8s-0000| awk '{print $6}'`
+couchmart_pod=`kubectl get pods | grep couchmart | awk '{print $1}'`
+kubectl exec ${couchmart_pod} -- bash -c "sed -i 's/AWS_NODES.*/AWS_NODES = [\"${IP}\"]/' couchmart/settings.py"
+
+kubectl exec ${couchmart_pod} -- bash -c "python couchmart/create_dataset.py"
+kubectl exec ${couchmart_pod} -- bash -c "cd couchmart; python web-server.py"

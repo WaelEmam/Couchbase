@@ -57,7 +57,7 @@ spec:
       conflictResolution: seqno
       enableFlush: false
       enableIndexReplica: false
-    - name: flight-data
+    - name: couchmart
       type: couchbase
       memoryQuota: 100
       replicas: 1

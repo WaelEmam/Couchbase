@@ -31,6 +31,7 @@ kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost
 kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file:///tmp/ecomm/users.json -g key::%_id% -t 4"
 kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file:///tmp/ecomm/products.json -g key::%_id% -t 4"
 kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file:///tmp/ecomm/orders.json -g key::%_id% -t 4"
+#kubectl exec wael-cb-k8s-0000 -- bash -c "cbindex -auth Administrator:password -type create -bucket couchmart -index category -fields=category"
 
 # Import Music Data Set
 kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b music -f list -d file:///tmp/music/countries.json -g key::%_id% -t 4"
@@ -43,3 +44,14 @@ sleep 15
 # Import Contacts Dataset
 kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b contacts -f list -d file:///tmp/contacts/contacts.json -g key::%contact_id% -t 4"
 
+
+# Create Couchmart 
+kubectl create -f couchmart.yml
+kubectl expose deployment couchmart --type=LoadBalancer --port=8888 --target-port=8888
+sleep 20
+IP=`kubectl get pods -o wide | grep wael-cb-k8s-0000| awk '{print $6}'`
+couchmart_pod=`kubectl get pods | grep couchmart | awk '{print $1}'`
+kubectl exec ${couchmart_pod} -- bash -c "sed -i 's/AWS_NODES.*/AWS_NODES = [\"${IP}\"]/' couchmart/settings.py"
+
+kubectl exec ${couchmart_pod} -- bash -c "python couchmart/create_dataset.py"
+kubectl exec ${couchmart_pod} -- bash -c "cd couchmart; python web-server.py"

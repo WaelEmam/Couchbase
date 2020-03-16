@@ -14,6 +14,8 @@ kubectl delete -f operator-deployment.yaml
 kubectl delete -f crd.yaml
 kubectl delete -f admission.yaml
 kubectl delete -f operator-service-account.yaml
+kubectl delete -f couchmart.yml
+kubectl delete svc couchmart
 
 if `kubectl get deployments | awk '{print $1}'| grep -q "openldap"`
 then
