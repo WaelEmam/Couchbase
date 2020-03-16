@@ -1,0 +1,63 @@
+apiVersion: couchbase.com/v1
+kind: CouchbaseCluster
+metadata:
+  name: wael-cb-k8s-2
+spec:
+  baseImage: couchbase/server
+  version: enterprise-6.5.0
+  authSecret: cb-example-auth
+  exposeAdminConsole: true
+  adminConsoleServices:
+    - data
+    - index
+    - query
+    - search
+    - analytics
+    - eventing  
+  exposedFeatures:
+    - xdcr
+    - client
+  cluster:
+    dataServiceMemoryQuota: 512
+    indexServiceMemoryQuota: 256
+    searchServiceMemoryQuota: 256
+    eventingServiceMemoryQuota: 256
+    analyticsServiceMemoryQuota: 1024
+    indexStorageSetting: memory_optimized
+    autoFailoverTimeout: 10
+    autoFailoverMaxCount: 3
+    autoFailoverOnDataDiskIssues: true
+    autoFailoverOnDataDiskIssuesTimePeriod: 120
+    autoFailoverServerGroup: false
+  buckets:
+    - name: default
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: couchmart
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+  servers:
+    - size: 2
+      name: data_index
+      services:
+        - data
+        - index
+    - size: 1
+      name: fts_analytics_eventing
+      services:
+        - search
+        - analytics
+        - eventing
+        - query
