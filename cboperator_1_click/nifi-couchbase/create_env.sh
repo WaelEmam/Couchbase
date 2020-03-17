@@ -46,7 +46,7 @@ sleep 15
 #kubectl exec wael-cb-k8s-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b contacts -f list -d file:///tmp/contacts/contacts.json -g key::%contact_id% -t 4"
 
 
-# Create Couchmart 
+# Create Nifi Pod
 kubectl create -f nifi.yaml
 kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
 #sleep 20
@@ -58,6 +58,6 @@ kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=808
 #kubectl exec ${couchmart_pod} -- bash -c "cd couchmart; python web-server.py"
 
 
-# Create Mysql
+# Create Mysql Pod
 kubectl run mysql --image=mysql:latest --env MYSQL_ROOT_PASSWORD=admin123 --port=3306
 #kubectl expose deployment mysql --type=LoadBalancer --port=3306 --target-port=3306
