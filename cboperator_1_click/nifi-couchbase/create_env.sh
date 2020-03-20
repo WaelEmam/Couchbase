@@ -49,6 +49,7 @@ sleep 15
 # Create Nifi Pod
 kubectl create -f nifi.yaml
 kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
+NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
 #sleep 20
 #IP=`kubectl get pods -o wide | grep wael-cb-k8s-0000| awk '{print $6}'`
 #couchmart_pod=`kubectl get pods | grep couchmart | awk '{print $1}'`
@@ -60,4 +61,7 @@ kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=808
 
 # Create Mysql Pod
 kubectl run mysql --image=mysql:latest --env MYSQL_ROOT_PASSWORD=admin123 --port=3306
+kubectl cp test_db/ mysql-7b9b8b5bb7-psgct:/tmp/test_db
+kubectl exec mysql-7b9b8b5bb7-psgct -- bash -c "cd /tmp/test_db; mysql -uroot -padmin123 < employees.sql"
+MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
 #kubectl expose deployment mysql --type=LoadBalancer --port=3306 --target-port=3306
