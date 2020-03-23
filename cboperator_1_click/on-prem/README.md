@@ -15,3 +15,8 @@ bash create_cluster_ldap.sh
 - Create an OpenLDAP pod and populate it with a very small set of users and groups
 - Integrate CB cluster with LDAP
 - Map a LDAP user in CB
+
+If LDAP integration is not required, please run
+``` bash
+bash create_cluster_no_ldap.sh
+```
