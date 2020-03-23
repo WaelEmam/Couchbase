@@ -52,7 +52,6 @@ sleep 40
 ldapadd -x -H ldap://localhost:389 -D "cn=admin,dc=wael,dc=couchbase,dc=com" -w admin123 -f ldap.ldif
 ldap=`kubectl get pods -o wide | grep open| awk '{print $6}'`
 
-#echo ${ldap}
 
 /Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/couchbase-cli setting-ldap --cluster http://localhost --username Administrator --password password --hosts ${ldap} --port 389 --bind-dn 'cn=admin,dc=wael,dc=couchbase,dc=com' --bind-password 'admin123' --authentication-enabled 1 --user-dn-query 'ou=users,dc=wael,dc=couchbase,dc=com??one?(uid=%u)' --authorization-enabled 1 --group-query 'ou=groups,dc=wael,dc=couchbase,dc=com??one?(member=%D)'
 # /Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/couchbase-cli setting-ldap --cluster http://localhost --username Administrator --password password --hosts ${ldap} --port 389 --bind-dn 'cn=admin,dc=wael,dc=couchbase,dc=com' --bind-password 'admin123' --authentication-enabled 1
@@ -60,15 +59,3 @@ ldap=`kubectl get pods -o wide | grep open| awk '{print $6}'`
 # Set Users Permissions
 kubectl exec wael-cb-k8s-0000 -- bash -c "couchbase-cli user-manage -c 127.0.0.1:8091 -u Administrator -p password --set --rbac-username erwin  --rbac-name "Erwin" --roles bucket_admin[music],data_writer[music],fts_admin[music],query_manage_index[music],query_delete[music],query_insert[music],query_select[music],query_update[music]  --auth-domain external"
 
-
-
-# Create Couchmart
-#kubectl create -f couchmart.yml
-#kubectl expose deployment couchmart --type=LoadBalancer --port=8888 --target-port=8888
-#sleep 20
-#IP=`kubectl get pods -o wide | grep wael-cb-k8s-0000| awk '{print $6}'`
-#couchmart_pod=`kubectl get pods | grep couchmart | awk '{print $1}'`
-#kubectl exec ${couchmart_pod} -- bash -c "sed -i 's/AWS_NODES.*/AWS_NODES = [\"${IP}\"]/' couchmart/settings.py"
-
-#kubectl exec ${couchmart_pod} -- bash -c "python couchmart/create_dataset.py"
-#kubectl exec ${couchmart_pod} -- bash -c "cd couchmart; python web-server.py"
