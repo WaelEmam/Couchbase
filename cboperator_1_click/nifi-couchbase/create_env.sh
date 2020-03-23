@@ -6,9 +6,8 @@ kubectl run mysql --image=mysql:latest --env MYSQL_ROOT_PASSWORD=admin123 --port
 sleep 15
 MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
 MYSQL_POD=`kubectl get pods -o wide| grep mysql | awk '{print $1}'`
-kubectl cp sakila-db/ ${MYSQL_POD}:/tmp/sakila-db
-kubectl exec ${MYSQL_POD} -- bash -c "cd /tmp/sakila-db; mysql -uroot -padmin123 < sakila-schema.sql; mysql -uroot -padmin123 < sakila-data.sql;"
-
+kubectl cp mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
+kubectl exec ${MYSQL_POD} -- bash -c "cd /tmp/; mysql -uroot -padmin123 < mysqlsampledatabase.sql"
 
 # Create Nifi Pod
 kubectl create -f nifi.yaml

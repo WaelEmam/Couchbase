@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template encoding-version="1.2">
     <description></description>
-    <groupId>079a4fb9-0171-1000-cecd-74f3c6b3980d</groupId>
+    <groupId>081e35fd-0171-1000-1e3a-999a900cba5b</groupId>
     <name>MySQL-to-CB-2</name>
     <snippet>
         <connections>
@@ -79,8 +79,8 @@
             <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
             <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
             <name></name>
-            <selectedRelationships>failure</selectedRelationships>
             <selectedRelationships>original</selectedRelationships>
+            <selectedRelationships>failure</selectedRelationships>
             <source>
                 <groupId>582b0131-bbd2-30cd-0000-000000000000</groupId>
                 <id>bac3f53a-acf3-3dac-0000-000000000000</id>
@@ -191,9 +191,9 @@
             <comments></comments>
             <descriptors>
                 <entry>
-                    <key>Connection String</key>
+                    <key>user-password</key>
                     <value>
-                        <name>Connection String</name>
+                        <name>user-password</name>
                     </value>
                 </entry>
                 <entry>
@@ -203,9 +203,9 @@
                     </value>
                 </entry>
                 <entry>
-                    <key>user-password</key>
+                    <key>Connection String</key>
                     <value>
-                        <name>user-password</name>
+                        <name>Connection String</name>
                     </value>
                 </entry>
             </descriptors>
@@ -213,15 +213,15 @@
             <persistsState>false</persistsState>
             <properties>
                 <entry>
-                    <key>Connection String</key>
-                    <value>couchbase://10.1.2.140</value>
+                    <key>user-password</key>
                 </entry>
                 <entry>
                     <key>user-name</key>
                     <value>Administrator</value>
                 </entry>
                 <entry>
-                    <key>user-password</key>
+                    <key>Connection String</key>
+                    <value>couchbase://10.1.2.140</value>
                 </entry>
             </properties>
             <state>ENABLED</state>
@@ -238,33 +238,15 @@
             <comments></comments>
             <descriptors>
                 <entry>
+                    <key>Validation-query</key>
+                    <value>
+                        <name>Validation-query</name>
+                    </value>
+                </entry>
+                <entry>
                     <key>Database Connection URL</key>
                     <value>
                         <name>Database Connection URL</name>
-                    </value>
-                </entry>
-                <entry>
-                    <key>Database Driver Class Name</key>
-                    <value>
-                        <name>Database Driver Class Name</name>
-                    </value>
-                </entry>
-                <entry>
-                    <key>database-driver-locations</key>
-                    <value>
-                        <name>database-driver-locations</name>
-                    </value>
-                </entry>
-                <entry>
-                    <key>Database User</key>
-                    <value>
-                        <name>Database User</name>
-                    </value>
-                </entry>
-                <entry>
-                    <key>Password</key>
-                    <value>
-                        <name>Password</name>
                     </value>
                 </entry>
                 <entry>
@@ -274,15 +256,33 @@
                     </value>
                 </entry>
                 <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>
+                        <name>Database Driver Class Name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>
+                        <name>Database User</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>
+                        <name>database-driver-locations</name>
+                    </value>
+                </entry>
+                <entry>
                     <key>Max Total Connections</key>
                     <value>
                         <name>Max Total Connections</name>
                     </value>
                 </entry>
                 <entry>
-                    <key>Validation-query</key>
+                    <key>Password</key>
                     <value>
-                        <name>Validation-query</name>
+                        <name>Password</name>
                     </value>
                 </entry>
             </descriptors>
@@ -290,34 +290,34 @@
             <persistsState>false</persistsState>
             <properties>
                 <entry>
+                    <key>Validation-query</key>
+                </entry>
+                <entry>
                     <key>Database Connection URL</key>
                     <value>jdbc:mysql://10.1.2.145:3306/sakila</value>
-                </entry>
-                <entry>
-                    <key>Database Driver Class Name</key>
-                    <value>com.mysql.jdbc.Driver</value>
-                </entry>
-                <entry>
-                    <key>database-driver-locations</key>
-                    <value>file:///tmp/mysql-connector-java-8.0.19.jar</value>
-                </entry>
-                <entry>
-                    <key>Database User</key>
-                    <value>root</value>
-                </entry>
-                <entry>
-                    <key>Password</key>
                 </entry>
                 <entry>
                     <key>Max Wait Time</key>
                     <value>500 millis</value>
                 </entry>
                 <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>com.mysql.jdbc.Driver</value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>root</value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>file:///tmp/mysql-connector-java-8.0.19.jar</value>
+                </entry>
+                <entry>
                     <key>Max Total Connections</key>
                     <value>8</value>
                 </entry>
                 <entry>
-                    <key>Validation-query</key>
+                    <key>Password</key>
                 </entry>
             </properties>
             <state>ENABLED</state>
@@ -341,10 +341,9 @@
                 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                 <descriptors>
                     <entry>
-                        <key>Database Connection Pooling Service</key>
+                        <key>Table Name</key>
                         <value>
-                            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
-                            <name>Database Connection Pooling Service</name>
+                            <name>Table Name</name>
                         </value>
                     </entry>
                     <entry>
@@ -354,9 +353,70 @@
                         </value>
                     </entry>
                     <entry>
-                        <key>Table Name</key>
+                        <key>dbf-default-precision</key>
                         <value>
-                            <name>Table Name</name>
+                            <name>dbf-default-precision</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Max Wait Time</key>
+                        <value>
+                            <name>Max Wait Time</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Database Connection Pooling Service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+                            <name>Database Connection Pooling Service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum-value Columns</key>
+                        <value>
+                            <name>Maximum-value Columns</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>dbf-user-logical-types</key>
+                        <value>
+                            <name>dbf-user-logical-types</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>qdbt-output-batch-size</key>
+                        <value>
+                            <name>qdbt-output-batch-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>qdbt-max-rows</key>
+                        <value>
+                            <name>qdbt-max-rows</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>qdbt-max-frags</key>
+                        <value>
+                            <name>qdbt-max-frags</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>dbf-default-scale</key>
+                        <value>
+                            <name>dbf-default-scale</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Fetch Size</key>
+                        <value>
+                            <name>Fetch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>db-fetch-sql-query</key>
+                        <value>
+                            <name>db-fetch-sql-query</name>
                         </value>
                     </entry>
                     <entry>
@@ -372,69 +432,9 @@
                         </value>
                     </entry>
                     <entry>
-                        <key>db-fetch-sql-query</key>
-                        <value>
-                            <name>db-fetch-sql-query</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Maximum-value Columns</key>
-                        <value>
-                            <name>Maximum-value Columns</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Max Wait Time</key>
-                        <value>
-                            <name>Max Wait Time</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Fetch Size</key>
-                        <value>
-                            <name>Fetch Size</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>qdbt-max-rows</key>
-                        <value>
-                            <name>qdbt-max-rows</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>qdbt-output-batch-size</key>
-                        <value>
-                            <name>qdbt-output-batch-size</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>qdbt-max-frags</key>
-                        <value>
-                            <name>qdbt-max-frags</name>
-                        </value>
-                    </entry>
-                    <entry>
                         <key>dbf-normalize</key>
                         <value>
                             <name>dbf-normalize</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>dbf-user-logical-types</key>
-                        <value>
-                            <name>dbf-user-logical-types</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>dbf-default-precision</key>
-                        <value>
-                            <name>dbf-default-precision</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>dbf-default-scale</key>
-                        <value>
-                            <name>dbf-default-scale</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -443,16 +443,54 @@
                 <penaltyDuration>30 sec</penaltyDuration>
                 <properties>
                     <entry>
-                        <key>Database Connection Pooling Service</key>
-                        <value>323aad02-6736-3eb6-0000-000000000000</value>
+                        <key>Table Name</key>
+                        <value>customer_list</value>
                     </entry>
                     <entry>
                         <key>db-fetch-db-type</key>
                         <value>MySQL</value>
                     </entry>
                     <entry>
-                        <key>Table Name</key>
-                        <value>customer_list</value>
+                        <key>dbf-default-precision</key>
+                        <value>10</value>
+                    </entry>
+                    <entry>
+                        <key>Max Wait Time</key>
+                        <value>0 seconds</value>
+                    </entry>
+                    <entry>
+                        <key>Database Connection Pooling Service</key>
+                        <value>323aad02-6736-3eb6-0000-000000000000</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum-value Columns</key>
+                    </entry>
+                    <entry>
+                        <key>dbf-user-logical-types</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>qdbt-output-batch-size</key>
+                        <value>0</value>
+                    </entry>
+                    <entry>
+                        <key>qdbt-max-rows</key>
+                        <value>0</value>
+                    </entry>
+                    <entry>
+                        <key>qdbt-max-frags</key>
+                        <value>0</value>
+                    </entry>
+                    <entry>
+                        <key>dbf-default-scale</key>
+                        <value>0</value>
+                    </entry>
+                    <entry>
+                        <key>Fetch Size</key>
+                        <value>0</value>
+                    </entry>
+                    <entry>
+                        <key>db-fetch-sql-query</key>
                     </entry>
                     <entry>
                         <key>Columns to Return</key>
@@ -461,46 +499,8 @@
                         <key>db-fetch-where-clause</key>
                     </entry>
                     <entry>
-                        <key>db-fetch-sql-query</key>
-                    </entry>
-                    <entry>
-                        <key>Maximum-value Columns</key>
-                    </entry>
-                    <entry>
-                        <key>Max Wait Time</key>
-                        <value>0 seconds</value>
-                    </entry>
-                    <entry>
-                        <key>Fetch Size</key>
-                        <value>0</value>
-                    </entry>
-                    <entry>
-                        <key>qdbt-max-rows</key>
-                        <value>0</value>
-                    </entry>
-                    <entry>
-                        <key>qdbt-output-batch-size</key>
-                        <value>0</value>
-                    </entry>
-                    <entry>
-                        <key>qdbt-max-frags</key>
-                        <value>0</value>
-                    </entry>
-                    <entry>
                         <key>dbf-normalize</key>
                         <value>false</value>
-                    </entry>
-                    <entry>
-                        <key>dbf-user-logical-types</key>
-                        <value>false</value>
-                    </entry>
-                    <entry>
-                        <key>dbf-default-precision</key>
-                        <value>10</value>
-                    </entry>
-                    <entry>
-                        <key>dbf-default-scale</key>
-                        <value>0</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -613,12 +613,6 @@
                         </value>
                     </entry>
                     <entry>
-                        <key>Output Size</key>
-                        <value>
-                            <name>Output Size</name>
-                        </value>
-                    </entry>
-                    <entry>
                         <key>Output Strategy</key>
                         <value>
                             <name>Output Strategy</name>
@@ -628,6 +622,12 @@
                         <key>Transfer Metadata</key>
                         <value>
                             <name>Transfer Metadata</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Output Size</key>
+                        <value>
+                            <name>Output Size</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -640,16 +640,16 @@
                         <value>Record</value>
                     </entry>
                     <entry>
-                        <key>Output Size</key>
-                        <value>1</value>
-                    </entry>
-                    <entry>
                         <key>Output Strategy</key>
                         <value>Datafile</value>
                     </entry>
                     <entry>
                         <key>Transfer Metadata</key>
                         <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Output Size</key>
+                        <value>1</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -712,9 +712,9 @@
                         </value>
                     </entry>
                     <entry>
-                        <key>document-id</key>
+                        <key>replicate-to</key>
                         <value>
-                            <name>document-id</name>
+                            <name>replicate-to</name>
                         </value>
                     </entry>
                     <entry>
@@ -724,9 +724,9 @@
                         </value>
                     </entry>
                     <entry>
-                        <key>replicate-to</key>
+                        <key>document-id</key>
                         <value>
-                            <name>replicate-to</name>
+                            <name>document-id</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -747,15 +747,15 @@
                         <value>Json</value>
                     </entry>
                     <entry>
-                        <key>document-id</key>
+                        <key>replicate-to</key>
+                        <value>NONE</value>
                     </entry>
                     <entry>
                         <key>persist-to</key>
                         <value>NONE</value>
                     </entry>
                     <entry>
-                        <key>replicate-to</key>
-                        <value>NONE</value>
+                        <key>document-id</key>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -782,5 +782,5 @@
             <type>org.apache.nifi.processors.couchbase.PutCouchbaseKey</type>
         </processors>
     </snippet>
-    <timestamp>03/23/2020 13:51:05 UTC</timestamp>
+    <timestamp>03/23/2020 16:06:57 UTC</timestamp>
 </template>
