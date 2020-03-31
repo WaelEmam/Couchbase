@@ -8,7 +8,8 @@ sleep 15
 #MONGO_IP=`kubectl get pods -o wide| grep mongo | awk '{print $6}'`
 MONGO_POD=`kubectl get pods -o wide| grep mongo | awk '{print $1}'`
 kubectl cp script.js  ${MONGO_POD}:/tmp/script.js
-kubectl exec ${MONGO_POD} -- bash -c "mongo /tmp/script.js"
+kubectl cp generated.json ${MONGO_POD}:/tmp/generated.json
+kubectl exec ${MONGO_POD} -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
 
 # Create Nifi Pod
 kubectl create -f nifi.yaml
