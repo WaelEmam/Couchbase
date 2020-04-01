@@ -1,52 +1,43 @@
-# Overview
+# README
 
-easy-rsa is a CLI utility to build and manage a PKI CA. In laymen's terms,
-this means to create a root certificate authority, and request and sign 
-certificates, including intermediate CAs and certificate revocation lists (CRL).
+## Overview
 
-# Downloads
+easy-rsa is a CLI utility to build and manage a PKI CA. In laymen's terms, this means to create a root certificate authority, and request and sign certificates, including intermediate CAs and certificate revocation lists \(CRL\).
 
-If you are looking for release downloads, please see the releases section on
-GitHub. Releases are also available as source checkouts using named tags.
+## Downloads
 
-# Documentation
+If you are looking for release downloads, please see the releases section on GitHub. Releases are also available as source checkouts using named tags.
 
-For 3.x project documentation and usage, see the [README.quickstart.md](README.quickstart.md) file or
-the more detailed docs under the doc/ directory. The .md files are in Markdown
-format and can be converted to html files as desired for release packages, or
-read as-is in plaintext.
+## Documentation
 
-# Getting help using easy-rsa
+For 3.x project documentation and usage, see the [README.quickstart.md](readme.quickstart.md) file or the more detailed docs under the doc/ directory. The .md files are in Markdown format and can be converted to html files as desired for release packages, or read as-is in plaintext.
 
-Currently, Easy-RSA development co-exists with OpenVPN even though they are
-separate projects. The following resources are good places as of this writing to
-seek help using Easy-RSA:
+## Getting help using easy-rsa
 
-The [openvpn-users mailing list](https://lists.sourceforge.net/lists/listinfo/openvpn-users)
-is a good place to post usage or help questions.
+Currently, Easy-RSA development co-exists with OpenVPN even though they are separate projects. The following resources are good places as of this writing to seek help using Easy-RSA:
 
-You can also try IRC at Freenode/#openvpn for general support or Freenode/#easyrsa for development discussion.
+The [openvpn-users mailing list](https://lists.sourceforge.net/lists/listinfo/openvpn-users) is a good place to post usage or help questions.
 
-# Branch structure
+You can also try IRC at Freenode/\#openvpn for general support or Freenode/\#easyrsa for development discussion.
 
-The easy-rsa master branch is currently tracking development for the 3.x release
-cycle. Please note that, at any given time, master may be broken.  Feel free to
-create issues against master, but have patience when using the master branch.  It
-is recommended to use a release, and priority will be given to bugs identified in
-the most recent release.
+## Branch structure
 
-The prior 2.x and 1.x versions are available as release branches for
-tracking and possible back-porting of relevant fixes. Branch layout is:
+The easy-rsa master branch is currently tracking development for the 3.x release cycle. Please note that, at any given time, master may be broken. Feel free to create issues against master, but have patience when using the master branch. It is recommended to use a release, and priority will be given to bugs identified in the most recent release.
 
-    master         <- 3.x, at present
-    v3.x.x            pre-release branches, used for staging branches
-    release/2.x
-    release/1.x
+The prior 2.x and 1.x versions are available as release branches for tracking and possible back-porting of relevant fixes. Branch layout is:
 
-LICENSING info for 3.x is in the [COPYING.md](COPYING.md) file
+```text
+master         <- 3.x, at present
+v3.x.x            pre-release branches, used for staging branches
+release/2.x
+release/1.x
+```
 
-# Code style, standards
+LICENSING info for 3.x is in the [COPYING.md](copying.md) file
+
+## Code style, standards
 
 We are attempting to adhere to the POSIX standard, which can be found here:
 
-http://pubs.opengroup.org/onlinepubs/9699919799/
+[http://pubs.opengroup.org/onlinepubs/9699919799/](http://pubs.opengroup.org/onlinepubs/9699919799/)
+
