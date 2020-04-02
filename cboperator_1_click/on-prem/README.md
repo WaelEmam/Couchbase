@@ -14,6 +14,6 @@ bash create_cluster_ldap.sh
 bash create_cluster_no_ldap.sh
 ```
 ## Once env. is up and running:
-* load nifi templates (in templates folder) to nifi (depending on which env. you chose).
-* fix IPs and passwords in connectors.
-* start the flow
+* Load nifi templates (in templates folder) to nifi (depending on which env. you chose).
+* Fix IPs and passwords in connectors.
+* Start the flow.
