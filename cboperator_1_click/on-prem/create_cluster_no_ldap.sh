@@ -19,6 +19,7 @@ read options
         2)
             echo "Building env for MySQL migration"
 	    echo " "
+	    echo "Creating MySQL POD"
 	    	# Create Mysql Pod
  	    	kubectl run mysql --image=mysql:latest --env MYSQL_ROOT_PASSWORD=admin123 --port=3306
 	    	sleep 15
@@ -28,6 +29,7 @@ read options
 	    	kubectl exec ${MYSQL_POD} -- bash -c "cd /tmp/; mysql -uroot -padmin123 < mysqlsampledatabase.sql"
 		echo " "
 	    	# Create Nifi Pod
+		echo "Creating Nifi POD"
 	    	kubectl create -f nifi.yaml
 	    	sleep 15
 	    	kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
@@ -41,6 +43,8 @@ read options
         3)
             echo "Building env for Mongodb migration"
 	    	# Create MongoDB Pod
+            echo " "
+            echo "Creating MonngoDB POD"
 		kubectl run mongodb --image=mongo:latest
 		sleep 15
 
@@ -51,6 +55,8 @@ read options
 		kubectl exec ${MONGO_POD} -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
 
 		# Create Nifi Pod
+            echo " "
+            echo "Creating Nifi POD"
 		kubectl create -f nifi.yaml
 		sleep 15
 		kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
