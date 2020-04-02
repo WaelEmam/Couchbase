@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# Create Mysql Pod
+# Create MongoDB Pod
 kubectl run mongodb --image=mongo:latest
 sleep 15
 

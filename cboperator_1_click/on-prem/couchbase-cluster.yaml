@@ -81,21 +81,21 @@ spec:
 #    - rack3  
   servers:
     - size: 2
-      name: data_index
+      name: data
 #      serverGroups:
 #        - rack1
 #        - rack2
 #        - rack3
       services:
         - data
-        - index
     - size: 1
-      name: query
+      name: query_index
 #      serverGroups:
 #        - rack1
 #        - rack2
       services:
         - query
+        - index
     - size: 1
       name: fts_analytics_eventing
 #      serverGroups:

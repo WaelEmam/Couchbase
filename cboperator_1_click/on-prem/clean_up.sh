@@ -14,13 +14,11 @@ kubectl delete -f operator-deployment.yaml
 kubectl delete -f crd.yaml
 kubectl delete -f admission.yaml
 kubectl delete -f operator-service-account.yaml
-kubectl delete -f couchmart.yml
-kubectl delete svc couchmart
+#kubectl delete -f couchmart.yml
 
-if `kubectl get deployments | awk '{print $1}'| grep -q "openldap"`
-then
-	kubectl delete deployment openldap
-	kubectl delete svc openldap
-else
-	exit
-fi
+        kubectl delete deployment openldap
+        kubectl delete svc openldap	    
+	kubectl delete deployment nifi
+        kubectl delete svc nifi
+        kubectl delete deployment mysql
+        kubectl delete deployment mongodb
