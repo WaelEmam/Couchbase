@@ -23,7 +23,7 @@ read options
 	    	# Create Mysql Pod
  	    	kubectl run mysql --image=mysql:latest --env MYSQL_ROOT_PASSWORD=admin123 --port=3306
 	    	sleep 15
-	    	MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
+	    	#MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
 	    	MYSQL_POD=`kubectl get pods -o wide| grep mysql | awk '{print $1}'`
 	    	kubectl cp mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
 	    	kubectl exec ${MYSQL_POD} -- bash -c "cd /tmp/; mysql -uroot -padmin123 < mysqlsampledatabase.sql"
@@ -33,7 +33,7 @@ read options
 	    	kubectl create -f nifi.yaml
 	    	sleep 15
 	    	kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
-	    	NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
+	    	#NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
 	    	NIFI_POD=`kubectl get pods | grep nifi | awk '{print $1}'`
 	    	kubectl cp mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
 	    	sleep 15
@@ -60,7 +60,7 @@ read options
 		kubectl create -f nifi.yaml
 		sleep 15
 		kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
-		NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
+		#NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
 		NIFI_POD=`kubectl get pods | grep nifi | awk '{print $1}'`
 		kubectl cp mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
 		sleep 15
@@ -74,7 +74,7 @@ read options
 		 echo " "
                  kubectl run mysql --image=mysql:latest --env MYSQL_ROOT_PASSWORD=admin123 --port=3306
                  sleep 15
-                 MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
+                 #MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
                  MYSQL_POD=`kubectl get pods -o wide| grep mysql | awk '{print $1}'`
                  kubectl cp mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
                  kubectl exec ${MYSQL_POD} -- bash -c "cd /tmp/; mysql -uroot -padmin123 < mysqlsampledatabase.sql"
@@ -97,7 +97,7 @@ read options
                 kubectl create -f nifi.yaml
                 sleep 15
                 kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
-                NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
+                #NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
                 NIFI_POD=`kubectl get pods | grep nifi | awk '{print $1}'`
                 kubectl cp mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
                 sleep 15
