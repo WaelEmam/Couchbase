@@ -14,8 +14,8 @@ read options
     case $options in
         1)
             echo "Building CB Cluster"
-	    break
-            ;;
+            bash ./cb_no_ldap.sh
+	    ;;
         2)
             echo "Building env for MySQL migration"
 	    echo " "
