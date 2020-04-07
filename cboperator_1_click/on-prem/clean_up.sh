@@ -16,9 +16,11 @@ kubectl delete -f admission.yaml
 kubectl delete -f operator-service-account.yaml
 #kubectl delete -f couchmart.yml
 
-        kubectl delete deployment openldap
-        kubectl delete svc openldap	    
-	kubectl delete deployment nifi
-        kubectl delete svc nifi
-        kubectl delete deployment mysql
-        kubectl delete deployment mongodb
+kubectl delete deployment openldap
+kubectl delete svc openldap	    
+kubectl delete deployment nifi
+kubectl delete svc nifi
+kubectl delete pod mysql
+kubectl delete svc mysql
+kubectl delete svc mongodb
+kubectl delete pod mongodb

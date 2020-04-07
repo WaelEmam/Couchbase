@@ -21,8 +21,9 @@ read options
 	    echo " "
 	    echo "Creating MySQL POD"
 	    	# Create Mysql Pod
- 	    	kubectl run mysql --image=mysql:latest --env MYSQL_ROOT_PASSWORD=admin123 --port=3306
+ 	    	kubectl run mysql --image=mysql:latest --restart=Never --env MYSQL_ROOT_PASSWORD=admin123 --port=3306 --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mysql", "subdomain": "example"}}'
 	    	sleep 15
+		kubectl expose pod  mysql --type=LoadBalancer --port=3306 --target-port=3306
 	    	#MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
 	    	MYSQL_POD=`kubectl get pods -o wide| grep mysql | awk '{print $1}'`
 	    	kubectl cp mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
@@ -45,14 +46,14 @@ read options
 	    	# Create MongoDB Pod
             echo " "
             echo "Creating MonngoDB POD"
-		kubectl run mongodb --image=mongo:latest
+		kubectl run mongodb --image=mongo:latest --restart=Never --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mongodb", "subdomain": "example"}}'
 		sleep 15
-
+		kubectl expose pod mongodb --type=LoadBalancer --port=27017 --target-port=27017
 		#MONGO_IP=`kubectl get pods -o wide| grep mongo | awk '{print $6}'`
-		MONGO_POD=`kubectl get pods -o wide| grep mongo | awk '{print $1}'`
-		kubectl cp script.js  ${MONGO_POD}:/tmp/script.js
-		kubectl cp generated.json ${MONGO_POD}:/tmp/generated.json
-		kubectl exec ${MONGO_POD} -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
+		#MONGO_POD=`kubectl get pods -o wide| grep mongo | awk '{print $1}'`
+		kubectl cp script.js  mongodb:/tmp/script.js
+		kubectl cp generated.json mongodb:/tmp/generated.json
+		kubectl exec mongodb -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
 
 		# Create Nifi Pod
             echo " "
@@ -72,8 +73,9 @@ read options
 	    	 # Create Mysql Pod
 		 echo "Creating MySQL POD "
 		 echo " "
-                 kubectl run mysql --image=mysql:latest --env MYSQL_ROOT_PASSWORD=admin123 --port=3306
+		 kubectl run mysql --image=mysql:latest --restart=Never --env MYSQL_ROOT_PASSWORD=admin123 --port=3306 --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mysql", "subdomain": "example"}}'
                  sleep 15
+		 kubectl expose pod  mysql --type=LoadBalancer --port=3306 --target-port=3306
                  #MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
                  MYSQL_POD=`kubectl get pods -o wide| grep mysql | awk '{print $1}'`
                  kubectl cp mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
@@ -82,14 +84,14 @@ read options
 
                 # Create MongoDB Pod
 		echo "Creating Mongodb POD "
-                kubectl run mongodb --image=mongo:latest
+                kubectl run mongodb --image=mongo:latest --restart=Never --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mongodb", "subdomain": "example"}}'
                 sleep 15
-
+		kubectl expose pod mongodb --type=LoadBalancer --port=27017 --target-port=27017
                 #MONGO_IP=`kubectl get pods -o wide| grep mongo | awk '{print $6}'`
-                MONGO_POD=`kubectl get pods -o wide| grep mongo | awk '{print $1}'`
-                kubectl cp script.js  ${MONGO_POD}:/tmp/script.js
-                kubectl cp generated.json ${MONGO_POD}:/tmp/generated.json
-                kubectl exec ${MONGO_POD} -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
+                #MONGO_POD=`kubectl get pods -o wide| grep mongo | awk '{print $1}'`
+                kubectl cp script.js  mongodb:/tmp/script.js
+                kubectl cp generated.json mongodb:/tmp/generated.json
+                kubectl exec mongodb -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
 		echo " "
 
                 # Create Nifi Pod
