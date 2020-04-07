@@ -18,7 +18,7 @@ spec:
     - xdcr
     - client
   cluster:
-    dataServiceMemoryQuota: 512
+    dataServiceMemoryQuota: 768
     indexServiceMemoryQuota: 256
     searchServiceMemoryQuota: 256
     eventingServiceMemoryQuota: 256
@@ -67,6 +67,24 @@ spec:
       enableFlush: false
       enableIndexReplica: false
     - name: contacts
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: mysql
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: mongodb
       type: couchbase
       memoryQuota: 100
       replicas: 1

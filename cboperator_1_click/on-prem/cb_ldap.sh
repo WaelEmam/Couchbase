@@ -56,4 +56,8 @@ ldap=`kubectl get pods -o wide | grep open| awk '{print $6}'`
 # /Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/couchbase-cli setting-ldap --cluster http://localhost --username Administrator --password password --hosts ${ldap} --port 389 --bind-dn 'cn=admin,dc=wael,dc=couchbase,dc=com' --bind-password 'admin123' --authentication-enabled 1
 
 # Set Users Permissions
-kubectl exec wael-cb-k8s-0000 -- bash -c "couchbase-cli user-manage -c 127.0.0.1:8091 -u Administrator -p password --set --rbac-username erwin  --rbac-name "Erwin" --roles bucket_admin[music],data_writer[music],fts_admin[music],query_manage_index[music],query_delete[music],query_insert[music],query_select[music],query_update[music]  --auth-domain external"
+kubectl exec wael-cb-k8s-0000 -- bash -c "couchbase-cli user-manage -c 127.0.0.1:8091 -u Administrator -p password --set --rbac-username erwin  --rbac-name "Erwin" --roles bucket_admin[couchmart],data_writer[couchmart],fts_admin[couchmart],query_manage_index[couchmart],query_delete[couchmart],query_insert[couchmart],query_select[couchmart],query_update[couchmart]  --auth-domain external"
+
+kubectl exec wael-cb-k8s-0000 -- bash -c "couchbase-cli user-manage -c 127.0.0.1:8091 -u Administrator -p password --set --rbac-username wael  --rbac-name "Wael" --roles bucket_admin[contacts],data_writer[contacts],fts_admin[contacts],query_manage_index[contacts],query_delete[contacts],query_insert[contacts],query_select[contacts],query_update[contacts]  --auth-domain external"
+
+kubectl exec wael-cb-k8s-0000 -- bash -c "couchbase-cli user-manage -c 127.0.0.1:8091 -u Administrator -p password --set --rbac-username peter  --rbac-name "Peter" --roles bucket_admin[music],data_writer[music],fts_admin[music],query_manage_index[music],query_delete[music],query_insert[music],query_select[music],query_update[music]  --auth-domain external"
