@@ -12,6 +12,7 @@ kubectl create -f secret.yaml
 kubectl create -f couchbase-cluster.yaml
 
 # Wait till all pods are up and running
+echo " "
 echo "Waiting for Pods to start"
 sleep 120
 kubectl port-forward wael-cb-k8s-0000 8091:8091 &

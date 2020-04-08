@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+echo " "
 echo "What would you like to demo today?"
 echo " "
 echo "
