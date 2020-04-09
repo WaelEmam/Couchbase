@@ -1,0 +1,98 @@
+apiVersion: couchbase.com/v1
+kind: CouchbaseCluster
+metadata:
+  name: wael-cb-k8s
+spec:
+  baseImage: couchbase/server
+  version: enterprise-6.5.0
+  authSecret: cb-example-auth
+  exposeAdminConsole: true
+  adminConsoleServices:
+    - data
+    - index
+    - query
+    - search
+    - analytics
+    - eventing  
+  exposedFeatures:
+    - xdcr
+    - client
+  cluster:
+    dataServiceMemoryQuota: 512
+    indexServiceMemoryQuota: 256
+    searchServiceMemoryQuota: 256
+    eventingServiceMemoryQuota: 256
+    analyticsServiceMemoryQuota: 1024
+    indexStorageSetting: memory_optimized
+    autoFailoverTimeout: 10
+    autoFailoverMaxCount: 3
+    autoFailoverOnDataDiskIssues: true
+    autoFailoverOnDataDiskIssuesTimePeriod: 120
+    autoFailoverServerGroup: false
+  buckets:
+    - name: default
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: moviedata
+      type: couchbase
+      memoryQuota: 200
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: customers
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+    - name: transfer
+      type: couchbase
+      memoryQuota: 100
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: false
+      enableIndexReplica: false
+#  serverGroups:    
+#    - rack1
+#    - rack2
+#    - rack3  
+  servers:
+    - size: 2
+      name: data
+#      serverGroups:
+#        - rack1
+#        - rack2
+#        - rack3
+      services:
+        - data
+    - size: 1
+      name: query_index
+#      serverGroups:
+#        - rack1
+#        - rack2
+      services:
+        - query
+        - index
+    - size: 1
+      name: fts_analytics_eventing
+#      serverGroups:
+#        - rack1
+#        - rack3
+      services:
+        - search
+        - analytics
+        - eventing

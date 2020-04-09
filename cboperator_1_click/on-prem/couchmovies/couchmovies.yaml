@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: couchmovies
+spec:
+  selector:
+    matchLabels:
+      app: couchmovies
+  template:
+    metadata:
+      labels:
+        app: couchmovies
+    spec:
+      containers:
+      - name: couchmovies
+        image: cbck/couchmovies:latest
+        imagePullPolicy: Always
+        env:
+        - name: DEMO_DIR
+          value: /couchmovies
+        - name: CB_SERVER #Make sure to select a node using FTS as this is used in CURL command
+          value: wael-cb-k8s-0003.wael-cb-k8s.default.svc 
+        - name: CB_USER
+          value: Administrator
+        - name: CB_PASSWORD
+          value: password
+        - name: CB_MOVIE_BUCKET
+          value: moviedata
+        - name: CB_TWEET_SOURCE_BUCKET
+          value: customers
+        - name: CB_TWEET_TARGET_BUCKET
+          value: transfer

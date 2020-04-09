@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: couchmart
+  labels:
+    app: couchmart
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: couchmart
+  template:
+    metadata:
+      labels:
+        app: couchmart
+    spec:
+      containers:
+      - name: couchmart
+        image: cbck/couchmart:python2
+        ports:
+        - containerPort: 8080

@@ -8,7 +8,9 @@ echo "
 "	2\) Data migration from Mysql"
 "	3\) Data migration from MongoDB"
 "	4\) Data migration from Mysql \& MongoDB"
-"	5\) Quit"
+"       5\) CouchMovies Demo"
+"       6\) CouchMart Demo"
+"	7\) Quit"
 "
 
 read options
@@ -108,7 +110,13 @@ read options
 		echo " "
 		bash ./cb_no_ldap.sh
             ;;
-        5)
+	5) 
+		bash couchmovies/couchmovies.sh
+	   ;;
+	6)
+                bash couchmart/couchmart.sh
+           ;;
+        7)
             break
             ;;
         *) echo "invalid option";;
