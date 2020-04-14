@@ -3,17 +3,16 @@
 * Data migration from Mysql.
 * Data migration from MongoDB.
 * Data migration from Mysql \& MongoDB.
+* CouchMovies Demo
+* CouchMart Demo
 
-## with Ldap integration run:
+## Run
 ```bash
-bash create_cluster_ldap.sh
+bash create_env.sh
 ```
+* choose LDAP integration option
 
-## If no Ldap integration is needed, run:
-```bash
-bash create_cluster_no_ldap.sh
-```
 ## Once env. is up and running:
 * Load nifi templates (in templates folder) to nifi (depending on which env. you chose).
-* Fix IPs and passwords in connectors.
+* Fix passwords in connectors.
 * Start the flow.
