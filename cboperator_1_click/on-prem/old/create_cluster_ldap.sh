@@ -27,7 +27,7 @@ read options
 		kubectl expose pod  mysql --type=LoadBalancer --port=3306 --target-port=3306
 	    	#MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
 	    	MYSQL_POD=`kubectl get pods -o wide| grep mysql | awk '{print $1}'`
-	    	kubectl cp mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
+	    	kubectl cp data/mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
 	    	kubectl exec ${MYSQL_POD} -- bash -c "cd /tmp/; mysql -uroot -padmin123 < mysqlsampledatabase.sql"
 		echo " "
 	    	# Create Nifi Pod
@@ -37,7 +37,7 @@ read options
 	    	kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
 	    	#NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
 	    	NIFI_POD=`kubectl get pods | grep nifi | awk '{print $1}'`
-	    	kubectl cp mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
+	    	kubectl cp data/mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
 	    	sleep 15
 		echo " "
 		bash ./cb_ldap.sh
@@ -52,8 +52,8 @@ read options
 		kubectl expose pod mongodb --type=LoadBalancer --port=27017 --target-port=27017
 		#MONGO_IP=`kubectl get pods -o wide| grep mongo | awk '{print $6}'`
 		#MONGO_POD=`kubectl get pods -o wide| grep mongo | awk '{print $1}'`
-		kubectl cp script.js  mongodb:/tmp/script.js
-		kubectl cp generated.json mongodb:/tmp/generated.json
+		kubectl cp data/script.js  mongodb:/tmp/script.js
+		kubectl cp data/generated.json mongodb:/tmp/generated.json
 		kubectl exec mongodb -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
 
 		# Create Nifi Pod
@@ -64,7 +64,7 @@ read options
 		kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
 		#NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
 		NIFI_POD=`kubectl get pods | grep nifi | awk '{print $1}'`
-		kubectl cp mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
+		kubectl cp data/mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
 		sleep 15
 		bash ./cb_ldap.sh
 
@@ -79,7 +79,7 @@ read options
 		 kubectl expose pod  mysql --type=LoadBalancer --port=3306 --target-port=3306
                  #MYSQL_IP=`kubectl get pods -o wide| grep mysql | awk '{print $6}'`
                  MYSQL_POD=`kubectl get pods -o wide| grep mysql | awk '{print $1}'`
-                 kubectl cp mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
+                 kubectl cp data/mysqlsampledatabase.sql  ${MYSQL_POD}:/tmp/mysqlsampledatabase.sql
                  kubectl exec ${MYSQL_POD} -- bash -c "cd /tmp/; mysql -uroot -padmin123 < mysqlsampledatabase.sql"
 		 echo " "
 
@@ -90,8 +90,8 @@ read options
 		kubectl expose pod mongodb --type=LoadBalancer --port=27017 --target-port=27017
                 #MONGO_IP=`kubectl get pods -o wide| grep mongo | awk '{print $6}'`
                 #MONGO_POD=`kubectl get pods -o wide| grep mongo | awk '{print $1}'`
-                kubectl cp script.js  mongodb:/tmp/script.js
-                kubectl cp generated.json mongodb:/tmp/generated.json
+                kubectl cp data/script.js  mongodb:/tmp/script.js
+                kubectl cp data/generated.json mongodb:/tmp/generated.json
                 kubectl exec mongodb -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
 		echo " "
 
@@ -102,7 +102,7 @@ read options
                 kubectl expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
                 #NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
                 NIFI_POD=`kubectl get pods | grep nifi | awk '{print $1}'`
-                kubectl cp mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
+                kubectl cp data/mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
                 sleep 15
 		echo "Creating CB Cluster "
 		echo " "
