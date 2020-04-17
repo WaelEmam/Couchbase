@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-kubectl create secret generic sgw-config --from-file sgw-config-xattrs.json
+kubectl create secret generic sgw-config --from-file couchmart/sgw-config-xattrs.json
 
-kubectl create -f sgw-deployment.yaml
+kubectl create -f couchmart/sgw-deployment.yaml
 
-kubectl create -f sgw-load-balancer.yaml
+kubectl create -f couchmart/sgw-load-balancer.yaml
 
