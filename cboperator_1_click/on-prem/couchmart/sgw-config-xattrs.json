@@ -5,7 +5,7 @@
     "couchmart": {
       "import_docs": "continuous",
       "enable_shared_bucket_access": true,
-      "server": "http://wael-cb-k8s-0000.wael-cb-k8s.default.svc:8091",
+      "server": "http://wael-cb-k8s-2-0000.wael-cb-k8s-2.default.svc:8091",
       "bucket": "couchmart",
       "username":"Administrator",
       "password": "password",

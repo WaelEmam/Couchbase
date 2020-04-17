@@ -31,3 +31,4 @@ kubectl exec ${couchmart_pod} -- bash -c "sed -i 's/AZURE_NODES.*/AZURE_NODES = 
 
 kubectl exec ${couchmart_pod} -- bash -c "python couchmart/create_dataset.py"
 kubectl exec ${couchmart_pod} -- bash -c "cd couchmart; python web-server.py" &
+bash create_sgw.sh
