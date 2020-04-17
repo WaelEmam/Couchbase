@@ -17,3 +17,6 @@ kubectl delete -f admission.yaml
 kubectl delete -f operator-service-account.yaml
 kubectl delete -f couchmart.yml
 kubectl delete svc couchmart
+kubectl delete -f sgw-load-balancer.yaml
+kubectl delete secret sgw-config
+kubectl delete -f sgw-deployment.yaml
