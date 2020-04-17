@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: sgw-load-balancer 
+spec:
+  selector:
+    app: sync-gateway 
+  ports:
+  - protocol: TCP
+    port: 4984 
+    targetPort: 4984
+  type: LoadBalancer
+
