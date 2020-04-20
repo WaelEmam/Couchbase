@@ -28,3 +28,8 @@ kubectl delete svc mongodb
 kubectl delete pod mongodb
 kubectl delete svc couchmovies-web
 kubectl delete svc couchmovies-rest
+kubectl delete -f couchmart/couchmart.yml
+kubectl delete svc couchmart
+kubectl delete -f couchmart/sgw-load-balancer.yaml
+kubectl delete secret sgw-config
+kubectl delete -f couchmart/sgw-deployment.yaml
