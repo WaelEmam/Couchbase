@@ -11,8 +11,9 @@ Creating some 1\_click scripts to create Couchbase clusters on kubernetes using 
 	* Ldap Integration
 	* Moving data from MySQL to Couchbase using Nifi
 	* Moving data from MongoDB to Couchbase using Nifi
+	* Couchmovies
+	* Couchmart
 * AWS EKS
-* Couchmart
 
 ## Road Map
 
