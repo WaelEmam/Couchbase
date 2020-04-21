@@ -19,5 +19,5 @@ kubectl port-forward wael-cb-k8s-0000 8091:8091 &
 
 kubectl create -f couchmovies/couchmovies.yaml
 kubectl expose deployment couchmovies --type=LoadBalancer --port=8000 --target-port=8000 --name=couchmovies-web
-kubectl expose deployment couchmovies --type=LoadBalancer --port=8000 --target-port=8080 --name=couchmovies-rest
+kubectl expose deployment couchmovies --type=LoadBalancer --port=8080 --target-port=8080 --name=couchmovies-rest
 
