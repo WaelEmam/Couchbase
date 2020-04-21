@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+clear
 echo "Enter Cluster Name"
 read cluster
 
