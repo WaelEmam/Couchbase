@@ -48,6 +48,25 @@ spec:
       conflictResolution: seqno
       enableFlush: false
       enableIndexReplica: false
+    - name: metadata
+      type: couchbase
+      memoryQuota: 128
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: true
+      enableIndexReplica: false
+    - name: fulfillment
+      type: couchbase
+      memoryQuota: 128
+      replicas: 1
+      ioPriority: low
+      evictionPolicy: valueOnly
+      conflictResolution: seqno
+      enableFlush: true
+      enableIndexReplica: false
+
   servers:
     - size: 2
       name: data_index
