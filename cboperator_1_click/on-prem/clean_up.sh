@@ -22,7 +22,7 @@ kubectl delete deployment openldap
 kubectl delete svc openldap	    
 kubectl delete deployment nifi zookeeper
 kubectl delete svc nifi zookeeper kafka connect
-kubectl delete pod mysql zookeeper kafka connect
+kubectl delete pod mysql kafka connect
 kubectl delete svc mysql
 kubectl delete svc mongodb
 kubectl delete pod mongodb
