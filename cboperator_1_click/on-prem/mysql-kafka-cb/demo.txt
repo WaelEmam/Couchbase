@@ -1,0 +1,4 @@
+mysql> SELECT * FROM customers;
+UPDATE customers SET first_name='Anne Marie' WHERE id=1004;
+SELECT * FROM customers;
+

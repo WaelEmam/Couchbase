@@ -5,12 +5,13 @@ echo "What would you like to demo today?"
 echo " "
 echo "
 "	1\) Just CB Cluster"
-"	2\) Data migration from Mysql"
-"	3\) Data migration from MongoDB"
-"	4\) Data migration from Mysql \& MongoDB"
-"       5\) CouchMovies Demo"
-"       6\) CouchMart Demo"
-"	7\) Quit"
+"	2\) Data migration from Mysql using Nifi"
+"	3\) Data migration from MongoDB using Nifi"
+"	4\) Data migration from Mysql \& MongoDB using Nifi"
+"       5\) Data streaming from Mysql using Kafka connect"
+"       6\) CouchMovies Demo"
+"       7\) CouchMart Demo"
+"	8\) Quit"
 "
 
 read options
@@ -119,13 +120,16 @@ case $LDAP in
 		echo " "
 		bash ./cb_no_ldap.sh
             ;;
-	5) 
+        5)
+		bash mysql-kafka-cb/create_env.sh
+	    ;;
+	6) 
 		bash couchmovies/couchmovies.sh
 	   ;;
-	6)
+	7)
                 bash couchmart/couchmart.sh
            ;;
-        7)
+        8)
             break
             ;;
         *) echo "invalid option";;
