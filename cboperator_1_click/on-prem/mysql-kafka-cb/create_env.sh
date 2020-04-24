@@ -57,4 +57,4 @@ curl -H "Accept:application/json" -H "Content-Type:application/json" -POST -d @.
 
 #curl -H "Accept:application/json" localhost:8083/
 #curl -H "Accept:application/json" localhost:8083/connectors
-
+bin/kafka-console-consumer.sh --bootstrap-server 10.1.7.17:9092 --property print.key=true --topic schema-changes.inventory --from-beginning
