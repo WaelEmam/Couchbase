@@ -69,10 +69,9 @@ spec:
 
   servers:
     - size: 2
-      name: data_index
+      name: data
       services:
         - data
-        - index
     - size: 1
       name: fts_analytics_eventing
       services:
@@ -80,3 +79,4 @@ spec:
         - analytics
         - eventing
         - query
+        - index

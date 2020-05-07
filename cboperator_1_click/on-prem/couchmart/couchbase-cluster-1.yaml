@@ -56,3 +56,11 @@ spec:
 #        - rack3
       services:
         - data
+    - size: 1
+      name: fts_analytics_eventing
+      services:
+        - search
+        - analytics
+        - eventing
+        - query
+        - index
