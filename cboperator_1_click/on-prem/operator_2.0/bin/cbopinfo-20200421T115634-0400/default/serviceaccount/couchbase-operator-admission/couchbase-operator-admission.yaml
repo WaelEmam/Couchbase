@@ -1,9 +1,0 @@
-metadata:
-  creationTimestamp: "2020-04-21T15:51:23Z"
-  name: couchbase-operator-admission
-  namespace: default
-  resourceVersion: "2868137"
-  selfLink: /api/v1/namespaces/default/serviceaccounts/couchbase-operator-admission
-  uid: a2de0265-b723-411b-848d-ba52837a4ec7
-secrets:
-- name: couchbase-operator-admission-token-kf9p4
