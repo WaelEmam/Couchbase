@@ -1,0 +1,31 @@
+metadata:
+  annotations:
+    operator.couchbase.com/version: 1.2.2
+  creationTimestamp: "2020-04-21T15:53:59Z"
+  generation: 1
+  labels:
+    app: couchbase
+    couchbase_cluster: wael
+  name: wael-pdb
+  namespace: default
+  ownerReferences:
+  - apiVersion: couchbase.com/v2
+    controller: true
+    kind: CouchbaseCluster
+    name: wael
+    uid: d5be5131-4ad2-4892-88fb-69a4076fc02e
+  resourceVersion: "2868919"
+  selfLink: /apis/policy/v1beta1/namespaces/default/poddisruptionbudgets/wael-pdb
+  uid: 39ac72ea-76e2-4335-ab6a-5fe3b3416fac
+spec:
+  minAvailable: 3
+  selector:
+    matchLabels:
+      app: couchbase
+      couchbase_cluster: wael
+status:
+  currentHealthy: 4
+  desiredHealthy: 3
+  disruptionsAllowed: 1
+  expectedPods: 4
+  observedGeneration: 1

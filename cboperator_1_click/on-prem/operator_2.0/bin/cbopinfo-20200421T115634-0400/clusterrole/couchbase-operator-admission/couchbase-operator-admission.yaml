@@ -1,0 +1,25 @@
+metadata:
+  creationTimestamp: "2020-04-21T15:51:23Z"
+  name: couchbase-operator-admission
+  resourceVersion: "2868134"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/clusterroles/couchbase-operator-admission
+  uid: 0960693c-2b00-471c-af9a-bbdb8ab644bc
+rules:
+- apiGroups:
+  - couchbase.com
+  resources:
+  - couchbaseclusters
+  verbs:
+  - get
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  verbs:
+  - get
+- apiGroups:
+  - storage.k8s.io
+  resources:
+  - storageclasses
+  verbs:
+  - get

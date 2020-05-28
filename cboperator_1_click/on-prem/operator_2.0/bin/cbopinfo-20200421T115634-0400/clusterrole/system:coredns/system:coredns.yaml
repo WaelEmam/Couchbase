@@ -1,0 +1,23 @@
+metadata:
+  creationTimestamp: "2020-02-20T15:42:51Z"
+  name: system:coredns
+  resourceVersion: "167"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/clusterroles/system%3Acoredns
+  uid: ac33ca29-bdc7-468f-b41b-73b029be89c6
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - endpoints
+  - services
+  - pods
+  - namespaces
+  verbs:
+  - list
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - nodes
+  verbs:
+  - get

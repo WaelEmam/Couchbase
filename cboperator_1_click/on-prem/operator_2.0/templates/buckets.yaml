@@ -1,0 +1,43 @@
+apiVersion: couchbase.com/v2
+kind: CouchbaseBucket
+#metadata: 
+#  name: default
+metadata: 
+  name: ecommerce
+spec:
+  type: couchbase
+  memoryQuota: 100Mi
+  replicas: 1
+  ioPriority: low
+  evictionPolicy: valueOnly
+  conflictResolution: seqno
+  enableFlush: false
+  enableIndexReplica: false
+---
+apiVersion: couchbase.com/v2
+kind: CouchbaseBucket
+metadata:
+  name: music
+spec:
+  type: couchbase
+  memoryQuota: 100Mi
+  replicas: 1
+  ioPriority: low
+  evictionPolicy: valueOnly
+  conflictResolution: seqno
+  enableFlush: false
+  enableIndexReplica: false
+---
+apiVersion: couchbase.com/v2
+kind: CouchbaseBucket
+metadata:
+  name: contacts
+spec:
+  type: couchbase
+  memoryQuota: 100Mi
+  replicas: 1
+  ioPriority: low
+  evictionPolicy: valueOnly
+  conflictResolution: seqno
+  enableFlush: false
+  enableIndexReplica: false

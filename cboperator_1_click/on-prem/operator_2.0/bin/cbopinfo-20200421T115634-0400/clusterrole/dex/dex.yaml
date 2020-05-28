@@ -1,0 +1,19 @@
+metadata:
+  creationTimestamp: "2020-03-03T18:19:28Z"
+  name: dex
+  resourceVersion: "499654"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/clusterroles/dex
+  uid: a1ce0eef-c16d-401b-8bd6-d82763183d05
+rules:
+- apiGroups:
+  - dex.coreos.com
+  resources:
+  - '*'
+  verbs:
+  - '*'
+- apiGroups:
+  - apiextensions.k8s.io
+  resources:
+  - customresourcedefinitions
+  verbs:
+  - create

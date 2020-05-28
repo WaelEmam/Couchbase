@@ -1,0 +1,46 @@
+metadata:
+  creationTimestamp: "2020-04-21T15:52:38Z"
+  labels:
+    app: couchbase
+    couchbase_cluster: wael
+    couchbase_node: wael-0003
+  name: wael-0003-exposed-ports
+  namespace: default
+  resourceVersion: "2868912"
+  selfLink: /api/v1/namespaces/default/endpoints/wael-0003-exposed-ports
+  uid: 36ca13f9-9f92-495c-9f46-9ff2830e104d
+subsets:
+- addresses:
+  - ip: 10.1.6.142
+    nodeName: docker-desktop
+    targetRef:
+      kind: Pod
+      name: wael-0003
+      namespace: default
+      resourceVersion: "2868902"
+      uid: 241800fa-14c3-4ad7-901d-d226b44bd80a
+  ports:
+  - name: eventing
+    port: 8096
+    protocol: TCP
+  - name: analytics
+    port: 8095
+    protocol: TCP
+  - name: search-tls
+    port: 18094
+    protocol: TCP
+  - name: eventing-tls
+    port: 18096
+    protocol: TCP
+  - name: search
+    port: 8094
+    protocol: TCP
+  - name: admin
+    port: 8091
+    protocol: TCP
+  - name: admin-tls
+    port: 18091
+    protocol: TCP
+  - name: analytics-tls
+    port: 18095
+    protocol: TCP

@@ -1,0 +1,54 @@
+metadata:
+  annotations:
+    operator.couchbase.com/version: 1.2.2
+    service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
+  creationTimestamp: "2020-04-21T15:52:38Z"
+  labels:
+    app: couchbase
+    couchbase_cluster: wael
+    couchbase_node: wael-0000
+  name: wael-0000-exposed-ports
+  namespace: default
+  ownerReferences:
+  - apiVersion: couchbase.com/v2
+    controller: true
+    kind: CouchbaseCluster
+    name: wael
+    uid: d5be5131-4ad2-4892-88fb-69a4076fc02e
+  resourceVersion: "2868905"
+  selfLink: /api/v1/namespaces/default/services/wael-0000-exposed-ports
+  uid: c9ac5156-efd3-42a9-9833-ce2e7ecbcccf
+spec:
+  clusterIP: 10.99.13.89
+  externalTrafficPolicy: Local
+  ports:
+  - name: admin
+    nodePort: 30223
+    port: 8091
+    protocol: TCP
+    targetPort: 8091
+  - name: admin-tls
+    nodePort: 31273
+    port: 18091
+    protocol: TCP
+    targetPort: 18091
+  - name: data
+    nodePort: 32026
+    port: 11210
+    protocol: TCP
+    targetPort: 11210
+  - name: data-tls
+    nodePort: 31390
+    port: 11207
+    protocol: TCP
+    targetPort: 11207
+  selector:
+    app: couchbase
+    couchbase_cluster: wael
+    couchbase_node: wael-0000
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer:
+    ingress:
+    - hostname: localhost

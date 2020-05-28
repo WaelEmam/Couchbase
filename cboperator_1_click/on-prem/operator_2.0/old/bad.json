@@ -1,0 +1,27 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "annotations": {
+            "cattle.io/status": "{\"Conditions\":[{\"Type\":\"ResourceQuotaInit\",\"Status\":\"True\",\"Message\":\"\",\"LastUpdateTime\":\"2020-04-30T19:16:27Z\"},{\"Type\":\"InitialRolesPopulated\",\"Status\":\"True\",\"Message\":\"\",\"LastUpdateTime\":\"2020-04-30T19:16:28Z\"}]}",
+            "lifecycle.cattle.io/create.namespace-auth": "true",
+            "management.cattle.io/system-namespace": "true"
+        },
+        "creationTimestamp": "2020-04-30T19:16:24Z",
+        "deletionTimestamp": "2020-05-01T12:52:27Z",
+        "finalizers": [
+            "controller.cattle.io/namespace-auth"
+        ],
+        "name": "p-bj6fs",
+        "resourceVersion": "3310960",
+        "selfLink": "/api/v1/namespaces/p-bj6fs",
+        "uid": "eab66480-638c-41e6-845d-65da97f6158d"
+    },
+    "spec": {
+        "finalizers": [
+        ]
+    },
+    "status": {
+        "phase": "Terminating"
+    }
+}

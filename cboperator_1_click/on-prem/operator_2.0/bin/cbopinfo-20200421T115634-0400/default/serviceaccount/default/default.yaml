@@ -1,0 +1,9 @@
+metadata:
+  creationTimestamp: "2020-02-20T15:42:59Z"
+  name: default
+  namespace: default
+  resourceVersion: "330"
+  selfLink: /api/v1/namespaces/default/serviceaccounts/default
+  uid: f72e6bcd-96b1-4a4a-b41e-3191797f6311
+secrets:
+- name: default-token-jxmhf

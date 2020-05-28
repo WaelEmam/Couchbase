@@ -1,0 +1,80 @@
+metadata:
+  creationTimestamp: "2020-04-21T15:55:24Z"
+  generation: 1
+  name: couchbasegroups.couchbase.com
+  resourceVersion: "2868805"
+  selfLink: /apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions/couchbasegroups.couchbase.com
+  uid: 2fd40b40-6c34-4d5d-a797-0c4913d4afb0
+spec:
+  conversion:
+    strategy: None
+  group: couchbase.com
+  names:
+    categories:
+    - all
+    - couchbase
+    kind: CouchbaseGroup
+    listKind: CouchbaseGroupList
+    plural: couchbasegroups
+    singular: couchbasegroup
+  scope: Namespaced
+  validation:
+    openAPIV3Schema:
+      properties:
+        spec:
+          properties:
+            ldap_group_ref:
+              type: string
+            roles:
+              items:
+                properties:
+                  bucket:
+                    type: string
+                  name:
+                    minLength: 1
+                    pattern: ^admin$|^cluster_admin$|^security_admin$|^ro_admin$|^replication_admin$|^query_external_access$|^query_system_catalog$|^analytics_reader$|^bucket_admin$|^views_admin$|^fts_admin$|^bucket_full_access$|^data_reader$|^data_writer$|^data_dcp_reader$|^data_backup$|^data_monitoring$|^replication_target$|^analytics_manager$|^views_reader$|^fts_searcher$|^query_select$|^query_update$|^query_insert$|^query_delete$|^query_manage_index$
+                    type: string
+                required:
+                - name
+                type: object
+              minLength: 1
+              type: array
+          required:
+          - roles
+          type: object
+  version: v1
+  versions:
+  - name: v1
+    served: false
+    storage: false
+  - name: v2
+    served: true
+    storage: true
+status:
+  acceptedNames:
+    categories:
+    - all
+    - couchbase
+    kind: CouchbaseGroup
+    listKind: CouchbaseGroupList
+    plural: couchbasegroups
+    singular: couchbasegroup
+  conditions:
+  - lastTransitionTime: "2020-04-21T15:55:24Z"
+    message: 'spec.validation.openAPIV3Schema.type: Required value: must not be empty
+      at the root'
+    reason: Violations
+    status: "True"
+    type: NonStructuralSchema
+  - lastTransitionTime: "2020-04-21T15:55:24Z"
+    message: no conflicts found
+    reason: NoConflicts
+    status: "True"
+    type: NamesAccepted
+  - lastTransitionTime: null
+    message: the initial names have been accepted
+    reason: InitialNamesAccepted
+    status: "True"
+    type: Established
+  storedVersions:
+  - v2

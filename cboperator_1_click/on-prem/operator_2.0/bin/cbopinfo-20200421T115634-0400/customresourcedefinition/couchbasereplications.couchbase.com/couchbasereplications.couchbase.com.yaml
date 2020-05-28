@@ -1,0 +1,88 @@
+metadata:
+  creationTimestamp: "2020-04-21T15:55:24Z"
+  generation: 1
+  name: couchbasereplications.couchbase.com
+  resourceVersion: "2868796"
+  selfLink: /apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions/couchbasereplications.couchbase.com
+  uid: 90c29530-5ed5-42c3-8815-c907a6e33a48
+spec:
+  additionalPrinterColumns:
+  - JSONPath: .spec.bucket
+    description: Bucket to replicate from
+    name: Bucket
+    type: string
+  - JSONPath: .spec.bucket
+    description: Bucket to replicate to
+    name: Remote Bucket
+    type: string
+  - JSONPath: .spec.paused
+    description: Whether the replication is paused
+    name: Paused
+    type: boolean
+  - JSONPath: .metadata.creationTimestamp
+    name: Age
+    type: date
+  conversion:
+    strategy: None
+  group: couchbase.com
+  names:
+    categories:
+    - all
+    - couchbase
+    kind: CouchbaseReplication
+    listKind: CouchbaseReplicationList
+    plural: couchbasereplications
+    singular: couchbasereplication
+  scope: Namespaced
+  validation:
+    openAPIV3Schema:
+      properties:
+        spec:
+          properties:
+            bucket:
+              type: string
+            compressionType:
+              pattern: ^None|Auto|Snappy$
+              type: string
+            filterExpression:
+              type: string
+            paused:
+              type: boolean
+            remoteBucket:
+              type: string
+          required:
+          - bucket
+          - remoteBucket
+          - compressionType
+          type: object
+      type: object
+  version: v1
+  versions:
+  - name: v1
+    served: false
+    storage: false
+  - name: v2
+    served: true
+    storage: true
+status:
+  acceptedNames:
+    categories:
+    - all
+    - couchbase
+    kind: CouchbaseReplication
+    listKind: CouchbaseReplicationList
+    plural: couchbasereplications
+    singular: couchbasereplication
+  conditions:
+  - lastTransitionTime: "2020-04-21T15:55:24Z"
+    message: no conflicts found
+    reason: NoConflicts
+    status: "True"
+    type: NamesAccepted
+  - lastTransitionTime: null
+    message: the initial names have been accepted
+    reason: InitialNamesAccepted
+    status: "True"
+    type: Established
+  storedVersions:
+  - v2

@@ -1,0 +1,78 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cb-example-auth
+type: Opaque
+data:
+  username: QWRtaW5pc3RyYXRvcg== # Administrator
+  password: cGFzc3dvcmQ=         # password
+---
+apiVersion: couchbase.com/v2
+kind: CouchbaseBucket
+metadata:
+  name: default
+---
+apiVersion: couchbase.com/v2
+kind: CouchbaseCluster
+metadata:
+  name: cb-example
+spec:
+  image: couchbase/server:6.5.1
+  security:
+    adminSecret: cb-example-auth
+    rbac:
+      managed: true
+    ldap:
+      hosts:
+      - openldap.default.svc.cluster.local
+      port: 389
+      bindDN: "cn=admin,dc=wael,dc=couchbase,dc=com"
+      bindSecret: cb-example-auth
+      userDNMapping:
+        template: "uid=%u,ou=users,dc=wael,dc=couchbase,dc=com"
+      authorizationEnabled: true
+      groupsQuery: "ou=groups,dc=wael,dc=couchbase,dc=com??one?"
+  networking:
+    exposeAdminConsole: true
+    adminConsoleServices:
+    - data
+    - index
+    - query
+    - search
+    - eventing
+    - analytics
+    exposedFeatures:
+    - xdcr
+    - client
+  cluster:
+    clusterName: cb-example
+    dataServiceMemoryQuota: 768Mi
+    indexServiceMemoryQuota: 256Mi
+    searchServiceMemoryQuota: 256Mi
+    eventingServiceMemoryQuota: 256Mi
+    analyticsServiceMemoryQuota: 1024Mi
+    indexStorageSetting: memory_optimized
+    autoFailoverTimeout: 10s
+    autoFailoverMaxCount: 3
+    autoFailoverOnDataDiskIssues: true
+    autoFailoverOnDataDiskIssuesTimePeriod: 120s
+    autoFailoverServerGroup: false
+  buckets:
+    managed: true
+  servers:
+  - size: 2
+    name: data
+    services:
+    - data
+  - size: 1
+    name: query_index
+    services:
+    - query
+    - index
+  - size: 1
+    name: fts_analytics_eventing
+    services:
+    - search
+    - analytics
+    - eventing
+

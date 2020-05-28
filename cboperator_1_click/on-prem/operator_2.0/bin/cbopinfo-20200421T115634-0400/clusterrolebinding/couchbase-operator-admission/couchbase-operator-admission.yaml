@@ -1,0 +1,14 @@
+metadata:
+  creationTimestamp: "2020-04-21T15:51:23Z"
+  name: couchbase-operator-admission
+  resourceVersion: "2868136"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/clusterrolebindings/couchbase-operator-admission
+  uid: 98bc36c7-fdab-464c-b907-34610621119e
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: couchbase-operator-admission
+subjects:
+- kind: ServiceAccount
+  name: couchbase-operator-admission
+  namespace: default

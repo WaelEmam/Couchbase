@@ -1,0 +1,38 @@
+metadata:
+  annotations:
+    operator.couchbase.com/version: 1.2.2
+    service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
+  creationTimestamp: "2020-04-21T15:51:42Z"
+  labels:
+    app: couchbase
+    couchbase_cluster: wael
+  name: wael-srv
+  namespace: default
+  ownerReferences:
+  - apiVersion: couchbase.com/v2
+    controller: true
+    kind: CouchbaseCluster
+    name: wael
+    uid: d5be5131-4ad2-4892-88fb-69a4076fc02e
+  resourceVersion: "2868913"
+  selfLink: /api/v1/namespaces/default/services/wael-srv
+  uid: 8f506d64-397a-4b4f-967c-d2b1ff68ae3a
+spec:
+  clusterIP: None
+  ports:
+  - name: couchbase
+    port: 11210
+    protocol: TCP
+    targetPort: 11210
+  - name: couchbases
+    port: 11207
+    protocol: TCP
+    targetPort: 11207
+  selector:
+    app: couchbase
+    couchbase_cluster: wael
+    couchbase_service_data: enabled
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

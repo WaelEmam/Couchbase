@@ -1,0 +1,14 @@
+metadata:
+  creationTimestamp: "2020-02-20T15:42:51Z"
+  name: kubeadm:node-autoapprove-certificate-rotation
+  resourceVersion: "162"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/clusterrolebindings/kubeadm%3Anode-autoapprove-certificate-rotation
+  uid: 4b85002e-6c80-44d5-841c-3c0d919c5a8d
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:certificates.k8s.io:certificatesigningrequests:selfnodeclient
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: system:nodes

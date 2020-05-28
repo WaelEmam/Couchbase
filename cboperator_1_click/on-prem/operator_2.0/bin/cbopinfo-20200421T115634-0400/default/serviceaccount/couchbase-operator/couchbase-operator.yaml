@@ -1,0 +1,9 @@
+metadata:
+  creationTimestamp: "2020-04-21T15:51:23Z"
+  name: couchbase-operator
+  namespace: default
+  resourceVersion: "2868165"
+  selfLink: /api/v1/namespaces/default/serviceaccounts/couchbase-operator
+  uid: 92ea704a-1d71-4c43-af47-0f4ce38e53a7
+secrets:
+- name: couchbase-operator-token-rf728

@@ -1,0 +1,14 @@
+metadata:
+  creationTimestamp: "2020-02-20T15:42:51Z"
+  name: kubeadm:node-autoapprove-bootstrap
+  resourceVersion: "161"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/clusterrolebindings/kubeadm%3Anode-autoapprove-bootstrap
+  uid: 497108cc-2078-477f-aa97-f53ba4551598
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:certificates.k8s.io:certificatesigningrequests:nodeclient
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: system:bootstrappers:kubeadm:default-node-token

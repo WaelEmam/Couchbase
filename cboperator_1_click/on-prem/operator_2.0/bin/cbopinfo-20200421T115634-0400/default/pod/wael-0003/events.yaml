@@ -1,0 +1,134 @@
+- count: 1
+  eventTime: null
+  firstTimestamp: "2020-04-21T15:52:26Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: wael-0003
+    namespace: default
+    resourceVersion: "2868359"
+    uid: 241800fa-14c3-4ad7-901d-d226b44bd80a
+  lastTimestamp: "2020-04-21T15:52:26Z"
+  message: Successfully assigned default/wael-0003 to docker-desktop
+  metadata:
+    creationTimestamp: "2020-04-21T15:52:26Z"
+    name: wael-0003.1607e09a2887b2f0
+    namespace: default
+    resourceVersion: "2868361"
+    selfLink: /api/v1/namespaces/default/events/wael-0003.1607e09a2887b2f0
+    uid: 18854a26-9ab2-4e9d-9a32-a83f1ef50651
+  reason: Scheduled
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Normal
+- count: 1
+  eventTime: null
+  firstTimestamp: "2020-04-21T15:52:27Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{couchbase-server}
+    kind: Pod
+    name: wael-0003
+    namespace: default
+    resourceVersion: "2868360"
+    uid: 241800fa-14c3-4ad7-901d-d226b44bd80a
+  lastTimestamp: "2020-04-21T15:52:27Z"
+  message: Container image "couchbase/server:enterprise-6.5.0" already present on
+    machine
+  metadata:
+    creationTimestamp: "2020-04-21T15:52:27Z"
+    name: wael-0003.1607e09a4d90fb24
+    namespace: default
+    resourceVersion: "2868367"
+    selfLink: /api/v1/namespaces/default/events/wael-0003.1607e09a4d90fb24
+    uid: f824b111-1f03-4838-9603-4a7870e60994
+  reason: Pulled
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: docker-desktop
+  type: Normal
+- count: 1
+  eventTime: null
+  firstTimestamp: "2020-04-21T15:52:27Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{couchbase-server}
+    kind: Pod
+    name: wael-0003
+    namespace: default
+    resourceVersion: "2868360"
+    uid: 241800fa-14c3-4ad7-901d-d226b44bd80a
+  lastTimestamp: "2020-04-21T15:52:27Z"
+  message: Created container couchbase-server
+  metadata:
+    creationTimestamp: "2020-04-21T15:52:27Z"
+    name: wael-0003.1607e09a529c8778
+    namespace: default
+    resourceVersion: "2868368"
+    selfLink: /api/v1/namespaces/default/events/wael-0003.1607e09a529c8778
+    uid: 8531e24e-b0e0-4aba-9e1c-b597bf69c52d
+  reason: Created
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: docker-desktop
+  type: Normal
+- count: 1
+  eventTime: null
+  firstTimestamp: "2020-04-21T15:52:27Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{couchbase-server}
+    kind: Pod
+    name: wael-0003
+    namespace: default
+    resourceVersion: "2868360"
+    uid: 241800fa-14c3-4ad7-901d-d226b44bd80a
+  lastTimestamp: "2020-04-21T15:52:27Z"
+  message: Started container couchbase-server
+  metadata:
+    creationTimestamp: "2020-04-21T15:52:27Z"
+    name: wael-0003.1607e09a58ad89c8
+    namespace: default
+    resourceVersion: "2868369"
+    selfLink: /api/v1/namespaces/default/events/wael-0003.1607e09a58ad89c8
+    uid: 35a3724f-a916-4e48-9f27-ff7439d85084
+  reason: Started
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: docker-desktop
+  type: Normal
+- count: 5
+  eventTime: null
+  firstTimestamp: "2020-04-21T15:52:39Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{couchbase-server}
+    kind: Pod
+    name: wael-0003
+    namespace: default
+    resourceVersion: "2868360"
+    uid: 241800fa-14c3-4ad7-901d-d226b44bd80a
+  lastTimestamp: "2020-04-21T15:53:59Z"
+  message: 'Readiness probe failed: '
+  metadata:
+    creationTimestamp: "2020-04-21T15:52:39Z"
+    name: wael-0003.1607e09d1ce60250
+    namespace: default
+    resourceVersion: "2868611"
+    selfLink: /api/v1/namespaces/default/events/wael-0003.1607e09d1ce60250
+    uid: e069d670-8c39-4523-bf1e-f494a97ce667
+  reason: Unhealthy
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: kubelet
+    host: docker-desktop
+  type: Warning

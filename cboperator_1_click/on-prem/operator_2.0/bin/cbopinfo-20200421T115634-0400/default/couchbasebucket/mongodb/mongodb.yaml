@@ -1,0 +1,19 @@
+apiVersion: couchbase.com/v2
+kind: CouchbaseBucket
+metadata:
+  creationTimestamp: "2020-04-21T15:56:08Z"
+  generation: 1
+  labels:
+    cluster.couchbase.com: wael
+  name: mongodb
+  namespace: default
+  resourceVersion: "2868897"
+  selfLink: /apis/couchbase.com/v2/namespaces/default/couchbasebuckets/mongodb
+  uid: d4bc3dfc-6ea1-4a47-8b96-277689b5d715
+spec:
+  compressionMode: passive
+  conflictResolution: seqno
+  evictionPolicy: valueOnly
+  ioPriority: low
+  memoryQuota: 100Mi
+  replicas: 1
