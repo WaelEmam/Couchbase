@@ -1,0 +1,17 @@
+apiVersion: couchbase.com/v2
+kind: CouchbaseBucket
+#metadata:
+#  name: default
+metadata:
+  name: couchmart
+  labels:
+    cluster: cb-example
+spec:
+  type: couchbase
+  memoryQuota: 100Mi
+  replicas: 1
+  ioPriority: low
+  evictionPolicy: valueOnly
+  conflictResolution: seqno
+  enableFlush: false
+  enableIndexReplica: false
