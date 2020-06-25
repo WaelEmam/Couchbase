@@ -48,7 +48,7 @@ spec:
 #    - rack2
 #    - rack3  
   servers:
-    - size: 3
+    - size: 2
       name: data
 #      serverGroups:
 #        - rack1
@@ -62,5 +62,8 @@ spec:
         - search
         - analytics
         - eventing
+    - size: 1
+      name: query_index
+      services:
         - query
         - index

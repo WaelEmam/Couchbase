@@ -31,13 +31,13 @@ spec:
 apiVersion: couchbase.com/v2
 kind: CouchbaseBucket
 metadata:
-  name: contacts
-spec:
-  type: couchbase
-  memoryQuota: 100Mi
-  replicas: 1
-  ioPriority: low
-  evictionPolicy: valueOnly
-  conflictResolution: seqno
-  enableFlush: false
-  enableIndexReplica: false
+  name: data
+  spec:
+   type: couchbase
+   memoryQuota: 100Mi
+   replicas: 1
+   ioPriority: low
+   evictionPolicy: valueOnly
+   conflictResolution: seqno
+   enableFlush: false
+   enableIndexReplica: false

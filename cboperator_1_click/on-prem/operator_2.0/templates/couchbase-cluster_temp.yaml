@@ -10,7 +10,7 @@ data:
 apiVersion: couchbase.com/v2
 kind: CouchbaseBucket
 metadata:
-  name: default
+  name: travel-sample
 ---
 apiVersion: couchbase.com/v2
 kind: CouchbaseCluster

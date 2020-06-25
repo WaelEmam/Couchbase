@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sync-gateway
+  labels:
+    app: sync-gateway
+spec:
+#      affinity: 
+#        podAntiAffinity:
+#          requiredDuringSchedulingIgnoredDuringExecution:
+#          - labelSelector:
+#              matchExpressions:
+#              - key: app
+#                operator: In
+#                values:
+#                - sync-gateway
+#            topologyKey: "kubernetes.io/hostname"
+      containers:
+        - name: sync-gateway
+          image: couchbase/sync-gateway:2.7.0-enterprise 
+          ports:
+          - containerPort: 4984
+          - containerPort: 4985
+          args: ["/sync-gateway-config/sync-gateway-config-travelsample.json"] 
+          volumeMounts: 
+            - name: sgw-config-volume
+              mountPath: /sync-gateway-config
+              readOnly: true
+          env:
+            - name: GOMAXPROCS 
+              value: "1"
+          resources:
+            requests:
+              cpu: 500m
+            limits:
+              cpu: 500m 
+        - name: try-cb-python
+          image: connectsv/try-cb-python-v2:6.5.0-server
+          ports:
+          - containerPort: 8080
+      volumes: 
+        - name: sgw-config-volume
+          secret:
+            secretName: sgw-config

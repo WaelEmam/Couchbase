@@ -4,8 +4,8 @@ kind: CouchbaseBucket
 #  name: default
 metadata:
   name: couchmart
-  labels:
-    cluster: cb-example
+  #  labels:
+  #  cluster: cb-example
 spec:
   type: couchbase
   memoryQuota: 100Mi
