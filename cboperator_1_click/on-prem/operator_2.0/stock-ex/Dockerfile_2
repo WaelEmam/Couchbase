@@ -1,0 +1,30 @@
+#Stock Exchange App
+FROM ubuntu:16.04
+MAINTAINER wael@couchbase.com
+
+RUN apt-get update
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
+RUN apt-get -y  install git sudo
+
+RUN sudo apt-get -y install zip unzip jq maven vim openjdk-8-jdk
+RUN sudo apt-get -y install git-all python-dev python-pip python-setuptools cmake build-essential wget lsb-core
+#RUN sudo pip install couchbase
+RUN cd /
+RUN git clone https://github.com/WaelEmam/stock-exchange.git
+RUN cd /stock-exchange
+#RUN pip install -r requirements.txt
+RUN wget http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-6-amd64.deb
+RUN dpkg -i couchbase-release-1.0-6-amd64.deb
+RUN apt-get update
+RUN apt-get install -y libcouchbase-dev libcouchbase2-bin build-essential
+RUN pip install twisted==19.10.0
+RUN pip install tornado==5.1.1
+RUN pip install couchbase==2.5
+RUN pip install requests
+
+#COPY setup.sh /
+#RUN chmod +x /setup.sh
+#ENTRYPOINT ["/setup.sh"]
+
+EXPOSE 8888
+CMD ["sh", "-c", "tail -f /dev/null"]
