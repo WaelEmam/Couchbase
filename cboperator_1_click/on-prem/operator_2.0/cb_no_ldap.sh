@@ -1,20 +1,33 @@
 #!/bin/bash
 
 clear
-echo "Enter Cluster Name"
-read cluster
+usage()
+{
+echo " "
+echo "Usage: $0 <NameSpace> <Cluster Name>"
+echo " "
+echo  " "
+exit 1
+}
+
+ns=$1
+cluster=$2
+
+if [ $# -ne 2 ] ; then
+    usage
+fi
 mkdir ${cluster}_cluster_config
 
-#kubectl create ns dac
-#./bin/cbopcfg --no-operator --namespace dac | kubectl create -n dac -f -
-echo ''
-echo "Enter your Namespace Name"
-read ns
+
+test=`kubectl get ns | grep ${ns}`
+if [ -z "$test" ]
+then
 kubectl create ns ${ns}
+fi
+
 
 kubectl create -f crd.yaml
 ./bin/cbopcfg --namespace ${ns} | kubectl -n ${ns} create  -f -
-#./bin/cbopcfg --no-admission --namespace ${ns} | kubectl create -n ${ns} -f -
 
 # Create CB Cluster
 

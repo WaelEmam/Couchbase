@@ -1,16 +1,34 @@
 #!/bin/bash
 
-echo "Enter Cluster Name"
-read cluster
-echo " "
-echo "Enter LDAP Domain Name:"
-read ldap_domain
-echo " "
+#echo "Enter Cluster Name"
+#read cluster
+#echo " "
+#echo "Enter LDAP Domain Name:"
+#read ldap_domain
+#echo " "
 #echo "Enter LDAP Password"
 #read ldap_pass
 #echo ''
-echo "Enter your Namespace Name"
-read ns
+#echo "Enter your Namespace Name"
+#read ns
+clear
+
+usage()
+{
+echo " "
+echo "Usage: $0 <NameSpace> <Cluster Name>"
+echo " "
+echo  " "
+exit 1
+}
+
+ns=$1
+cluster=$2
+
+if [ $# -ne 2 ] ; then
+    usage
+fi
+
 
 #kubectl create ns dac
 #./bin/cbopcfg --no-operator --namespace dac | kubectl create -n dac -f -

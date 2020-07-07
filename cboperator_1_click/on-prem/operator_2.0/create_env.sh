@@ -11,7 +11,8 @@ echo "
 "       5\) Data streaming from Mysql using Kafka connect" -- WIP
 "       6\) CouchMovies Demo" -- WIP
 "       7\) CouchMart Demo"
-"	8\) Quit"
+"	8\) Stocks Demo"
+"	9\) Quit"
 "
 
 read options
@@ -21,6 +22,11 @@ echo " Do you want LDAP integration? (Y/N)"
 read LDAP
 echo "Enter you Namespace name"
 read ns
+#kubectl create ns ${ns}
+echo "Enter Couchbase Cluster Name"
+read cluster
+export ns
+export cluster
 case $LDAP in 
 	N|n)
 
@@ -28,14 +34,14 @@ case $LDAP in
     case $options in
         1)
             echo "Building CB Cluster"
-            bash ./cb_no_ldap.sh
+            bash ./cb_no_ldap.sh ${ns} ${cluster}
 	    ;;
         2)
             echo "Building env for MySQL migration"
 	    echo " "
 	    echo "Creating MySQL POD"
 	    	# Create Mysql Pod
- 	    	kubectli -n ${ns} run mysql --image=mysql:latest --restart=Never --env MYSQL_ROOT_PASSWORD=admin123 --port=3306 --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mysql", "subdomain": "example"}}'
+ 	    	kubectl -n ${ns} run mysql --image=mysql:latest --restart=Never --env MYSQL_ROOT_PASSWORD=admin123 --port=3306 --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mysql", "subdomain": "example"}}'
 	    	sleep 15
 		kubectl -n ${ns} expose pod  mysql --type=LoadBalancer --port=3306 --target-port=3306
 	    	#MYSQL_POD=`kubectl get pods -o wide| grep mysql | awk '{print $1}'`
@@ -123,7 +129,10 @@ case $LDAP in
 	7)
                 bash couchmart_no_ldap.sh
            ;;
-        8)
+	8)
+		bash stock-ex/create_env.sh
+	  ;;
+        9)
             break
             ;;
         *) echo "invalid option";;
