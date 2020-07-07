@@ -31,7 +31,21 @@ spec:
 apiVersion: couchbase.com/v2
 kind: CouchbaseBucket
 metadata:
-  name: data
+  name: contacts
+  spec:
+   type: couchbase
+   memoryQuota: 100Mi
+   replicas: 1
+   ioPriority: low
+   evictionPolicy: valueOnly
+   conflictResolution: seqno
+   enableFlush: false
+   enableIndexReplica: false
+---
+apiVersion: couchbase.com/v2
+kind: CouchbaseBucket
+metadata:
+  name: default
   spec:
    type: couchbase
    memoryQuota: 100Mi

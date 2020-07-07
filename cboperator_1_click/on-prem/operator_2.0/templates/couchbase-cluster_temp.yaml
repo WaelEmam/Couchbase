@@ -7,11 +7,11 @@ data:
   username: QWRtaW5pc3RyYXRvcg== # Administrator
   password: cGFzc3dvcmQ=         # password
 ---
-apiVersion: couchbase.com/v2
-kind: CouchbaseBucket
-metadata:
-  name: travel-sample
----
+#apiVersion: couchbase.com/v2
+#kind: CouchbaseBucket
+#metadata:
+#  name: travel-sample
+#---
 apiVersion: couchbase.com/v2
 kind: CouchbaseCluster
 metadata:

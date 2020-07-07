@@ -40,6 +40,7 @@ case $LDAP in
             echo "Building env for MySQL migration"
 	    echo " "
 	    echo "Creating MySQL POD"
+	    	kubectl create ns ${ns}
 	    	# Create Mysql Pod
  	    	kubectl -n ${ns} run mysql --image=mysql:latest --restart=Never --env MYSQL_ROOT_PASSWORD=admin123 --port=3306 --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mysql", "subdomain": "example"}}'
 	    	sleep 15
@@ -57,35 +58,37 @@ case $LDAP in
 	    	kubectl -n ${ns} cp ../mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
 	    	sleep 15
 		echo " "
-		bash ./cb_no_ldap.sh
+		bash ./cb_no_ldap.sh ${ns} ${cluster}
             ;;
         3)
             echo "Building env for Mongodb migration"
 	    	# Create MongoDB Pod
             echo " "
             echo "Creating MonngoDB POD"
+	    	kubectl create ns ${ns}
 		kubectl -n ${ns} run mongodb --image=mongo:latest --restart=Never --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mongodb", "subdomain": "example"}}'
 		sleep 15
 		kubectl -n ${ns} expose pod mongodb --type=LoadBalancer --port=27017 --target-port=27017
-		kubectl -n ${ns} cp data/script.js  mongodb:/tmp/script.js
-		kubectl -n ${ns} cp data/generated.json mongodb:/tmp/generated.json
+		kubectl -n ${ns} cp ../data/script.js  mongodb:/tmp/script.js
+		kubectl -n ${ns} cp ../data/generated.json mongodb:/tmp/generated.json
 		kubectl -n ${ns} exec mongodb -- bash -c "mongo /tmp/script.js; mongoimport -c cases --jsonArray --drop --file /tmp/generated.json"
 
 		# Create Nifi Pod
             echo " "
             echo "Creating Nifi POD"
-		kubectl -n ${ns} create -f nifi.yaml
+		kubectl -n ${ns} create -f ../nifi.yaml
 		sleep 15
 		kubectl -n ${ns} expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
 		NIFI_POD=`kubectl -n ${ns} get pods | grep nifi | awk '{print $1}'`
 		kubectl -n ${ns} cp ../data/mysql-connector-java-8.0.19.jar ${NIFI_POD}:/tmp
 		sleep 15
-		bash ./cb_no_ldap.sh
+		bash ./cb_no_ldap.sh ${ns} ${cluster}
 
             ;;
         4)
             echo "Building env for MySQL & MongoDB migration"
 	    	 # Create Mysql Pod
+		 kubectl create ns ${ns}
 		 echo "Creating MySQL POD "
 		 echo " "
 		 kubectl -n ${ns} run mysql --image=mysql:latest --restart=Never --env MYSQL_ROOT_PASSWORD=admin123 --port=3306 --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mysql", "subdomain": "example"}}'
@@ -109,7 +112,7 @@ case $LDAP in
 
                 # Create Nifi Pod
 		echo "Creating Nifi POD "
-                kubectl -n ${ns} create -f nifi.yaml
+                kubectl -n ${ns} create -f ../nifi.yaml
                 sleep 15
                 kubectl -n ${ns} expose deployment nifi --type=LoadBalancer --port=8080 --target-port=8080
                 #NIFI_IP=`kubectl get pods -o wide| grep nifi | awk '{print $6}'`
@@ -118,7 +121,7 @@ case $LDAP in
                 sleep 15
 		echo "Creating CB Cluster "
 		echo " "
-		bash ./cb_no_ldap.sh
+		bash ./cb_no_ldap.sh ${ns} ${cluster}
             ;;
         5)
 		bash mysql-kafka-cb/create_env.sh
