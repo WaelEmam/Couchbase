@@ -26,8 +26,8 @@ kubectl create ns ${ns}
 fi
 
 
-kubectl create -f crd.yaml
-./bin/cbopcfg --namespace ${ns} | kubectl -n ${ns} create  -f -
+kubectl create -f operator_2.0/crd.yaml
+./operator_2.0/bin/cbopcfg --namespace ${ns} | kubectl -n ${ns} create  -f -
 
 # Create CB Cluster
 
@@ -47,13 +47,13 @@ kubectl port-forward --namespace ${ns} ${cluster}-0000 8091:8091 &
 
 sleep 60
 # Copy Ecomm Data Set (50 Users, 100 Products, 60 Orders, 30 Reviews)
-kubectl --namespace ${ns} cp ../data/ecomm ${cluster}-0000:/tmp/ecomm
+kubectl --namespace ${ns} cp data/ecomm ${cluster}-0000:/tmp/ecomm
 
 # Copy Music Data Set (10 Countries, 50 Users, 50 Tracks, 50 Playlists)
-kubectl --namespace ${ns} cp ../data/music ${cluster}-0000:/tmp/music
+kubectl --namespace ${ns} cp data/music ${cluster}-0000:/tmp/music
 
 # Copy Contacts Data Set (50 Contacts)
-kubectl --namespace ${ns}  cp ../data/contacts ${cluster}-0000:/tmp/contacts
+kubectl --namespace ${ns}  cp /data/contacts ${cluster}-0000:/tmp/contacts
 
 # Import Data set to ecommerce bucket
 kubectl exec --namespace ${ns} ${cluster}-0000 -- bash -c "cbimport json -c couchbase://localhost -u Administrator -p password -b ecommerce -f list -d file:///tmp/ecomm/reviews.json -g key::%_id% -t 4"

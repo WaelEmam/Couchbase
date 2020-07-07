@@ -1,125 +1,78 @@
-apiVersion: couchbase.com/v1
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cb-example-auth
+type: Opaque
+data:
+  username: QWRtaW5pc3RyYXRvcg== # Administrator
+  password: cGFzc3dvcmQ=         # password
+---
+#apiVersion: couchbase.com/v2
+#kind: CouchbaseBucket
+#metadata:
+#  name: travel-sample
+#---
+apiVersion: couchbase.com/v2
 kind: CouchbaseCluster
 metadata:
-  name: wael-cb-k8s
+  name: cb-example
 spec:
-  baseImage: couchbase/server
-  version: enterprise-6.5.0
-  authSecret: cb-example-auth
-  exposeAdminConsole: true
-  adminConsoleServices:
+  image: couchbase/server:6.5.1
+  security:
+    adminSecret: cb-example-auth
+    #    rbac:
+    #  managed: true
+    #ldap:
+    #  hosts:
+    #  - openldap.default.svc.cluster.local
+    #  port: 389
+    #  bindDN: "cn=admin,dc=wael,dc=couchbase,dc=com"
+    #  bindSecret: cb-example-auth
+    #  userDNMapping:
+    #    template: "uid=%u,ou=users,dc=wael,dc=couchbase,dc=com"
+    #  authorizationEnabled: true
+    #  groupsQuery: "ou=groups,dc=wael,dc=couchbase,dc=com??one?"
+  networking:
+    exposeAdminConsole: true
+    adminConsoleServices:
     - data
     - index
     - query
     - search
+    - eventing
     - analytics
-    - eventing  
-  exposedFeatures:
+    exposedFeatures:
     - xdcr
     - client
   cluster:
-    dataServiceMemoryQuota: 768
-    indexServiceMemoryQuota: 256
-    searchServiceMemoryQuota: 256
-    eventingServiceMemoryQuota: 256
-    analyticsServiceMemoryQuota: 1024
+    clusterName: cb-example
+    dataServiceMemoryQuota: 768Mi
+    indexServiceMemoryQuota: 256Mi
+    searchServiceMemoryQuota: 256Mi
+    eventingServiceMemoryQuota: 256Mi
+    analyticsServiceMemoryQuota: 1024Mi
     indexStorageSetting: memory_optimized
-    autoFailoverTimeout: 10
+    autoFailoverTimeout: 10s
     autoFailoverMaxCount: 3
     autoFailoverOnDataDiskIssues: true
-    autoFailoverOnDataDiskIssuesTimePeriod: 120
+    autoFailoverOnDataDiskIssuesTimePeriod: 120s
     autoFailoverServerGroup: false
   buckets:
-    - name: default
-      type: couchbase
-      memoryQuota: 100
-      replicas: 1
-      ioPriority: low
-      evictionPolicy: valueOnly
-      conflictResolution: seqno
-      enableFlush: false
-      enableIndexReplica: false
-    - name: ecommerce
-      type: couchbase
-      memoryQuota: 100
-      replicas: 1
-      ioPriority: low
-      evictionPolicy: valueOnly
-      conflictResolution: seqno
-      enableFlush: false
-      enableIndexReplica: false
-    - name: music
-      type: couchbase
-      memoryQuota: 100
-      replicas: 1
-      ioPriority: low
-      evictionPolicy: valueOnly
-      conflictResolution: seqno
-      enableFlush: false
-      enableIndexReplica: false
-    - name: couchmart
-      type: couchbase
-      memoryQuota: 100
-      replicas: 1
-      ioPriority: low
-      evictionPolicy: valueOnly
-      conflictResolution: seqno
-      enableFlush: false
-      enableIndexReplica: false
-    - name: contacts
-      type: couchbase
-      memoryQuota: 100
-      replicas: 1
-      ioPriority: low
-      evictionPolicy: valueOnly
-      conflictResolution: seqno
-      enableFlush: false
-      enableIndexReplica: false
-    - name: mysql
-      type: couchbase
-      memoryQuota: 100
-      replicas: 1
-      ioPriority: low
-      evictionPolicy: valueOnly
-      conflictResolution: seqno
-      enableFlush: false
-      enableIndexReplica: false
-    - name: mongodb
-      type: couchbase
-      memoryQuota: 100
-      replicas: 1
-      ioPriority: low
-      evictionPolicy: valueOnly
-      conflictResolution: seqno
-      enableFlush: false
-      enableIndexReplica: false
-#  serverGroups:    
-#    - rack1
-#    - rack2
-#    - rack3  
+    managed: true
   servers:
-    - size: 2
-      name: data
-#      serverGroups:
-#        - rack1
-#        - rack2
-#        - rack3
-      services:
-        - data
-    - size: 1
-      name: query_index
-#      serverGroups:
-#        - rack1
-#        - rack2
-      services:
-        - query
-        - index
-    - size: 1
-      name: fts_analytics_eventing
-#      serverGroups:
-#        - rack1
-#        - rack3
-      services:
-        - search
-        - analytics
-        - eventing
+  - size: 2
+    name: data
+    services:
+    - data
+  - size: 1
+    name: query_index
+    services:
+    - query
+    - index
+  - size: 1
+    name: fts_analytics_eventing
+    services:
+    - search
+    - analytics
+    - eventing
+

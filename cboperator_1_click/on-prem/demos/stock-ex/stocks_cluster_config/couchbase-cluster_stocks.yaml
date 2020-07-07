@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: cb-example-auth
+  name: stocks-auth
 type: Opaque
 data:
   username: QWRtaW5pc3RyYXRvcg== # Administrator
@@ -11,15 +11,15 @@ data:
 #kind: CouchbaseBucket
 #metadata:
 #  name: travel-sample
-#---
+---
 apiVersion: couchbase.com/v2
 kind: CouchbaseCluster
 metadata:
-  name: cb-example
+  name: stocks
 spec:
   image: couchbase/server:6.5.1
   security:
-    adminSecret: cb-example-auth
+    adminSecret: stocks-auth
     #    rbac:
     #  managed: true
     #ldap:
@@ -27,7 +27,7 @@ spec:
     #  - openldap.default.svc.cluster.local
     #  port: 389
     #  bindDN: "cn=admin,dc=wael,dc=couchbase,dc=com"
-    #  bindSecret: cb-example-auth
+    #  bindSecret: stocks-auth
     #  userDNMapping:
     #    template: "uid=%u,ou=users,dc=wael,dc=couchbase,dc=com"
     #  authorizationEnabled: true
@@ -45,7 +45,7 @@ spec:
     - xdcr
     - client
   cluster:
-    clusterName: cb-example
+    clusterName: stocks
     dataServiceMemoryQuota: 768Mi
     indexServiceMemoryQuota: 256Mi
     searchServiceMemoryQuota: 256Mi
@@ -58,21 +58,13 @@ spec:
     autoFailoverOnDataDiskIssuesTimePeriod: 120s
     autoFailoverServerGroup: false
   buckets:
-    managed: true
+    managed: false
   servers:
-  - size: 2
-    name: data
+  - size: 3
+    name: services
     services:
     - data
-  - size: 1
-    name: query_index
-    services:
     - query
     - index
-  - size: 1
-    name: fts_analytics_eventing
-    services:
     - search
     - analytics
-    - eventing
-

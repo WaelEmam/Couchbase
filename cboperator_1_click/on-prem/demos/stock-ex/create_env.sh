@@ -4,7 +4,7 @@ clear
 #echo "Enter Cluster Name"
 #read cluster
 cluster=stock
-mkdir stock-ex/${cluster}_cluster_config
+mkdir cluster_configs/${cluster}_cluster_config
 
 #kubectl create ns dac
 #./bin/cbopcfg --no-operator --namespace dac | kubectl create -n dac -f -
@@ -14,16 +14,16 @@ echo ''
 ns=stock
 kubectl create ns ${ns}
 
-kubectl create -f crd.yaml
-./bin/cbopcfg --namespace ${ns} | kubectl -n ${ns} create  -f -
+kubectl create -f operator_2.0/crd.yaml
+./operator_2.0/bin/cbopcfg --namespace ${ns} | kubectl -n ${ns} create  -f -
 #./bin/cbopcfg --no-admission --namespace ${ns} | kubectl create -n ${ns} -f -
 
 # Create CB Cluster
 
 #kubectl create -f crd.yaml
-cp templates/couchbase-cluster_stock.yaml stock-ex/${cluster}_cluster_config/couchbase-cluster_${cluster}.yaml
-sed -i '' "s/cb-example/${cluster}/g" stock-ex/${cluster}_cluster_config/couchbase-cluster_${cluster}.yaml
-kubectl create -f stock-ex/${cluster}_cluster_config/couchbase-cluster_${cluster}.yaml --namespace ${ns}
+cp templates/couchbase-cluster_stock.yaml cluster_configs/${cluster}_cluster_config/couchbase-cluster_${cluster}.yaml
+sed -i '' "s/cb-example/${cluster}/g" cluster_configs/${cluster}_cluster_config/couchbase-cluster_${cluster}.yaml
+kubectl create -f cluster_configs/${cluster}_cluster_config/couchbase-cluster_${cluster}.yaml --namespace ${ns}
 
 # Wait till all pods are up and running
 echo " "
