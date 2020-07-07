@@ -10,7 +10,7 @@ echo "
 "	4\) Data migration from Mysql \& MongoDB using Nifi"
 "       5\) Data streaming from Mysql using Kafka connect" -- WIP
 "       6\) CouchMovies Demo" -- WIP
-"       7\) CouchMart Demo"
+"       7\) CouchMart Demo" -- WIP
 "	8\) Stocks Demo"
 "	9\) Travel Sample Demo"
 "	10\) Quit"

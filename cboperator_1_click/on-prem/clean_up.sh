@@ -14,3 +14,5 @@ echo ''
 echo ''
 ./operator_2.0/bin/cbopcfg | kubectl delete -f -
 kubectl delete -f operator_2.0/crd.yaml
+kubectl delete svc openldap
+kubectl delete pod openldap
