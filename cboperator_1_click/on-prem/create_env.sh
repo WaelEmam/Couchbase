@@ -21,13 +21,12 @@ read options
 echo " Do you want LDAP integration? (Y/N)"
 
 read LDAP
-echo "Enter you Namespace name"
-read ns
-#kubectl create ns ${ns}
-echo "Enter Couchbase Cluster Name"
-read cluster
-export ns
-export cluster
+#echo "Enter you Namespace name"
+#read ns
+#echo "Enter Couchbase Cluster Name"
+#read cluster
+#export ns
+#export cluster
 case $LDAP in 
 	N|n)
 
@@ -35,12 +34,24 @@ case $LDAP in
     case $options in
         1)
             echo "Building CB Cluster"
+	    echo "Enter you Namespace name"
+	    read ns
+	    echo "Enter Couchbase Cluster Name"
+            read cluster
+            export ns
+            export cluster
             bash ./scripts/cb_no_ldap.sh ${ns} ${cluster}
 	    ;;
         2)
-            echo "Building env for MySQL migration"
-	    echo " "
-	    echo "Creating MySQL POD"
+	    	echo "Enter you Namespace name"
+            	read ns
+            	echo "Enter Couchbase Cluster Name"
+	    	read cluster
+	    	export ns
+	    	export cluster
+	    	echo "Building env for MySQL migration"
+	    	echo " "
+	    	echo "Creating MySQL POD"
 	    	kubectl create ns ${ns}
 	    	# Create Mysql Pod
  	    	kubectl -n ${ns} run mysql --image=mysql:latest --restart=Never --env MYSQL_ROOT_PASSWORD=admin123 --port=3306 --overrides='{ "apiVersion": "v1", "spec": {"hostname": "mysql", "subdomain": "example"}}'
@@ -62,6 +73,12 @@ case $LDAP in
 		bash ./scripts/cb_no_ldap.sh ${ns} ${cluster}
             ;;
         3)
+		echo "Enter you Namespace name"
+		read ns
+		echo "Enter Couchbase Cluster Name"
+		read cluster
+		export ns
+		export cluster
             echo "Building env for Mongodb migration"
 	    	# Create MongoDB Pod
             echo " "
@@ -87,6 +104,12 @@ case $LDAP in
 
             ;;
         4)
+                echo "Enter you Namespace name"
+                read ns
+                echo "Enter Couchbase Cluster Name"
+                read cluster
+                export ns
+                export cluster
             echo "Building env for MySQL & MongoDB migration"
 	    	 # Create Mysql Pod
 		 kubectl create ns ${ns}
